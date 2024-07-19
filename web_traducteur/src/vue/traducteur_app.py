@@ -3,6 +3,7 @@ import streamlit as st
 from streamlit_chat import message
 from config.parametres import URL_TRADUCTEUR, URL_VERSIONS, URL_LOGIN, URL_TRADUCTIONS
 import requests
+import pysnooper
 
 class TraducteurApp:
     def __init__(self):
@@ -73,16 +74,36 @@ class TraducteurApp:
 
         if st.session_state["logged_in"] :
             self.add_chat()
+            
+   
+    # def get_versions(self):
+    #     versions = ["Aucune langue détectée !"]
+    #     response = requests.get(self.URL_VERSIONS)
 
+    #     if response.status_code == 200:
+    #         versions = response.json()
+    #     else:
+    #         st.error(f"Erreur : {response.status_code}")
+    #     return versions
+    
+    @pysnooper.snoop('debug.log')
     def get_versions(self):
         versions = ["Aucune langue détectée !"]
-        response = requests.get(self.URL_VERSIONS)
+        try:
+            response = requests.get(self.URL_VERSIONS)
+            if response.status_code == 200:
+                try:
+                    versions = response.json()
+                except ValueError as e:
+                    st.error(f"Erreur de décodage JSON : {e}")
+                    st.write(f"Contenu brut de la réponse : {response.text}")
+            else:
+                st.error(f"Erreur : {response.status_code}")
+        except requests.RequestException as e:
+            st.error(f"Erreur de requête : {e}")
 
-        if response.status_code == 200:
-            versions = response.json()
-        else:
-            st.error(f"Erreur : {response.status_code}")
         return versions
+
 
     def add_form(self, option):
         st.subheader(option)
