@@ -13,6 +13,7 @@ class Service_Traducteur(Connexion):
         cls.cursor.execute(query, values)
         cls.bdd.commit()
         cls.fermer_connexion()
+
     
     @classmethod
     def verifier_login(cls, utilisateur:Utilisateur):

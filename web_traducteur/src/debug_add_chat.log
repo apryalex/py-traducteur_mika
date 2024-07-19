@@ -1,0 +1,178 @@
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000001D0083CD210>
+15:40:23.131866 call       117     def add_chat(self):
+15:40:23.132401 line       118         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+15:40:23.133409 line       119         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+15:40:23.148173 line       121         if chat.status_code == 200:
+15:40:23.148702 line       122             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...nsole", 'version': 'en >> fr', 'utilisateur': 1}]
+15:40:23.149228 line       124             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+15:40:23.149756 line       125                 message(prompt["atraduire"], is_user=True)
+15:40:23.248092 line       126                 message(prompt["traduction"])
+15:40:23.250092 line       124             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+15:40:23.251093 line       125                 message(prompt["atraduire"], is_user=True)
+15:40:23.252092 line       126                 message(prompt["traduction"])
+15:40:23.254094 line       124             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+15:40:23.254094 line       125                 message(prompt["atraduire"], is_user=True)
+15:40:23.256281 line       126                 message(prompt["traduction"])
+15:40:23.257279 line       124             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': "j'aime les pommes", 'traduction':...pples.', 'version': 'fr >> en', 'utilisateur': 1}
+15:40:23.258279 line       125                 message(prompt["atraduire"], is_user=True)
+15:40:23.259282 line       126                 message(prompt["traduction"])
+15:40:23.260281 line       124             for prompt in chat_messages:
+15:40:23.261283 line       125                 message(prompt["atraduire"], is_user=True)
+15:40:23.262281 exception  125                 message(prompt["atraduire"], is_user=True)
+Exception:..... streamlit.errors.DuplicateWidgetID: There are mu...` argument to
+`st.streamlit_chat.streamlit_chat`.
+Call ended by exception
+Elapsed time: 00:00:00.131414
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000001D0083C70D0>
+15:40:28.655700 call       117     def add_chat(self):
+15:40:28.656709 line       118         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+15:40:28.656709 line       119         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+15:40:28.748584 line       121         if chat.status_code == 200:
+15:40:28.749054 line       122             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...nsole", 'version': 'en >> fr', 'utilisateur': 1}]
+15:40:28.749568 line       124             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+15:40:28.750893 line       125                 message(prompt["atraduire"], is_user=True)
+15:40:28.752858 exception  125                 message(prompt["atraduire"], is_user=True)
+Exception:..... streamlit.runtime.scriptrunner.script_runner.StopException
+Call ended by exception
+Elapsed time: 00:00:00.101409
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000001D0083C70A0>
+15:40:28.776928 call       117     def add_chat(self):
+15:40:28.776928 line       118         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+15:40:28.776928 line       119         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+15:40:28.792534 line       121         if chat.status_code == 200:
+15:40:28.793062 line       122             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...nsole", 'version': 'en >> fr', 'utilisateur': 1}]
+15:40:28.793588 line       124             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+15:40:28.794121 line       125                 message(prompt["atraduire"], is_user=True)
+15:40:28.796166 line       126                 message(prompt["traduction"])
+15:40:28.797220 line       124             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+15:40:28.797751 line       125                 message(prompt["atraduire"], is_user=True)
+15:40:28.799361 line       126                 message(prompt["traduction"])
+15:40:28.800953 line       124             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+15:40:28.801481 line       125                 message(prompt["atraduire"], is_user=True)
+15:40:28.802533 line       126                 message(prompt["traduction"])
+15:40:28.803573 line       124             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': "j'aime les pommes", 'traduction':...pples.', 'version': 'fr >> en', 'utilisateur': 1}
+15:40:28.803573 line       125                 message(prompt["atraduire"], is_user=True)
+15:40:28.806102 line       126                 message(prompt["traduction"])
+15:40:28.807105 line       124             for prompt in chat_messages:
+15:40:28.808104 line       125                 message(prompt["atraduire"], is_user=True)
+15:40:28.809105 exception  125                 message(prompt["atraduire"], is_user=True)
+Exception:..... streamlit.errors.DuplicateWidgetID: There are mu...` argument to
+`st.streamlit_chat.streamlit_chat`.
+Call ended by exception
+Elapsed time: 00:00:00.033174
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000001A2CCB8A860>
+15:50:34.272413 call       116     def add_chat(self):
+15:50:34.273021 line       117         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+15:50:34.274029 line       118         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+15:50:34.292055 line       120         if chat.status_code == 200:
+15:50:34.292582 line       121             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...nsole', 'version': 'fr >> en', 'utilisateur': 1}]
+15:50:34.293123 line       123             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+15:50:34.293780 line       124                 message(prompt["atraduire"], is_user=True)
+15:50:34.385146 line       125                 message(prompt["traduction"])
+15:50:34.387152 line       123             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+15:50:34.387152 line       124                 message(prompt["atraduire"], is_user=True)
+15:50:34.389147 line       125                 message(prompt["traduction"])
+15:50:34.390149 line       123             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+15:50:34.390149 line       124                 message(prompt["atraduire"], is_user=True)
+15:50:34.392270 line       125                 message(prompt["traduction"])
+15:50:34.393270 line       123             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': "j'aime les pommes", 'traduction':...pples.', 'version': 'fr >> en', 'utilisateur': 1}
+15:50:34.394270 line       124                 message(prompt["atraduire"], is_user=True)
+15:50:34.395270 line       125                 message(prompt["traduction"])
+15:50:34.396269 line       123             for prompt in chat_messages:
+15:50:34.397269 line       124                 message(prompt["atraduire"], is_user=True)
+15:50:34.398269 exception  124                 message(prompt["atraduire"], is_user=True)
+Exception:..... streamlit.errors.DuplicateWidgetID: There are mu...` argument to
+`st.streamlit_chat.streamlit_chat`.
+Call ended by exception
+Elapsed time: 00:00:00.127856
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000001A2EBCC8F40>
+15:50:37.532816 call       116     def add_chat(self):
+15:50:37.532816 line       117         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+15:50:37.533822 line       118         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+15:50:37.551853 line       120         if chat.status_code == 200:
+15:50:37.552670 line       121             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...nsole', 'version': 'fr >> en', 'utilisateur': 1}]
+15:50:37.552670 line       123             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+15:50:37.552670 line       124                 message(prompt["atraduire"], is_user=True)
+15:50:37.554677 line       125                 message(prompt["traduction"])
+15:50:37.557108 line       123             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+15:50:37.557639 line       124                 message(prompt["atraduire"], is_user=True)
+15:50:37.559498 line       125                 message(prompt["traduction"])
+15:50:37.561113 line       123             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+15:50:37.561654 line       124                 message(prompt["atraduire"], is_user=True)
+15:50:37.564195 line       125                 message(prompt["traduction"])
+15:50:37.565193 line       123             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': "j'aime les pommes", 'traduction':...pples.', 'version': 'fr >> en', 'utilisateur': 1}
+15:50:37.566195 line       124                 message(prompt["atraduire"], is_user=True)
+15:50:37.568195 line       125                 message(prompt["traduction"])
+15:50:37.570193 line       123             for prompt in chat_messages:
+15:50:37.571701 line       124                 message(prompt["atraduire"], is_user=True)
+15:50:37.572710 exception  124                 message(prompt["atraduire"], is_user=True)
+Exception:..... streamlit.errors.DuplicateWidgetID: There are mu...` argument to
+`st.streamlit_chat.streamlit_chat`.
+Call ended by exception
+Elapsed time: 00:00:00.040901
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000001A2EBCC9120>
+15:50:40.617913 call       116     def add_chat(self):
+15:50:40.618445 line       117         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+15:50:40.618970 line       118         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+15:50:40.634142 line       120         if chat.status_code == 200:
+15:50:40.634675 line       121             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...nsole', 'version': 'fr >> en', 'utilisateur': 1}]
+15:50:40.635196 line       123             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+15:50:40.636246 line       124                 message(prompt["atraduire"], is_user=True)
+15:50:40.637905 line       125                 message(prompt["traduction"])
+15:50:40.640020 line       123             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+15:50:40.640545 line       124                 message(prompt["atraduire"], is_user=True)
+15:50:40.642621 line       125                 message(prompt["traduction"])
+15:50:40.644213 line       123             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+15:50:40.645222 line       124                 message(prompt["atraduire"], is_user=True)
+15:50:40.649221 line       125                 message(prompt["traduction"])
+15:50:40.653741 line       123             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': "j'aime les pommes", 'traduction':...pples.', 'version': 'fr >> en', 'utilisateur': 1}
+15:50:40.654741 line       124                 message(prompt["atraduire"], is_user=True)
+15:50:40.656741 line       125                 message(prompt["traduction"])
+15:50:40.659741 line       123             for prompt in chat_messages:
+15:50:40.661247 line       124                 message(prompt["atraduire"], is_user=True)
+15:50:40.662254 exception  124                 message(prompt["atraduire"], is_user=True)
+Exception:..... streamlit.errors.DuplicateWidgetID: There are mu...` argument to
+`st.streamlit_chat.streamlit_chat`.
+Call ended by exception
+Elapsed time: 00:00:00.046349

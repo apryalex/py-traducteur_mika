@@ -3,8 +3,8 @@ import streamlit as st
 from streamlit_chat import message
 from config.parametres import URL_TRADUCTEUR, URL_VERSIONS, URL_LOGIN, URL_TRADUCTIONS
 import requests
-import pysnooper
-import uuid
+import pysnoop
+
 class TraducteurApp:
     def __init__(self):
         self.URL_TRADUCTEUR = URL_TRADUCTEUR
@@ -26,17 +26,8 @@ class TraducteurApp:
         self.show_login_form()
         self.show_app()
 
-   
     def show_login_form(self):
-        """
-        Affiche le formulaire de connexion dans la barre latérale.
-        Le formulaire permet à l'utilisateur de se connecter.
-        """
         def login(username, password):
-            """
-            Fonction de connexion qui envoie les informations de connexion au serveur et
-            met à jour l'état de session si la connexion est réussie.
-            """
 
             data = {
                 "login": username,
@@ -59,35 +50,18 @@ class TraducteurApp:
         password = st.sidebar.text_input("Mot de passe", type="password")
         st.sidebar.button("Se connecter", on_click=login, args=(username, password))
 
-
     def show_index(self) :
-        """
-        Affiche le message d'accueil lorsque l'utilisateur n'est pas connecté.
-        """
         st.title(self.titre)
         st.write("Veuillez vous connecter pour accéder aux fonctionnalités sécurisées.")
         
-
     def show_logout_button(self):
-        """
-        Affiche le bouton de déconnexion dans la barre latérale.
-        Permet à l'utilisateur de se déconnecter.
-        """
         def logout() :
-            """
-            Fonction de déconnexion qui réinitialise l'état de session.
-            """
             st.session_state["logged_in"] = None
     
         st.sidebar.title("Déconnexion")
         st.sidebar.button("Se déconnecter", on_click=logout)    
 
-
     def show_app(self):
-        """
-        Affiche l'application principale une fois l'utilisateur connecté.
-        Permet de sélectionner la version de traduction et d'afficher le formulaire de traduction.
-        """
         st.title(self.titre)
         versions = self.get_versions()
 
@@ -102,12 +76,6 @@ class TraducteurApp:
             self.add_chat()
 
     def get_versions(self):
-        """
-        Récupère les versions de traduction disponibles à partir du serveur.
-        
-        Returns:
-            list: Liste des versions disponibles ou message d'erreur en cas d'échec.
-        """
         versions = ["Aucune langue détectée !"]
         response = requests.get(self.URL_VERSIONS)
 
@@ -117,16 +85,9 @@ class TraducteurApp:
             st.error(f"Erreur : {response.status_code}")
         return versions
     
-
-    @pysnooper.snoop('debug_add_form.log')
+    
+    @pysnoop.snoop('add_form.log')
     def add_form(self, option):
-        """
-        Affiche le formulaire de traduction et gère la demande de traduction.
-        Envoie le texte à traduire au serveur et affiche la réponse.
-
-        Parameters:
-            option (str): La version de traduction sélectionnée par l'utilisateur.
-        """
         st.subheader(option)
         atraduire = st.text_input("Texte à traduire")
 
@@ -142,35 +103,23 @@ class TraducteurApp:
             if response.status_code == 200:
                 st.success("Voici votre traduction !")
                 response_data = response.json()
-                reponse = response_data['traduction']
-                message(reponse)
+                reponse = f"{response_data['traduction'][0]['translation_text']}"   # ligne conçerné
+                st.write(reponse)   
             else:
                 st.error(f"Erreur : {response.status_code}")
                 reponse = response.json()
                 st.json(response.json())
 
-                
-    
-
-    @pysnooper.snoop('add_chat_v2.log')
     def add_chat(self):
-        """
-        Affiche l'historique des messages de chat entre l'utilisateur et le bot.
-        Récupère les messages depuis le serveur et les affiche avec des clés uniques.
-
-        """
         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
         chat = requests.get(url)
-        
+
         if chat.status_code == 200:
             chat_messages = chat.json()
-            counter = 0
-            
+
             for prompt in chat_messages:
-                counter += 1
-           
-                message(f"U S E R :{prompt['atraduire']}", key=f"user_message_{counter}")
-                message(f" G P T :{prompt['traduction']}", key=f"bot_message_{counter}")
-            
-            else :
-               st.error(f"Erreur : {chat.status_code}")
+                message(prompt["atraduire"], is_user=True)
+                message(prompt["traduction"])
+        else :
+            st.error(f"Erreur : {chat.status_code}")
+
