@@ -142,7 +142,7 @@ class TraducteurApp:
             if response.status_code == 200:
                 st.success("Voici votre traduction !")
                 response_data = response.json()
-                reponse = response_data['traduction']
+                reponse = f"{response_data['traduction'][0]['translation_text']}"
                 message(reponse)
             else:
                 st.error(f"Erreur : {response.status_code}")
@@ -164,13 +164,32 @@ class TraducteurApp:
         
         if chat.status_code == 200:
             chat_messages = chat.json()
-            counter = 0
+            counter_user = 0
+            counter_bot = 1
             
             for prompt in chat_messages:
-                counter += 1
+                counter_user += 2
+                counter_bot += 2
+
+                message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+                message(prompt["traduction"],key=f"bot_message_{counter_bot}")
            
-                message(f"U S E R :{prompt['atraduire']}", key=f"user_message_{counter}")
-                message(f" G P T :{prompt['traduction']}", key=f"bot_message_{counter}")
+                # message(f"U S E R :{prompt['atraduire'],}", key=f"user_message_{counter}")
+                # message(f" G P T :{prompt['traduction']}", key=f"bot_message_{counter}")
             
             else :
                st.error(f"Erreur : {chat.status_code}")
+
+
+        # def add_chat(self):
+        # url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+        # chat = requests.get(url)
+
+        # if chat.status_code == 200:
+        #     chat_messages = chat.json()
+
+        #     for prompt in chat_messages:
+        #         message(prompt["atraduire"], is_user=True)
+        #         message(prompt["traduction"])
+        # else :
+        #     st.error(f"Erreur : {chat.status_code}")
