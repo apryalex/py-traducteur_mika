@@ -2,6 +2,7 @@ from transformers import pipeline
 from config.parametres import VERSIONS
 from model.prompt import Prompt
 
+
 def traduire(prompt:Prompt) :
     if prompt.version == VERSIONS[0] :
         translator = pipeline("translation", model="Helsinki-NLP/opus-mt-fr-en")
@@ -23,8 +24,7 @@ def traduire(prompt:Prompt) :
 #     try:
 #         # Utilisation du traducteur
 #         translation_result = translator(prompt.atraduire)
-#         # Extraction du texte traduit
-#         prompt.traduction = translation_result[0]['translation_text']
+
 #     except Exception as e:
 #         print(f"Erreur lors de la traduction : {e}")
 #         raise

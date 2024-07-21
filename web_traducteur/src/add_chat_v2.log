@@ -378,3 +378,2258 @@ Modified var:.. counter_bot = 5
 13:04:39.064843 line       175             else :
 13:04:39.066362 line       170                 counter += 1
     Elapsed time: 00:00:00.027502
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000018F434E5690>
+13:11:53.166854 call       156     def add_chat(self):
+13:11:53.166854 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:11:53.167856 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+13:11:53.213131 line       165         if chat.status_code == 200:
+13:11:53.216132 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:11:53.217131 line       167             counter = 0
+New var:....... counter_user = 0
+13:11:53.217131 line       168             
+New var:....... counter_bot = 1
+13:11:53.218131 line       170                 counter += 1
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:11:53.218636 line       171            
+Modified var:.. counter_user = 2
+13:11:53.219645 line       172                 message(f"U S E R :{prompt['atraduire']}", key=f"user_message_{counter}")
+Modified var:.. counter_bot = 3
+13:11:53.219645 line       174             
+13:11:53.221653 line       175             else :
+13:11:53.222653 line       170                 counter += 1
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:11:53.222653 line       171            
+Modified var:.. counter_user = 4
+13:11:53.223654 line       172                 message(f"U S E R :{prompt['atraduire']}", key=f"user_message_{counter}")
+Modified var:.. counter_bot = 5
+13:11:53.223654 line       174             
+13:11:53.225653 line       175             else :
+13:11:53.226654 line       170                 counter += 1
+    Elapsed time: 00:00:00.059800
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000018F434E6BF0>
+13:11:57.945872 call       156     def add_chat(self):
+13:11:57.946399 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:11:57.946922 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+13:11:57.960112 line       165         if chat.status_code == 200:
+13:11:57.960621 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:11:57.961150 line       167             counter = 0
+New var:....... counter_user = 0
+13:11:57.962204 line       168             
+New var:....... counter_bot = 1
+13:11:57.962730 line       170                 counter += 1
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:11:57.963268 line       171            
+Modified var:.. counter_user = 2
+13:11:57.964350 line       172                 message(f"U S E R :{prompt['atraduire']}", key=f"user_message_{counter}")
+Modified var:.. counter_bot = 3
+13:11:57.964883 line       174             
+13:11:57.966400 line       175             else :
+13:11:57.967975 line       170                 counter += 1
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:11:57.968520 line       171            
+Modified var:.. counter_user = 4
+13:11:57.969156 line       172                 message(f"U S E R :{prompt['atraduire']}", key=f"user_message_{counter}")
+Modified var:.. counter_bot = 5
+13:11:57.969827 line       174             
+13:11:57.972186 line       175             else :
+13:11:57.973700 line       170                 counter += 1
+    Elapsed time: 00:00:00.027828
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000018F434E4940>
+13:17:46.896862 call       156     def add_chat(self):
+13:17:46.897864 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:17:46.897864 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+13:17:46.917025 line       165         if chat.status_code == 200:
+13:17:46.917699 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:17:46.917699 line       167             counter = 0
+New var:....... counter_user = 0
+13:17:46.918538 line       168             
+New var:....... counter_bot = 1
+13:17:46.919540 line       170                 counter += 1
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:17:46.920540 line       171            
+Modified var:.. counter_user = 2
+13:17:46.921540 line       172                 message(f"U S E R :{prompt['atraduire']}", key=f"user_message_{counter}")
+Modified var:.. counter_bot = 3
+13:17:46.922540 line       174             
+13:17:46.924047 line       175             else :
+13:17:46.926064 line       170                 counter += 1
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:17:46.927064 line       171            
+Modified var:.. counter_user = 4
+13:17:46.928064 line       172                 message(f"U S E R :{prompt['atraduire']}", key=f"user_message_{counter}")
+Modified var:.. counter_bot = 5
+13:17:46.928064 line       174             
+13:17:46.930064 line       175             else :
+13:17:46.932064 line       170                 counter += 1
+    Elapsed time: 00:00:00.036709
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000018F434E4700>
+13:17:52.152533 call       156     def add_chat(self):
+13:17:52.153131 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:17:52.153659 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+13:17:52.167551 line       165         if chat.status_code == 200:
+13:17:52.168586 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:17:52.168586 line       167             counter = 0
+New var:....... counter_user = 0
+13:17:52.169187 line       168             
+New var:....... counter_bot = 1
+13:17:52.170564 line       170                 counter += 1
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:17:52.171136 line       171            
+Modified var:.. counter_user = 2
+13:17:52.171642 line       172                 message(f"U S E R :{prompt['atraduire']}", key=f"user_message_{counter}")
+Modified var:.. counter_bot = 3
+13:17:52.172691 line       174             
+13:17:52.174280 line       175             else :
+13:17:52.175568 line       170                 counter += 1
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:17:52.176603 line       171            
+Modified var:.. counter_user = 4
+13:17:52.177297 line       172                 message(f"U S E R :{prompt['atraduire']}", key=f"user_message_{counter}")
+Modified var:.. counter_bot = 5
+13:17:52.177813 line       174             
+13:17:52.180067 line       175             else :
+13:17:52.181067 line       170                 counter += 1
+    Elapsed time: 00:00:00.029533
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000018F434E7B80>
+13:18:46.907958 call       156     def add_chat(self):
+13:18:46.909006 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:18:46.909532 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+13:18:46.922298 line       165         if chat.status_code == 200:
+13:18:46.923805 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:18:46.923805 line       167             counter = 0
+New var:....... counter_user = 0
+13:18:46.924858 line       168             
+New var:....... counter_bot = 1
+13:18:46.925387 line       170                 counter += 1
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:18:46.926219 line       171            
+Modified var:.. counter_user = 2
+13:18:46.926724 line       172                 message(f"U S E R :{prompt['atraduire']}", key=f"user_message_{counter}")
+Modified var:.. counter_bot = 3
+13:18:46.927247 line       174             
+13:18:46.928855 line       175             else :
+13:18:46.930456 line       170                 counter += 1
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:18:46.930985 line       171            
+Modified var:.. counter_user = 4
+13:18:46.931510 line       172                 message(f"U S E R :{prompt['atraduire']}", key=f"user_message_{counter}")
+Modified var:.. counter_bot = 5
+13:18:46.932652 line       174             
+13:18:46.934230 line       175             else :
+13:18:46.935240 line       170                 counter += 1
+    Elapsed time: 00:00:00.028279
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287DB39E7A0>
+13:28:47.377940 call       156     def add_chat(self):
+13:28:47.378997 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:28:47.379529 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+13:28:47.391741 line       165         if chat.status_code == 200:
+13:28:47.392248 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:28:47.392776 line       167             counter_user = 0
+New var:....... counter_user = 0
+13:28:47.393303 line       168             counter_bot = 1
+New var:....... counter_bot = 1
+13:28:47.393823 line       170             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:28:47.394357 line       171                 counter_user += 2
+Modified var:.. counter_user = 2
+13:28:47.394891 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 3
+13:28:47.395422 line       174                 message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:28:48.139334 line       175                 message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:28:48.141333 line       170             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:28:48.141333 line       171                 counter_user += 2
+Modified var:.. counter_user = 4
+13:28:48.142334 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 5
+13:28:48.142334 line       174                 message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:28:48.143840 line       175                 message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:28:48.144846 line       170             for prompt in chat_messages:
+13:28:48.145847 line       181                st.error(f"Erreur : {chat.status_code}")
+13:28:48.145847 return     181                st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.768908
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287FA4D46A0>
+13:28:52.303750 call       156     def add_chat(self):
+13:28:52.305078 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:28:52.305078 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+13:28:52.317879 line       165         if chat.status_code == 200:
+13:28:52.318548 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:28:52.318548 line       167             counter_user = 0
+New var:....... counter_user = 0
+13:28:52.319067 line       168             counter_bot = 1
+New var:....... counter_bot = 1
+13:28:52.319592 line       170             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:28:52.320118 line       171                 counter_user += 2
+Modified var:.. counter_user = 2
+13:28:52.320645 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 3
+13:28:52.321173 line       174                 message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:28:52.322757 line       175                 message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:28:52.323801 line       170             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:28:52.324555 line       171                 counter_user += 2
+Modified var:.. counter_user = 4
+13:28:52.325069 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 5
+13:28:52.325594 line       174                 message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:28:52.326637 line       175                 message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:28:52.328206 line       170             for prompt in chat_messages:
+13:28:52.328722 line       181                st.error(f"Erreur : {chat.status_code}")
+13:28:52.329257 return     181                st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.026513
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287FA4D45B0>
+13:29:00.067448 call       156     def add_chat(self):
+13:29:00.067448 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:29:00.068447 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+13:29:00.080280 line       165         if chat.status_code == 200:
+13:29:00.080785 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:29:00.081311 line       167             counter_user = 0
+New var:....... counter_user = 0
+13:29:00.081833 line       168             counter_bot = 1
+New var:....... counter_bot = 1
+13:29:00.082355 line       170             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:29:00.082880 line       171                 counter_user += 2
+Modified var:.. counter_user = 2
+13:29:00.083411 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 3
+13:29:00.083926 line       174                 message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:29:00.085491 line       175                 message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:29:00.086534 line       170             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:29:00.087061 line       171                 counter_user += 2
+Modified var:.. counter_user = 4
+13:29:00.088102 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 5
+13:29:00.088629 line       174                 message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:29:00.089693 line       175                 message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:29:00.090736 line       170             for prompt in chat_messages:
+13:29:00.091259 line       181                st.error(f"Erreur : {chat.status_code}")
+13:29:00.091779 return     181                st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.026338
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287DBB5C970>
+13:29:25.344603 call       156     def add_chat(self):
+13:29:25.344603 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:29:25.344603 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+13:29:25.357784 line       165         if chat.status_code == 200:
+13:29:25.358288 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:29:25.358811 line       167             counter_user = 0
+New var:....... counter_user = 0
+13:29:25.359335 line       168             counter_bot = 1
+New var:....... counter_bot = 1
+13:29:25.359860 line       170             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:29:25.360385 line       171                 counter_user += 2
+Modified var:.. counter_user = 2
+13:29:25.360908 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 3
+13:29:25.361431 line       174                 message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:29:25.362482 line       175                 message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:29:25.363519 line       170             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:29:25.364034 line       171                 counter_user += 2
+Modified var:.. counter_user = 4
+13:29:25.364559 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 5
+13:29:25.365605 line       174                 message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:29:25.366650 line       175                 message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:29:25.367697 line       170             for prompt in chat_messages:
+13:29:25.368223 line       181                st.error(f"Erreur : {chat.status_code}")
+13:29:25.368746 return     181                st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.024664
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287DBB5E980>
+13:29:28.643871 call       156     def add_chat(self):
+13:29:28.643871 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:29:28.645014 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+13:29:28.656654 line       165         if chat.status_code == 200:
+13:29:28.657176 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:29:28.657708 line       167             counter_user = 0
+New var:....... counter_user = 0
+13:29:28.658234 line       168             counter_bot = 1
+New var:....... counter_bot = 1
+13:29:28.658766 line       170             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:29:28.659294 line       171                 counter_user += 2
+Modified var:.. counter_user = 2
+13:29:28.659294 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 3
+13:29:28.659805 line       174                 message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:29:28.661386 line       175                 message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:29:28.662435 line       170             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:29:28.662956 line       171                 counter_user += 2
+Modified var:.. counter_user = 4
+13:29:28.663482 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 5
+13:29:28.663995 line       174                 message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:29:28.665056 line       175                 message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:29:28.666116 line       170             for prompt in chat_messages:
+13:29:28.666643 line       181                st.error(f"Erreur : {chat.status_code}")
+13:29:28.667176 return     181                st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.024369
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287DB3CC1F0>
+13:29:49.990770 call       156     def add_chat(self):
+13:29:49.991294 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:29:49.991822 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+13:29:50.003904 line       165         if chat.status_code == 200:
+13:29:50.004413 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:29:50.004946 line       167             counter_user = 0
+New var:....... counter_user = 0
+13:29:50.005481 line       168             counter_bot = 1
+New var:....... counter_bot = 1
+13:29:50.006012 line       170             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:29:50.006666 line       171                 counter_user += 2
+Modified var:.. counter_user = 2
+13:29:50.007707 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 3
+13:29:50.008231 line       174                 message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:29:50.010374 line       175                 message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:29:50.011940 line       170             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:29:50.012465 line       171                 counter_user += 2
+Modified var:.. counter_user = 4
+13:29:50.012990 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 5
+13:29:50.013523 line       174                 message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:29:50.015108 line       175                 message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:29:50.016116 line       170             for prompt in chat_messages:
+13:29:50.016116 line       181                st.error(f"Erreur : {chat.status_code}")
+13:29:50.017118 return     181                st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.027346
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287DBE06560>
+13:30:42.167376 call       156     def add_chat(self):
+13:30:42.168376 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:30:42.168376 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+13:30:42.181093 line       165         if chat.status_code == 200:
+13:30:42.181600 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:30:42.182118 line       167             counter_user = 0
+New var:....... counter_user = 0
+13:30:42.182643 line       168             counter_bot = 1
+New var:....... counter_bot = 1
+13:30:42.183180 line       170             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:30:42.183702 line       171                 counter_user += 2
+Modified var:.. counter_user = 2
+13:30:42.184226 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 3
+13:30:42.185275 line       174                 message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:30:42.186315 line       175                 message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:30:42.187894 line       170             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:30:42.187894 line       171                 counter_user += 2
+Modified var:.. counter_user = 4
+13:30:42.188941 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 5
+13:30:42.189467 line       174                 message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:30:42.190515 line       175                 message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:30:42.191567 line       170             for prompt in chat_messages:
+13:30:42.192091 line       181                st.error(f"Erreur : {chat.status_code}")
+13:30:42.192619 return     181                st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.026248
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287DB3D0070>
+13:30:45.279586 call       156     def add_chat(self):
+13:30:45.280113 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:30:45.280638 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+13:30:45.292655 line       165         if chat.status_code == 200:
+13:30:45.293162 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:30:45.293679 line       167             counter_user = 0
+New var:....... counter_user = 0
+13:30:45.294205 line       168             counter_bot = 1
+New var:....... counter_bot = 1
+13:30:45.294729 line       170             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:30:45.295255 line       171                 counter_user += 2
+Modified var:.. counter_user = 2
+13:30:45.295770 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 3
+13:30:45.296298 line       174                 message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:30:45.297362 line       175                 message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:30:45.298946 line       170             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:30:45.299472 line       171                 counter_user += 2
+Modified var:.. counter_user = 4
+13:30:45.300025 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 5
+13:30:45.300553 line       174                 message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:30:45.301610 line       175                 message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:30:45.303196 line       170             for prompt in chat_messages:
+13:30:45.303715 line       181                st.error(f"Erreur : {chat.status_code}")
+13:30:45.304726 return     181                st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.026135
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DDE3B80>
+13:51:26.581037 call       155     # @pysnooper.snoop('add_chat_v2.log')
+13:51:26.582036 line       162     #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:51:26.582036 line       163     #     chat = requests.get(url)
+New var:....... chat = <Response [200]>
+13:51:26.595714 line       165     #     if chat.status_code == 200:
+13:51:26.596229 line       166     #         chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:51:26.596229 line       167     #         counter_user = 0
+New var:....... counter_user = 0
+13:51:26.596755 line       168     #         counter_bot = 1
+New var:....... counter_bot = 1
+13:51:26.597281 line       170     #         for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:51:26.597799 line       171     #             counter_user += 2
+Modified var:.. counter_user = 2
+13:51:26.598319 line       172     #             counter_bot += 2
+Modified var:.. counter_bot = 3
+13:51:26.598851 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:51:26.599899 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:51:26.602010 line       170     #         for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:51:26.602537 line       171     #             counter_user += 2
+Modified var:.. counter_user = 4
+13:51:26.603066 line       172     #             counter_bot += 2
+Modified var:.. counter_bot = 5
+13:51:26.603594 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:51:26.604646 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:51:26.606218 line       170     #         for prompt in chat_messages:
+13:51:26.606746 line       180     #            st.error(f"Erreur : {chat.status_code}")
+13:51:26.606746 return     180     #            st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.026717
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D813EE0>
+13:51:32.612559 call       155     # @pysnooper.snoop('add_chat_v2.log')
+13:51:32.613073 line       162     #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:51:32.613599 line       163     #     chat = requests.get(url)
+New var:....... chat = <Response [200]>
+13:51:32.625649 line       165     #     if chat.status_code == 200:
+13:51:32.626156 line       166     #         chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:51:32.626673 line       167     #         counter_user = 0
+New var:....... counter_user = 0
+13:51:32.627193 line       168     #         counter_bot = 1
+New var:....... counter_bot = 1
+13:51:32.627717 line       170     #         for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:51:32.628234 line       171     #             counter_user += 2
+Modified var:.. counter_user = 2
+13:51:32.628750 line       172     #             counter_bot += 2
+Modified var:.. counter_bot = 3
+13:51:32.629802 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:51:32.630849 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:51:32.631909 line       170     #         for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:51:32.632428 line       171     #             counter_user += 2
+Modified var:.. counter_user = 4
+13:51:32.633481 line       172     #             counter_bot += 2
+Modified var:.. counter_bot = 5
+13:51:32.633997 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:51:32.635040 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:51:32.636082 line       170     #         for prompt in chat_messages:
+13:51:32.636611 line       180     #            st.error(f"Erreur : {chat.status_code}")
+13:51:32.637127 return     180     #            st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.025575
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DB380D0>
+13:53:26.891244 call       165     #     if chat.status_code == 200:
+13:53:26.892246 line       172     #             counter_bot += 2
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:53:26.892246 line       173 
+New var:....... chat = <Response [200]>
+13:53:26.907273 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:53:26.907782 line       176            
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:53:26.908318 line       177 
+New var:....... counter_user = 0
+13:53:26.908845 line       178             
+New var:....... counter_bot = 1
+13:53:26.909378 line       180     #            st.error(f"Erreur : {chat.status_code}")
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:53:26.909903 line       181 
+Modified var:.. counter_user = 2
+13:53:26.910426 line       182 
+Modified var:.. counter_bot = 3
+13:53:26.911480 line       184         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+13:53:26.913164 line       185         chat = requests.get(url)
+13:53:26.914204 line       180     #            st.error(f"Erreur : {chat.status_code}")
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:53:26.914731 line       181 
+Modified var:.. counter_user = 4
+13:53:26.915792 line       182 
+Modified var:.. counter_bot = 5
+13:53:26.916322 line       184         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+13:53:26.917977 line       185         chat = requests.get(url)
+13:53:26.918483 line       180     #            st.error(f"Erreur : {chat.status_code}")
+13:53:26.919490 line       190             for prompt in chat_messages:
+13:53:26.920489 return     190             for prompt in chat_messages:
+Return value:.. None
+Elapsed time: 00:00:00.029245
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DDDAD40>
+13:53:34.940692 call       165     #     if chat.status_code == 200:
+13:53:34.941220 line       172     #             counter_bot += 2
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:53:34.941220 line       173 
+New var:....... chat = <Response [200]>
+13:53:34.953360 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:53:34.953866 line       176            
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:53:34.954385 line       177 
+New var:....... counter_user = 0
+13:53:34.954907 line       178             
+New var:....... counter_bot = 1
+13:53:34.955440 line       180     #            st.error(f"Erreur : {chat.status_code}")
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:53:34.955972 line       181 
+Modified var:.. counter_user = 2
+13:53:34.956490 line       182 
+Modified var:.. counter_bot = 3
+13:53:34.957005 line       184         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+13:53:34.958067 line       185         chat = requests.get(url)
+13:53:34.959130 line       180     #            st.error(f"Erreur : {chat.status_code}")
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:53:34.959658 line       181 
+Modified var:.. counter_user = 4
+13:53:34.960787 line       182 
+Modified var:.. counter_bot = 5
+13:53:34.961304 line       184         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+13:53:34.962349 line       185         chat = requests.get(url)
+13:53:34.963403 line       180     #            st.error(f"Erreur : {chat.status_code}")
+13:53:34.963939 line       190             for prompt in chat_messages:
+13:53:34.964480 return     190             for prompt in chat_messages:
+Return value:.. None
+Elapsed time: 00:00:00.024793
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D812B90>
+13:53:41.997175 call       165     #     if chat.status_code == 200:
+13:53:41.998647 line       172     #             counter_bot += 2
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:53:41.998647 line       173 
+New var:....... chat = <Response [200]>
+13:53:42.012026 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:53:42.012534 line       176            
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:53:42.013052 line       177 
+New var:....... counter_user = 0
+13:53:42.013584 line       178             
+New var:....... counter_bot = 1
+13:53:42.014117 line       180     #            st.error(f"Erreur : {chat.status_code}")
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:53:42.014645 line       181 
+Modified var:.. counter_user = 2
+13:53:42.015174 line       182 
+Modified var:.. counter_bot = 3
+13:53:42.016236 line       184         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+13:53:42.017275 line       185         chat = requests.get(url)
+13:53:42.018348 line       180     #            st.error(f"Erreur : {chat.status_code}")
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:53:42.019156 line       181 
+Modified var:.. counter_user = 4
+13:53:42.019668 line       182 
+Modified var:.. counter_bot = 5
+13:53:42.020193 line       184         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+13:53:42.021249 line       185         chat = requests.get(url)
+13:53:42.022823 line       180     #            st.error(f"Erreur : {chat.status_code}")
+13:53:42.023343 line       190             for prompt in chat_messages:
+13:53:42.023343 return     190             for prompt in chat_messages:
+Return value:.. None
+Elapsed time: 00:00:00.027178
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DDDB130>
+13:53:45.530910 call       165     #     if chat.status_code == 200:
+13:53:45.531433 line       172     #             counter_bot += 2
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:53:45.531433 line       173 
+New var:....... chat = <Response [200]>
+13:53:45.543517 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:53:45.544025 line       176            
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:53:45.544544 line       177 
+New var:....... counter_user = 0
+13:53:45.545072 line       178             
+New var:....... counter_bot = 1
+13:53:45.545620 line       180     #            st.error(f"Erreur : {chat.status_code}")
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:53:45.546143 line       181 
+Modified var:.. counter_user = 2
+13:53:45.546662 line       182 
+Modified var:.. counter_bot = 3
+13:53:45.547175 line       184         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+13:53:45.548746 line       185         chat = requests.get(url)
+13:53:45.549787 line       180     #            st.error(f"Erreur : {chat.status_code}")
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:53:45.550315 line       181 
+Modified var:.. counter_user = 4
+13:53:45.550842 line       182 
+Modified var:.. counter_bot = 5
+13:53:45.551366 line       184         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+13:53:45.552410 line       185         chat = requests.get(url)
+13:53:45.553463 line       180     #            st.error(f"Erreur : {chat.status_code}")
+13:53:45.553985 line       190             for prompt in chat_messages:
+13:53:45.555044 return     190             for prompt in chat_messages:
+Return value:.. None
+Elapsed time: 00:00:00.025143
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DB381C0>
+13:53:53.530390 call       165     #     if chat.status_code == 200:
+13:53:53.531390 line       172     #             counter_bot += 2
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:53:53.531390 line       173 
+New var:....... chat = <Response [200]>
+13:53:53.544466 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:53:53.544977 line       176            
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:53:53.545510 line       177 
+New var:....... counter_user = 0
+13:53:53.546037 line       178             
+New var:....... counter_bot = 1
+13:53:53.546557 line       180     #            st.error(f"Erreur : {chat.status_code}")
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:53:53.547070 line       181 
+Modified var:.. counter_user = 2
+13:53:53.547599 line       182 
+Modified var:.. counter_bot = 3
+13:53:53.548210 line       184         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+13:53:53.549247 line       185         chat = requests.get(url)
+13:53:53.550292 line       180     #            st.error(f"Erreur : {chat.status_code}")
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:53:53.550810 line       181 
+Modified var:.. counter_user = 4
+13:53:53.551346 line       182 
+Modified var:.. counter_bot = 5
+13:53:53.551874 line       184         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+13:53:53.553443 line       185         chat = requests.get(url)
+13:53:53.554491 line       180     #            st.error(f"Erreur : {chat.status_code}")
+13:53:53.555021 line       190             for prompt in chat_messages:
+13:53:53.555553 return     190             for prompt in chat_messages:
+Return value:.. None
+Elapsed time: 00:00:00.026679
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D811B40>
+13:53:57.260814 call       165     #     if chat.status_code == 200:
+13:53:57.261338 line       172     #             counter_bot += 2
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:53:57.261338 line       173 
+New var:....... chat = <Response [200]>
+13:53:57.273423 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:53:57.274458 line       176            
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:53:57.274458 line       177 
+New var:....... counter_user = 0
+13:53:57.274984 line       178             
+New var:....... counter_bot = 1
+13:53:57.275508 line       180     #            st.error(f"Erreur : {chat.status_code}")
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:53:57.276030 line       181 
+Modified var:.. counter_user = 2
+13:53:57.276561 line       182 
+Modified var:.. counter_bot = 3
+13:53:57.277077 line       184         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+13:53:57.278651 line       185         chat = requests.get(url)
+13:53:57.279700 line       180     #            st.error(f"Erreur : {chat.status_code}")
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:53:57.280228 line       181 
+Modified var:.. counter_user = 4
+13:53:57.280756 line       182 
+Modified var:.. counter_bot = 5
+13:53:57.281284 line       184         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+13:53:57.282338 line       185         chat = requests.get(url)
+13:53:57.283940 line       180     #            st.error(f"Erreur : {chat.status_code}")
+13:53:57.283940 line       190             for prompt in chat_messages:
+13:53:57.284463 return     190             for prompt in chat_messages:
+Return value:.. None
+Elapsed time: 00:00:00.024655
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D812C80>
+13:54:07.093079 call       155     # @pysnooper.snoop('add_chat_v2.log')
+13:54:07.094079 line       162     #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:54:07.094079 line       163     #     chat = requests.get(url)
+New var:....... chat = <Response [200]>
+13:54:07.107395 line       165     #     if chat.status_code == 200:
+13:54:07.107903 line       166     #         chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:54:07.108434 line       167     #         counter_user = 0
+New var:....... counter_user = 0
+13:54:07.108966 line       168     #         counter_bot = 1
+New var:....... counter_bot = 1
+13:54:07.109493 line       170     #         for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:54:07.110022 line       171     #             counter_user += 2
+Modified var:.. counter_user = 2
+13:54:07.110546 line       172     #             counter_bot += 2
+Modified var:.. counter_bot = 3
+13:54:07.111076 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:54:07.112136 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:54:07.113197 line       170     #         for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:54:07.113727 line       171     #             counter_user += 2
+Modified var:.. counter_user = 4
+13:54:07.114257 line       172     #             counter_bot += 2
+Modified var:.. counter_bot = 5
+13:54:07.114780 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:54:07.116358 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:54:07.117921 line       170     #         for prompt in chat_messages:
+13:54:07.117921 line       180     #            st.error(f"Erreur : {chat.status_code}")
+13:54:07.118449 return     180     #            st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.026378
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D8132B0>
+13:54:45.536742 call       155     # @pysnooper.snoop('add_chat_v2.log')
+13:54:45.537741 line       162     #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:54:45.537741 line       163     #     chat = requests.get(url)
+New var:....... chat = <Response [200]>
+13:54:45.550987 line       165     #     if chat.status_code == 200:
+13:54:45.551493 line       166     #         chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:54:45.552021 line       167     #         counter_user = 0
+New var:....... counter_user = 1
+13:54:45.552551 line       168     #         counter_bot = 1
+New var:....... counter_bot = 2
+13:54:45.553071 line       170     #         for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:54:45.553607 line       171     #             counter_user += 2
+Modified var:.. counter_user = 3
+13:54:45.554128 line       172     #             counter_bot += 2
+Modified var:.. counter_bot = 4
+13:54:45.554650 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:54:45.556217 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:54:45.557260 line       170     #         for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:54:45.557787 line       171     #             counter_user += 2
+Modified var:.. counter_user = 5
+13:54:45.558310 line       172     #             counter_bot += 2
+Modified var:.. counter_bot = 6
+13:54:45.558837 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:54:45.560451 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:54:45.561500 line       170     #         for prompt in chat_messages:
+13:54:45.562025 line       180     #            st.error(f"Erreur : {chat.status_code}")
+13:54:45.562025 return     180     #            st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.026289
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DDDAAD0>
+13:54:50.682836 call       155     # @pysnooper.snoop('add_chat_v2.log')
+13:54:50.683364 line       162     #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:54:50.683899 line       163     #     chat = requests.get(url)
+New var:....... chat = <Response [200]>
+13:54:50.696368 line       165     #     if chat.status_code == 200:
+13:54:50.696876 line       166     #         chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:54:50.697395 line       167     #         counter_user = 0
+New var:....... counter_user = 1
+13:54:50.697924 line       168     #         counter_bot = 1
+New var:....... counter_bot = 2
+13:54:50.698441 line       170     #         for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:54:50.698956 line       171     #             counter_user += 2
+Modified var:.. counter_user = 3
+13:54:50.699484 line       172     #             counter_bot += 2
+Modified var:.. counter_bot = 4
+13:54:50.700010 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:54:50.701068 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:54:50.702652 line       170     #         for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:54:50.703168 line       171     #             counter_user += 2
+Modified var:.. counter_user = 5
+13:54:50.703689 line       172     #             counter_bot += 2
+Modified var:.. counter_bot = 6
+13:54:50.704206 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:54:50.705273 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:54:50.706327 line       170     #         for prompt in chat_messages:
+13:54:50.706853 line       180     #            st.error(f"Erreur : {chat.status_code}")
+13:54:50.707378 return     180     #            st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.025066
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D813220>
+13:54:56.536543 call       155     # @pysnooper.snoop('add_chat_v2.log')
+13:54:56.537542 line       162     #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:54:56.537542 line       163     #     chat = requests.get(url)
+New var:....... chat = <Response [200]>
+13:54:56.550362 line       165     #     if chat.status_code == 200:
+13:54:56.550872 line       166     #         chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:54:56.551407 line       167     #         counter_user = 0
+New var:....... counter_user = 1
+13:54:56.551944 line       168     #         counter_bot = 1
+New var:....... counter_bot = 2
+13:54:56.552474 line       170     #         for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:54:56.553005 line       171     #             counter_user += 2
+Modified var:.. counter_user = 3
+13:54:56.553536 line       172     #             counter_bot += 2
+Modified var:.. counter_bot = 4
+13:54:56.554064 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:54:56.555120 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:54:56.556164 line       170     #         for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:54:56.556695 line       171     #             counter_user += 2
+Modified var:.. counter_user = 5
+13:54:56.557773 line       172     #             counter_bot += 2
+Modified var:.. counter_bot = 6
+13:54:56.558302 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:54:56.559348 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:54:56.560396 line       170     #         for prompt in chat_messages:
+13:54:56.560922 line       180     #            st.error(f"Erreur : {chat.status_code}")
+13:54:56.561459 return     180     #            st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.025923
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D812C50>
+13:55:00.874259 call       155     # @pysnooper.snoop('add_chat_v2.log')
+13:55:00.874781 line       162     #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:55:00.875301 line       163     #     chat = requests.get(url)
+New var:....... chat = <Response [200]>
+13:55:00.887412 line       165     #     if chat.status_code == 200:
+13:55:00.887919 line       166     #         chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:55:00.888444 line       167     #         counter_user = 0
+New var:....... counter_user = 1
+13:55:00.888962 line       168     #         counter_bot = 1
+New var:....... counter_bot = 2
+13:55:00.889475 line       170     #         for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:55:00.890001 line       171     #             counter_user += 2
+Modified var:.. counter_user = 3
+13:55:00.890528 line       172     #             counter_bot += 2
+Modified var:.. counter_bot = 4
+13:55:00.891054 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:55:00.892094 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:55:00.893138 line       170     #         for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:55:00.893655 line       171     #             counter_user += 2
+Modified var:.. counter_user = 5
+13:55:00.894180 line       172     #             counter_bot += 2
+Modified var:.. counter_bot = 6
+13:55:00.894710 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:55:00.896292 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:55:00.897345 line       170     #         for prompt in chat_messages:
+13:55:00.897870 line       180     #            st.error(f"Erreur : {chat.status_code}")
+13:55:00.897870 return     180     #            st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.025123
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DB388B0>
+13:56:42.712999 call       155     # @pysnooper.snoop('add_chat_v2.log')
+13:56:42.713998 line       162     #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+13:56:42.713998 line       163     #     chat = requests.get(url)
+New var:....... chat = <Response [200]>
+13:56:42.727328 line       165     #     if chat.status_code == 200:
+13:56:42.727834 line       166     #         chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+13:56:42.728360 line       167     #         counter_user = 0
+New var:....... counter_user = 1
+13:56:42.728890 line       168     #         counter_bot = 1
+New var:....... counter_bot = 2
+13:56:42.729413 line       170     #         for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+13:56:42.730454 line       171     #             counter_user += 2
+Modified var:.. counter_user = 3
+13:56:42.730982 line       172     #             counter_bot += 2
+Modified var:.. counter_bot = 4
+13:56:42.731509 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:56:42.732591 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+13:56:42.733643 line       170     #         for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+13:56:42.734165 line       171     #             counter_user += 2
+Modified var:.. counter_user = 5
+13:56:42.734690 line       172     #             counter_bot += 2
+Modified var:.. counter_bot = 6
+13:56:42.735740 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+13:56:42.736810 exception  174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+Exception:..... streamlit.errors.DuplicateWidgetID: There are mu...y` argument is unique for each
+widget you create.
+Call ended by exception
+Elapsed time: 00:00:00.024875
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D812C20>
+14:06:30.540741 call       155     # @pysnooper.snoop('add_chat_v2.log')
+14:06:30.541268 line       162     #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:06:30.541796 line       163     #     chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:06:30.553778 line       165     #     if chat.status_code == 200:
+14:06:30.554286 line       166     #         chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+14:06:30.554819 line       167     #         counter_user = 0
+New var:....... counter_user = 1
+14:06:30.555371 line       168     #         counter_bot = 1
+New var:....... counter_bot = 2
+14:06:30.555904 line       170     #         for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:06:30.556437 line       171     #             counter_user += 2
+Modified var:.. counter_user = 3
+14:06:30.556961 line       172     #             counter_bot += 2
+Modified var:.. counter_bot = 4
+14:06:30.557481 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:06:30.559056 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:06:30.560105 line       170     #         for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:06:30.560633 line       171     #             counter_user += 2
+Modified var:.. counter_user = 5
+14:06:30.561159 line       172     #             counter_bot += 2
+Modified var:.. counter_bot = 6
+14:06:30.561688 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:06:30.562747 exception  174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+Exception:..... streamlit.errors.DuplicateWidgetID: There are mu...y` argument is unique for each
+widget you create.
+Call ended by exception
+Elapsed time: 00:00:00.023059
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DDDA830>
+14:13:04.832021 call       155     # @pysnooper.snoop('add_chat_v2.log')
+14:13:04.833022 line       162     #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:13:04.833022 line       163     #     chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:13:04.846535 line       165     #     if chat.status_code == 200:
+14:13:04.847039 line       166     #         chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+14:13:04.847570 line       169             
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:13:04.848098 line       171     #             counter_user += 2
+New var:....... user_key = 'db7559f6-29a0-4815-9e3e-a1f354da992d'
+14:13:04.848625 line       172     #             counter_bot += 2
+New var:....... bot_key = 'f2b0b868-6cff-4a7e-9b17-4e4ad5117881'
+14:13:04.849162 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:13:04.850750 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:13:04.851791 line       169             
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:13:04.852314 line       171     #             counter_user += 2
+Modified var:.. user_key = '6cc4b7c4-c945-4a43-b72f-8042444127ee'
+14:13:04.852837 line       172     #             counter_bot += 2
+Modified var:.. bot_key = '3f556c35-1de3-4099-97fd-0b06499dde8c'
+14:13:04.853365 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:13:04.854940 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:13:04.856022 line       169             
+14:13:04.856555 line       180     #            st.error(f"Erreur : {chat.status_code}")
+14:13:04.857624 return     180     #            st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.025603
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DDDB670>
+14:13:11.833869 call       155     # @pysnooper.snoop('add_chat_v2.log')
+14:13:11.834391 line       162     #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:13:11.834911 line       163     #     chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:13:11.851517 line       165     #     if chat.status_code == 200:
+14:13:11.852027 line       166     #         chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+14:13:11.852561 line       169             
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:13:11.853093 line       171     #             counter_user += 2
+New var:....... user_key = '9002dcfe-5605-4ce0-be0f-f2b878a9ca68'
+14:13:11.853619 line       172     #             counter_bot += 2
+New var:....... bot_key = '1ce9b66c-311d-4fcf-859c-12bb1243f473'
+14:13:11.854142 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:13:11.855749 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:13:11.856801 line       169             
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:13:11.857330 line       171     #             counter_user += 2
+Modified var:.. user_key = '14a21862-e2f7-4794-a04b-ced2c5f7a310'
+14:13:11.857858 line       172     #             counter_bot += 2
+Modified var:.. bot_key = '9561f23e-b103-4e5c-8dbb-43f8b08f9627'
+14:13:11.858384 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:13:11.860482 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:13:11.861537 line       169             
+14:13:11.861537 line       180     #            st.error(f"Erreur : {chat.status_code}")
+14:13:11.862597 return     180     #            st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.028728
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DDA2020>
+14:13:32.237857 call       155     # @pysnooper.snoop('add_chat_v2.log')
+14:13:32.238855 line       162     #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:13:32.238855 line       163     #     chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:13:32.251947 line       165     #     if chat.status_code == 200:
+14:13:32.252452 line       166     #         chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+14:13:32.252979 line       169             
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:13:32.253503 line       171     #             counter_user += 2
+New var:....... user_key = 'cc957466-5dd8-4901-981c-cc649666bd50'
+14:13:32.254027 line       172     #             counter_bot += 2
+New var:....... bot_key = 'da784169-bfa1-4e14-a321-dd0e33f2b69c'
+14:13:32.254554 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:13:32.255605 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:13:32.256664 line       169             
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:13:32.257188 line       171     #             counter_user += 2
+Modified var:.. user_key = 'c53b5f30-35ea-4188-a8fe-75123efbe0ef'
+14:13:32.257717 line       172     #             counter_bot += 2
+Modified var:.. bot_key = '99079bb6-ea36-4d28-99df-af47c7918624'
+14:13:32.258241 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:13:32.259818 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:13:32.260877 line       169             
+14:13:32.261402 line       180     #            st.error(f"Erreur : {chat.status_code}")
+14:13:32.261931 return     180     #            st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.025139
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DDA1F60>
+14:13:35.508640 call       155     # @pysnooper.snoop('add_chat_v2.log')
+14:13:35.509169 line       162     #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:13:35.509702 line       163     #     chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:13:35.521585 line       165     #     if chat.status_code == 200:
+14:13:35.522091 line       166     #         chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+14:13:35.522614 line       169             
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:13:35.523138 line       171     #             counter_user += 2
+New var:....... user_key = '9e833ee4-ac55-4fb0-b7fc-ba60f8688e64'
+14:13:35.523664 line       172     #             counter_bot += 2
+New var:....... bot_key = 'db686817-c5ea-43e5-848d-21bc3e0d91da'
+14:13:35.524191 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:13:35.525239 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:13:35.526300 line       169             
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:13:35.526823 line       171     #             counter_user += 2
+Modified var:.. user_key = '8b2b2771-8f9a-4b7c-8124-fbcf45f532c1'
+14:13:35.527905 line       172     #             counter_bot += 2
+Modified var:.. bot_key = 'a3f8cd84-53e6-4791-b26c-1e2a46eeef18'
+14:13:35.528426 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:13:35.529476 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:13:35.530544 line       169             
+14:13:35.531066 line       180     #            st.error(f"Erreur : {chat.status_code}")
+14:13:35.531600 return     180     #            st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.024020
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D812D10>
+14:13:40.195251 call       155     # @pysnooper.snoop('add_chat_v2.log')
+14:13:40.195251 line       162     #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:13:40.195251 line       163     #     chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:13:40.208252 line       165     #     if chat.status_code == 200:
+14:13:40.209129 line       166     #         chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+14:13:40.209648 line       169             
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:13:40.210184 line       171     #             counter_user += 2
+New var:....... user_key = '3017711b-36a1-4d14-b3e6-a5392ccd3c41'
+14:13:40.210714 line       172     #             counter_bot += 2
+New var:....... bot_key = '6f7f7d3a-16c0-42cc-b9ff-97a457f2b087'
+14:13:40.211233 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:13:40.212816 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:13:40.213869 line       169             
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:13:40.214399 line       171     #             counter_user += 2
+Modified var:.. user_key = '50f857e0-4407-4842-8bc1-5b9e00264687'
+14:13:40.214923 line       172     #             counter_bot += 2
+Modified var:.. bot_key = '126e878c-ae42-4fb3-b982-74293014c9ee'
+14:13:40.215451 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:13:40.216506 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:13:40.218089 line       169             
+14:13:40.218638 line       180     #            st.error(f"Erreur : {chat.status_code}")
+14:13:40.219162 return     180     #            st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.024427
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D8132B0>
+14:13:53.097018 call       155     # @pysnooper.snoop('add_chat_v2.log')
+14:13:53.098018 line       162     #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:13:53.098018 line       163     #     chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:13:53.110827 line       165     #     if chat.status_code == 200:
+14:13:53.111334 line       166     #         chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+14:13:53.111857 line       169             
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:13:53.112380 line       171     #             counter_user += 2
+New var:....... user_key = 'c65e48dc-58ab-4284-9b15-f6caa7d4cbdd'
+14:13:53.112905 line       172     #             counter_bot += 2
+New var:....... bot_key = '61d90679-46a8-412e-9d4a-ebd4d668b57a'
+14:13:53.113418 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:13:53.114499 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:13:53.115557 line       169             
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:13:53.116070 line       171     #             counter_user += 2
+Modified var:.. user_key = '27d556ea-2f89-4478-aa45-de38279ca3cc'
+14:13:53.116597 line       172     #             counter_bot += 2
+Modified var:.. bot_key = '00d7ba85-16f1-42c1-ba08-e1923e1c3d79'
+14:13:53.117124 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:13:53.118692 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:13:53.119749 line       169             
+14:13:53.120278 line       180     #            st.error(f"Erreur : {chat.status_code}")
+14:13:53.120806 return     180     #            st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.024846
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DDA22F0>
+14:15:16.637634 call       155     # @pysnooper.snoop('add_chat_v2.log')
+14:15:16.638161 line       162     #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:15:16.638677 line       163     #     chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:15:16.650167 line       165     #     if chat.status_code == 200:
+14:15:16.650674 line       166     #         chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+14:15:16.650674 line       169             
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:15:16.651207 line       171     #             counter_user += 2
+New var:....... user_key = '03836890-56b2-4d3b-817f-93fbbcc2ca12'
+14:15:16.651733 line       172     #             counter_bot += 2
+New var:....... bot_key = 'ad19748d-7bd4-4445-87c9-a03f38434e6e'
+14:15:16.652785 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:15:16.653850 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:15:16.655433 line       169             
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:15:16.655958 line       171     #             counter_user += 2
+Modified var:.. user_key = 'f59d9db0-4ae4-4260-9f2c-7ecb6aa36bb3'
+14:15:16.656487 line       172     #             counter_bot += 2
+Modified var:.. bot_key = '345293ed-4f76-4210-bcb9-8fd6f8d78788'
+14:15:16.657007 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:15:16.658052 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:15:16.659096 line       169             
+14:15:16.659621 line       180     #            st.error(f"Erreur : {chat.status_code}")
+14:15:16.660700 return     180     #            st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.023592
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D811D20>
+14:16:11.538787 call       155     # @pysnooper.snoop('add_chat_v2.log')
+14:16:11.539788 line       162     #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:16:11.539788 line       163     #     chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:16:11.552579 line       165     #     if chat.status_code == 200:
+14:16:11.553082 line       166     #         chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+14:16:11.553612 line       169             
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:16:11.554138 line       171     #             counter_user += 2
+New var:....... user_key = '1b569a2b-ded7-4f56-9563-6ad0c6ea1d1b'
+14:16:11.554659 line       172     #             counter_bot += 2
+New var:....... bot_key = '5d0c1d89-23bd-47d0-bd6a-05b62069976f'
+14:16:11.555185 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:16:11.556236 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:16:11.557834 line       169             
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:16:11.558376 line       171     #             counter_user += 2
+Modified var:.. user_key = 'c5d6c59d-b1de-457e-8272-991a06daca99'
+14:16:11.558899 line       172     #             counter_bot += 2
+Modified var:.. bot_key = 'b8dc8a9a-ebcd-40fa-91e7-9cdbe7f937c0'
+14:16:11.559959 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:16:11.561554 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:16:11.562621 line       169             
+14:16:11.563231 line       180     #            st.error(f"Erreur : {chat.status_code}")
+14:16:11.563746 return     180     #            st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.026026
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D813700>
+14:16:15.337026 call       155     # @pysnooper.snoop('add_chat_v2.log')
+14:16:15.337553 line       162     #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:16:15.338079 line       163     #     chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:16:15.349919 line       165     #     if chat.status_code == 200:
+14:16:15.350424 line       166     #         chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+14:16:15.350951 line       169             
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:16:15.351473 line       171     #             counter_user += 2
+New var:....... user_key = 'c1df4b12-db70-49aa-9e66-5571579b2ad3'
+14:16:15.352001 line       172     #             counter_bot += 2
+New var:....... bot_key = '22cc558a-bba9-4977-920b-b515dc9abfa2'
+14:16:15.352524 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:16:15.353583 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:16:15.355146 line       169             
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:16:15.355680 line       171     #             counter_user += 2
+Modified var:.. user_key = 'a39c2ada-6176-4b03-9909-56e6b0761222'
+14:16:15.356203 line       172     #             counter_bot += 2
+Modified var:.. bot_key = '9fbb8836-9532-494b-890c-a79719656a07'
+14:16:15.356719 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:16:15.357778 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:16:15.358822 line       169             
+14:16:15.359351 line       180     #            st.error(f"Erreur : {chat.status_code}")
+14:16:15.360416 return     180     #            st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.023924
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DB38100>
+14:16:21.924346 call       155     # @pysnooper.snoop('add_chat_v2.log')
+14:16:21.924346 line       162     #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:16:21.925342 line       163     #     chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:16:21.938203 line       165     #     if chat.status_code == 200:
+14:16:21.938711 line       166     #         chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+14:16:21.939241 line       169             
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:16:21.939769 line       171     #             counter_user += 2
+New var:....... user_key = '34988b23-68d5-4100-888b-d86398567bee'
+14:16:21.940305 line       172     #             counter_bot += 2
+New var:....... bot_key = '8fd4d4c7-cf79-4e0e-b4c1-36d2037dd85b'
+14:16:21.940838 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:16:21.941899 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:16:21.942966 line       169             
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:16:21.943501 line       171     #             counter_user += 2
+Modified var:.. user_key = 'ed909ac5-2992-46c8-be00-78e43f782508'
+14:16:21.944031 line       172     #             counter_bot += 2
+Modified var:.. bot_key = '65e1e010-a1d3-4b2d-b97a-0f7fe9d922e2'
+14:16:21.944561 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:16:21.946159 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:16:21.947212 line       169             
+14:16:21.947737 line       180     #            st.error(f"Erreur : {chat.status_code}")
+14:16:21.948273 return     180     #            st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.024992
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D813610>
+14:17:31.451619 call       155     # @pysnooper.snoop('add_chat_v2.log')
+14:17:31.452617 line       162     #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:17:31.452617 line       163     #     chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:17:31.465589 line       165     #     if chat.status_code == 200:
+14:17:31.466116 line       166     #         chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+14:17:31.466116 line       169             
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:17:31.466646 line       171     #             counter_user += 2
+New var:....... user_key = '574a036e-f470-472b-b3d1-5ce5fb18b6ba'
+14:17:31.467177 line       172     #             counter_bot += 2
+New var:....... bot_key = '51eda713-153a-488d-8273-2e400ec3154e'
+14:17:31.467704 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:17:31.469286 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:17:31.470341 line       169             
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:17:31.470868 line       171     #             counter_user += 2
+Modified var:.. user_key = '3e34828a-2120-4036-a868-62a39ce19960'
+14:17:31.471403 line       172     #             counter_bot += 2
+Modified var:.. bot_key = '36506864-253a-4e1d-941d-378f7298c8a0'
+14:17:31.471930 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:17:31.472995 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:17:31.474607 line       169             
+14:17:31.475133 line       180     #            st.error(f"Erreur : {chat.status_code}")
+14:17:31.475660 return     180     #            st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.024568
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D812E60>
+14:17:35.915758 call       155     # @pysnooper.snoop('add_chat_v2.log')
+14:17:35.916284 line       162     #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:17:35.916813 line       163     #     chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:17:35.929129 line       165     #     if chat.status_code == 200:
+14:17:35.929646 line       166     #         chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+14:17:35.929646 line       169             
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:17:35.930169 line       171     #             counter_user += 2
+New var:....... user_key = '035af575-a8ce-4b8e-af0e-eb8e665362eb'
+14:17:35.931211 line       172     #             counter_bot += 2
+New var:....... bot_key = '7777e8b1-85db-4708-bfb4-e49fe36db511'
+14:17:35.931730 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:17:35.932794 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:17:35.934358 line       169             
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:17:35.934887 line       171     #             counter_user += 2
+Modified var:.. user_key = 'ddb1c262-4c1c-4dbe-9994-ac7113de4fb1'
+14:17:35.935407 line       172     #             counter_bot += 2
+Modified var:.. bot_key = 'ef12b406-2b96-4cd1-9686-1400d8d75a36'
+14:17:35.935933 line       174     #             message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
+14:17:35.936981 line       175     #             message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+14:17:35.938571 line       169             
+14:17:35.939098 line       180     #            st.error(f"Erreur : {chat.status_code}")
+14:17:35.939633 return     180     #            st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.025413
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002A01899DDB0>
+14:19:04.703945 call       156     def add_chat(self):
+14:19:04.704474 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:19:04.705007 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:19:04.716733 line       165         if chat.status_code == 200:
+14:19:04.717237 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+14:19:04.717765 line       169             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:19:04.718296 line       171                 user_key = str(uuid.uuid4())
+New var:....... user_key = '48b3d132-c6f7-4605-8229-8baedbc0b18a'
+14:19:04.718822 line       172                 bot_key = str(uuid.uuid4())
+New var:....... bot_key = '7935bf4c-c6a9-417c-8589-dd0a44299e5c'
+14:19:04.719347 line       174                 message(prompt["atraduire"], is_user=True, key=user_key)
+14:19:04.807394 line       175                 message(prompt["traduction"], key=bot_key)
+14:19:04.808398 line       169             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:19:04.809395 line       171                 user_key = str(uuid.uuid4())
+Modified var:.. user_key = 'c0fda6b7-3b46-47a5-92c6-b3b0b76f8445'
+14:19:04.810397 line       172                 bot_key = str(uuid.uuid4())
+Modified var:.. bot_key = '78436b6d-192a-4975-848b-4843d83f7503'
+14:19:04.810397 line       174                 message(prompt["atraduire"], is_user=True, key=user_key)
+14:19:04.811394 line       175                 message(prompt["traduction"], key=bot_key)
+14:19:04.813396 line       169             for prompt in chat_messages:
+14:19:04.813396 line       180                st.error(f"Erreur : {chat.status_code}")
+14:19:04.814395 return     180                st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.111449
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002A0197939D0>
+14:19:08.578120 call       156     def add_chat(self):
+14:19:08.578120 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:19:08.579123 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:19:08.592121 line       165         if chat.status_code == 200:
+14:19:08.592627 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...oods.', 'version': 'fr >> en', 'utilisateur': 1}]
+14:19:08.593143 line       169             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:19:08.593676 line       171                 user_key = str(uuid.uuid4())
+New var:....... user_key = 'c76ee303-5297-41a2-9a9c-fe85cde14662'
+14:19:08.594205 line       172                 bot_key = str(uuid.uuid4())
+New var:....... bot_key = '7742047d-6835-4410-a5d0-98a806a191fc'
+14:19:08.594738 line       174                 message(prompt["atraduire"], is_user=True, key=user_key)
+14:19:08.596323 line       175                 message(prompt["traduction"], key=bot_key)
+14:19:08.597376 line       169             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:19:08.597900 line       171                 user_key = str(uuid.uuid4())
+Modified var:.. user_key = 'cb2fa8ac-910c-49e1-8e39-6b2a8a2c3ba7'
+14:19:08.598949 line       172                 bot_key = str(uuid.uuid4())
+Modified var:.. bot_key = '6c5147ec-aea0-4ce4-b02d-2227ed223a48'
+14:19:08.599469 line       174                 message(prompt["atraduire"], is_user=True, key=user_key)
+14:19:08.600525 line       175                 message(prompt["traduction"], key=bot_key)
+14:19:08.601586 line       169             for prompt in chat_messages:
+14:19:08.602118 line       180                st.error(f"Erreur : {chat.status_code}")
+14:19:08.602649 return     180                st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.025057
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000025EF3A999F0>
+14:21:13.931254 call       156     def add_chat(self):
+14:21:13.931783 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:21:13.932312 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:21:13.944659 line       165         if chat.status_code == 200:
+14:21:13.945693 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:21:13.945693 line       169             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:21:13.946216 line       171                 user_key = str(uuid.uuid4())
+New var:....... user_key = 'ebc0cbfe-8a0f-41f8-a95e-61c394cbbe6e'
+14:21:13.946804 line       172                 bot_key = str(uuid.uuid4())
+New var:....... bot_key = 'ab851343-5837-4f2e-8b99-5246a0d0c381'
+14:21:13.947844 line       174                 message(prompt["atraduire"], is_user=True, key=user_key)
+14:21:14.035547 line       175                 message(prompt["traduction"], key=bot_key)
+14:21:14.036552 line       169             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:21:14.037582 line       171                 user_key = str(uuid.uuid4())
+Modified var:.. user_key = '398cecdd-8d83-4b61-a85b-d31201055c37'
+14:21:14.038583 line       172                 bot_key = str(uuid.uuid4())
+Modified var:.. bot_key = '65c32225-d3dc-43a3-8d01-865191409cf0'
+14:21:14.038583 line       174                 message(prompt["atraduire"], is_user=True, key=user_key)
+14:21:14.039584 line       175                 message(prompt["traduction"], key=bot_key)
+14:21:14.040584 line       169             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+14:21:14.041582 line       171                 user_key = str(uuid.uuid4())
+Modified var:.. user_key = '25dc4c9f-fd20-4453-8967-093bf34e7cf1'
+14:21:14.041582 line       172                 bot_key = str(uuid.uuid4())
+Modified var:.. bot_key = '5be3b560-3c34-4de7-9828-b5a4e9450a29'
+14:21:14.042584 line       174                 message(prompt["atraduire"], is_user=True, key=user_key)
+14:21:14.043583 line       175                 message(prompt["traduction"], key=bot_key)
+14:21:14.044585 line       169             for prompt in chat_messages:
+14:21:14.045584 line       180                st.error(f"Erreur : {chat.status_code}")
+14:21:14.045584 return     180                st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.115330
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000025EF42175E0>
+14:21:16.479216 call       156     def add_chat(self):
+14:21:16.479216 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:21:16.479216 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:21:16.492387 line       165         if chat.status_code == 200:
+14:21:16.492894 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:21:16.493415 line       169             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:21:16.493944 line       171                 user_key = str(uuid.uuid4())
+New var:....... user_key = '7cede3b7-f682-400d-86b0-26225c777354'
+14:21:16.494470 line       172                 bot_key = str(uuid.uuid4())
+New var:....... bot_key = '14c827a8-fd00-4027-8de4-8ed71b1cdba8'
+14:21:16.494998 line       174                 message(prompt["atraduire"], is_user=True, key=user_key)
+14:21:16.496052 line       175                 message(prompt["traduction"], key=bot_key)
+14:21:16.497628 line       169             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:21:16.498160 line       171                 user_key = str(uuid.uuid4())
+Modified var:.. user_key = '529db920-bb0c-4300-b303-3d0f72be4056'
+14:21:16.498687 line       172                 bot_key = str(uuid.uuid4())
+Modified var:.. bot_key = '36253e3f-57a4-460b-bf81-49afb4ef6a69'
+14:21:16.499219 line       174                 message(prompt["atraduire"], is_user=True, key=user_key)
+14:21:16.500258 line       175                 message(prompt["traduction"], key=bot_key)
+14:21:16.501309 line       169             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+14:21:16.501835 line       171                 user_key = str(uuid.uuid4())
+Modified var:.. user_key = 'c25e731f-1ef9-4dd2-9bdb-f0c40fdd485b'
+14:21:16.502362 line       172                 bot_key = str(uuid.uuid4())
+Modified var:.. bot_key = '73745a68-49cc-444e-bca7-343025c4e37f'
+14:21:16.502899 line       174                 message(prompt["atraduire"], is_user=True, key=user_key)
+14:21:16.504442 line       175                 message(prompt["traduction"], key=bot_key)
+14:21:16.505443 line       169             for prompt in chat_messages:
+14:21:16.505443 line       180                st.error(f"Erreur : {chat.status_code}")
+14:21:16.506441 return     180                st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.028224
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD49CC70>
+14:29:14.021058 call       156     def add_chat(self):
+14:29:14.021584 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:29:14.022114 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:29:14.033989 line       165         if chat.status_code == 200:
+14:29:14.034494 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:29:14.035020 line       167             counter_user = 1
+New var:....... counter_user = 1
+14:29:14.035544 line       168             counter_bot = 2
+New var:....... counter_bot = 2
+14:29:14.036072 line       170             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:29:14.037108 line       171                 counter_user += 2
+Modified var:.. counter_user = 3
+14:29:14.037635 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 4
+14:29:14.038163 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:29:14.130574 line       175                 message(prompt["traduction"],key="bot key")
+14:29:14.132576 line       170             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:29:14.132576 line       171                 counter_user += 2
+Modified var:.. counter_user = 5
+14:29:14.133577 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 6
+14:29:14.133577 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:29:14.134575 exception  174                 message(prompt["atraduire"], is_user=True, key="user_key")
+Exception:..... streamlit.errors.DuplicateWidgetID: There are mu...y` argument is unique for each
+widget you create.
+Call ended by exception
+Elapsed time: 00:00:00.114516
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BE1A9F60>
+14:29:24.098301 call       156     def add_chat(self):
+14:29:24.098301 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:29:24.098827 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:29:24.112986 line       165         if chat.status_code == 200:
+14:29:24.113494 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:29:24.114027 line       167             counter_user = 1
+New var:....... counter_user = 1
+14:29:24.114552 line       168             counter_bot = 2
+New var:....... counter_bot = 2
+14:29:24.115077 line       170             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:29:24.115602 line       171                 counter_user += 2
+Modified var:.. counter_user = 3
+14:29:24.116132 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 4
+14:29:24.116659 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:29:24.118236 line       175                 message(prompt["traduction"],key="bot key")
+14:29:24.119303 line       170             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:29:24.119836 line       171                 counter_user += 2
+Modified var:.. counter_user = 5
+14:29:24.120376 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 6
+14:29:24.120923 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:29:24.122509 exception  174                 message(prompt["atraduire"], is_user=True, key="user_key")
+Exception:..... streamlit.errors.DuplicateWidgetID: There are mu...y` argument is unique for each
+widget you create.
+Call ended by exception
+Elapsed time: 00:00:00.025277
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD3EB8B0>
+14:32:12.811896 call       156     def add_chat(self):
+14:32:12.812898 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:32:12.812898 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:32:12.826418 line       165         if chat.status_code == 200:
+14:32:12.826924 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:32:12.827441 line       167             counter_user = 1
+New var:....... counter_user = 0
+14:32:12.828040 line       168             counter_bot = 2
+New var:....... counter_bot = 1
+14:32:12.828544 line       170             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:32:12.829072 line       171                 counter_user += 2
+Modified var:.. counter_user = 2
+14:32:12.829593 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 3
+14:32:12.830117 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:32:12.831712 line       175                 message(prompt["traduction"],key="bot key")
+14:32:12.833292 line       170             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:32:12.833826 line       171                 counter_user += 2
+Modified var:.. counter_user = 4
+14:32:12.834353 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 5
+14:32:12.835431 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:32:12.837031 exception  174                 message(prompt["atraduire"], is_user=True, key="user_key")
+Exception:..... streamlit.errors.DuplicateWidgetID: There are mu...y` argument is unique for each
+widget you create.
+Call ended by exception
+Elapsed time: 00:00:00.025668
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD45C700>
+14:34:06.867282 call       156     def add_chat(self):
+14:34:06.868283 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:34:06.868283 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:34:06.881194 line       165         if chat.status_code == 200:
+14:34:06.881702 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:34:06.882231 line       167             counter_user = 1
+New var:....... counter_user = 0
+14:34:06.882747 line       168             counter_bot = 2
+New var:....... counter_bot = 1
+14:34:06.883262 line       170             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:34:06.883797 line       171                 counter_user += 2
+Modified var:.. counter_user = 2
+14:34:06.884332 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 3
+14:34:06.884868 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:34:06.885924 line       175                 message(prompt["traduction"],key="bot key")
+14:34:06.887012 line       170             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:34:06.887538 line       171                 counter_user += 2
+Modified var:.. counter_user = 4
+14:34:06.888078 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 5
+14:34:06.889133 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:34:06.889675 exception  174                 message(prompt["atraduire"], is_user=True, key="user_key")
+Exception:..... streamlit.errors.DuplicateWidgetID: There are mu...y` argument is unique for each
+widget you create.
+Call ended by exception
+Elapsed time: 00:00:00.023455
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190DC64BBB0>
+14:34:11.052397 call       156     def add_chat(self):
+14:34:11.052932 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:34:11.052932 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:34:11.065385 line       165         if chat.status_code == 200:
+14:34:11.065894 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:34:11.065894 line       167             counter_user = 1
+New var:....... counter_user = 0
+14:34:11.066426 line       168             counter_bot = 2
+New var:....... counter_bot = 1
+14:34:11.066959 line       170             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:34:11.067493 line       171                 counter_user += 2
+Modified var:.. counter_user = 2
+14:34:11.068044 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 3
+14:34:11.068578 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:34:11.070170 line       175                 message(prompt["traduction"],key="bot key")
+14:34:11.071233 line       170             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:34:11.071754 line       171                 counter_user += 2
+Modified var:.. counter_user = 4
+14:34:11.072285 line       172                 counter_bot += 2
+Modified var:.. counter_bot = 5
+14:34:11.072817 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:34:11.073885 exception  174                 message(prompt["atraduire"], is_user=True, key="user_key")
+Exception:..... streamlit.errors.DuplicateWidgetID: There are mu...y` argument is unique for each
+widget you create.
+Call ended by exception
+Elapsed time: 00:00:00.022550
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD49DD80>
+14:35:08.129981 call       156     def add_chat(self):
+14:35:08.130981 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:35:08.130981 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:35:08.143737 line       165         if chat.status_code == 200:
+14:35:08.144245 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:35:08.144771 line       167             counter_user = 1
+New var:....... counter_user = 0
+14:35:08.145302 line       168             counter_bot = 2
+New var:....... counter_bot = 1
+14:35:08.145853 line       170             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:35:08.146382 line       171                 counter_user += 2
+New var:....... user_key = '890508c6-a0c7-4ecb-a28f-c4508db395c2'
+14:35:08.146907 line       172                 counter_bot += 2
+New var:....... bot_key = 'd90548d0-4c80-4edc-94a5-36f92b6f0b63'
+14:35:08.147432 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:35:08.149006 line       175                 message(prompt["traduction"],key="bot key")
+14:35:08.150074 line       170             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:35:08.150617 line       171                 counter_user += 2
+Modified var:.. user_key = '0c024199-5ca8-4a74-a0c4-38dcbe185dd7'
+14:35:08.151152 line       172                 counter_bot += 2
+Modified var:.. bot_key = 'a4c3a993-a3c2-43f0-a8a8-c0f7cab544ab'
+14:35:08.151689 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:35:08.152758 line       175                 message(prompt["traduction"],key="bot key")
+14:35:08.154025 line       170             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+14:35:08.154533 line       171                 counter_user += 2
+Modified var:.. user_key = '264a44d5-dc9d-4f08-ad76-9412bd789b4b'
+14:35:08.155067 line       172                 counter_bot += 2
+Modified var:.. bot_key = 'f4262e84-20bc-42ad-8959-1584903168d8'
+14:35:08.155067 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:35:08.157075 line       175                 message(prompt["traduction"],key="bot key")
+14:35:08.158074 line       170             for prompt in chat_messages:
+14:35:08.159073 line       180                st.error(f"Erreur : {chat.status_code}")
+14:35:08.159073 return     180                st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.030094
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190DC623940>
+14:40:42.235404 call       156     def add_chat(self):
+14:40:42.235926 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:40:42.236448 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:40:42.248712 line       165         if chat.status_code == 200:
+14:40:42.249242 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:40:42.249242 line       167             counter_user = 1
+New var:....... counter_user = 0
+14:40:42.249770 line       168             counter_bot = 2
+New var:....... counter_bot = 1
+14:40:42.250296 line       170             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:40:42.250818 line       171                 counter_user += 2
+New var:....... user_key = '5502dc5f-3c74-4819-ae11-3889dc0a2727'
+14:40:42.251339 line       172                 counter_bot += 2
+New var:....... bot_key = '41c0d4dd-3c3f-451e-91c4-d4be38280d20'
+14:40:42.251861 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:40:42.253428 line       175                 message(prompt["traduction"],key="bot key")
+14:40:42.254473 line       170             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:40:42.254993 line       171                 counter_user += 2
+Modified var:.. user_key = '0c0a89f8-3929-4e18-852c-e2b73fc7b272'
+14:40:42.256044 line       172                 counter_bot += 2
+Modified var:.. bot_key = 'c623deed-8d3a-48f8-8a68-eae0a2c00f75'
+14:40:42.256567 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:40:42.257615 line       175                 message(prompt["traduction"],key="bot key")
+14:40:42.259177 line       170             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+14:40:42.259707 line       171                 counter_user += 2
+Modified var:.. user_key = '65b6f76a-57a2-49cb-8ce1-4fd9603f94e5'
+14:40:42.259707 line       172                 counter_bot += 2
+Modified var:.. bot_key = '91578691-0af1-4882-a70e-d2ab8f752408'
+14:40:42.260712 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:40:42.261714 line       175                 message(prompt["traduction"],key="bot key")
+14:40:42.262712 line       170             for prompt in chat_messages:
+14:40:42.263715 line       180                st.error(f"Erreur : {chat.status_code}")
+14:40:42.263715 return     180                st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.030308
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD3EBE80>
+14:40:50.759254 call       156     def add_chat(self):
+14:40:50.760256 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:40:50.760256 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:40:50.773114 line       165         if chat.status_code == 200:
+14:40:50.773620 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:40:50.774147 line       167             counter_user = 1
+New var:....... counter_user = 0
+14:40:50.774672 line       168             counter_bot = 2
+New var:....... counter_bot = 1
+14:40:50.775195 line       170             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:40:50.775719 line       171                 counter_user += 2
+New var:....... user_key = '1aedc5b8-88c1-4dd1-84d4-5646121183ee'
+14:40:50.776267 line       172                 counter_bot += 2
+New var:....... bot_key = 'b5142c98-f749-4d23-abb8-4ef9152f123b'
+14:40:50.776803 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:40:50.777858 line       175                 message(prompt["traduction"],key="bot key")
+14:40:50.778923 line       170             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:40:50.779450 line       171                 counter_user += 2
+Modified var:.. user_key = '439139bc-0e41-41e6-9fc2-db532441026d'
+14:40:50.779979 line       172                 counter_bot += 2
+Modified var:.. bot_key = '327bf3e1-c31b-47e6-b554-e6be67a08541'
+14:40:50.781031 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:40:50.782081 line       175                 message(prompt["traduction"],key="bot key")
+14:40:50.783118 line       170             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+14:40:50.783645 line       171                 counter_user += 2
+Modified var:.. user_key = 'c9273cf9-c613-4fba-b559-32a9696774a2'
+14:40:50.784176 line       172                 counter_bot += 2
+Modified var:.. bot_key = 'be4e3b07-c60c-44fc-b60d-34ce592d6e0a'
+14:40:50.784176 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:40:50.786183 line       175                 message(prompt["traduction"],key="bot key")
+14:40:50.787183 line       170             for prompt in chat_messages:
+14:40:50.787183 line       180                st.error(f"Erreur : {chat.status_code}")
+14:40:50.788184 return     180                st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.029930
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD49CFA0>
+14:40:51.905792 call       156     def add_chat(self):
+14:40:51.905792 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:40:51.906797 line       163         chat = requests.get(url)
+New var:....... chat = <Response [200]>
+14:40:51.919259 line       165         if chat.status_code == 200:
+14:40:51.919764 line       166             chat_messages = chat.json()
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:40:51.920291 line       167             counter_user = 1
+New var:....... counter_user = 0
+14:40:51.920813 line       168             counter_bot = 2
+New var:....... counter_bot = 1
+14:40:51.921341 line       170             for prompt in chat_messages:
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:40:51.921864 line       171                 counter_user += 2
+New var:....... user_key = '45e3e0b1-9fa2-4896-8512-a3d4f17982a4'
+14:40:51.922391 line       172                 counter_bot += 2
+New var:....... bot_key = '424ad962-2e25-4dac-a3a6-448dfa7b84fd'
+14:40:51.922908 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:40:51.924478 line       175                 message(prompt["traduction"],key="bot key")
+14:40:51.925568 line       170             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:40:51.926093 line       171                 counter_user += 2
+Modified var:.. user_key = 'df931904-d6e5-474e-ad1a-28a153e36844'
+14:40:51.926614 line       172                 counter_bot += 2
+Modified var:.. bot_key = '21e58b7e-0e1c-4116-8c91-452eb30f3b26'
+14:40:51.927146 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:40:51.928199 line       175                 message(prompt["traduction"],key="bot key")
+14:40:51.929243 line       170             for prompt in chat_messages:
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+14:40:51.929761 line       171                 counter_user += 2
+Modified var:.. user_key = '68c5f2a3-f73f-415b-b37b-ca6c7197a5fd'
+14:40:51.930277 line       172                 counter_bot += 2
+Modified var:.. bot_key = '712333d2-67a0-4c66-878b-6161c415ef82'
+14:40:51.930809 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+14:40:51.931818 line       175                 message(prompt["traduction"],key="bot key")
+14:40:51.932817 line       170             for prompt in chat_messages:
+14:40:51.933816 line       180                st.error(f"Erreur : {chat.status_code}")
+14:40:51.934816 return     180                st.error(f"Erreur : {chat.status_code}")
+Return value:.. None
+Elapsed time: 00:00:00.030023
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+    Elapsed time: 00:00:00.000000
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+    Elapsed time: 00:00:00.000000
+    Elapsed time: 00:00:00.000000
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+    Elapsed time: 00:00:00.000999
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+    Elapsed time: 00:00:00.000000
+    Elapsed time: 00:00:00.000000
+    Elapsed time: 00:00:00.000000
+    Elapsed time: 00:00:00.000000
+    Elapsed time: 00:00:00.000000
+    Elapsed time: 00:00:00.000000
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD45C760>
+14:48:40.380695 call       157         """
+14:48:40.381692 line       164         
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:48:40.381692 line       165         if chat.status_code == 200:
+New var:....... chat = <Response [200]>
+14:48:40.395481 line       167             counter_user = 1
+14:48:40.395988 line       168             counter_bot = 2
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:48:40.396507 line       169             
+New var:....... counter_user = 0
+14:48:40.397036 line       170             for prompt in chat_messages:
+New var:....... counter_bot = 1
+14:48:40.397563 line       172                 counter_bot += 2
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:48:40.398094 line       173 
+New var:....... user_key = '1ba860aa-1a57-4166-8124-eb382b72a275'
+14:48:40.398623 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+New var:....... bot_key = '87fce4b4-7836-4202-87ad-adf301c544b7'
+14:48:40.399679 line       176            
+14:48:40.400725 line       177 
+14:48:40.402306 line       172                 counter_bot += 2
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:48:40.402831 line       173 
+Modified var:.. user_key = 'a9b5f035-8aa0-4f1f-8d32-ab365d541d81'
+14:48:40.403359 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+Modified var:.. bot_key = '24c1b72b-15bf-42fd-b6ab-af64bd78e300'
+14:48:40.403886 line       176            
+14:48:40.405470 line       177 
+14:48:40.407045 line       172                 counter_bot += 2
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+14:48:40.407045 line       173 
+Modified var:.. user_key = '23050db1-4da3-4861-aaee-32e64771f185'
+14:48:40.408053 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+Modified var:.. bot_key = '3f9241f2-e56b-4ccd-b3f5-8c4d1ba43278'
+14:48:40.409052 line       176            
+14:48:40.410053 line       177 
+14:48:40.411053 line       172                 counter_bot += 2
+14:48:40.412054 line       182 
+14:48:40.413053 return     182 
+Return value:.. None
+Elapsed time: 00:00:00.033356
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD49D780>
+14:49:00.867785 call       158         Affiche l'historique des messages de chat entre l'utilisateur et le bot.
+14:49:00.868784 line       165         if chat.status_code == 200:
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:49:00.869784 line       166             chat_messages = chat.json()
+New var:....... chat = <Response [200]>
+14:49:00.882901 line       168             counter_bot = 2
+14:49:00.883970 line       169             
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:49:00.883970 line       170             for prompt in chat_messages:
+New var:....... counter_user = 0
+14:49:00.885010 line       171                 counter_user += 2
+New var:....... counter_bot = 1
+14:49:00.885536 line       173 
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:49:00.886060 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+New var:....... user_key = '4b2df043-aa4e-4505-b1e5-4a1fe1b98129'
+14:49:00.886579 line       175                 message(prompt["traduction"],key="bot key")
+New var:....... bot_key = 'd8399b16-0ab1-4997-9217-400944cdb098'
+14:49:00.887101 line       177 
+14:49:00.888151 line       178             
+14:49:00.889206 line       173 
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:49:00.889729 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+Modified var:.. user_key = '64266d5c-a88b-41c7-8801-9655f266f789'
+14:49:00.890253 line       175                 message(prompt["traduction"],key="bot key")
+Modified var:.. bot_key = 'ee2e419d-c8fb-47da-9669-7d42ce811980'
+14:49:00.890781 line       177 
+14:49:00.892343 line       178             
+14:49:00.893388 line       173 
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+14:49:00.893912 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+Modified var:.. user_key = 'c604cf14-f13d-4d12-8516-94f70608f995'
+14:49:00.894443 line       175                 message(prompt["traduction"],key="bot key")
+Modified var:.. bot_key = 'f19ec6bc-61dd-4939-9777-598eee65bb21'
+14:49:00.894443 line       177 
+14:49:00.895449 line       178             
+14:49:00.897452 line       173 
+14:49:00.897452 line       183     # def add_chat(self):
+14:49:00.898450 return     183     # def add_chat(self):
+Return value:.. None
+Elapsed time: 00:00:00.031664
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190DC6200A0>
+14:49:05.459329 call       158         Affiche l'historique des messages de chat entre l'utilisateur et le bot.
+14:49:05.459860 line       165         if chat.status_code == 200:
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:49:05.460388 line       166             chat_messages = chat.json()
+New var:....... chat = <Response [200]>
+14:49:05.472179 line       168             counter_bot = 2
+14:49:05.472687 line       169             
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:49:05.473224 line       170             for prompt in chat_messages:
+New var:....... counter_user = 0
+14:49:05.473753 line       171                 counter_user += 2
+New var:....... counter_bot = 1
+14:49:05.474284 line       173 
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:49:05.474812 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+New var:....... user_key = 'c361d531-cbd3-49d7-bd8f-a779f6a60db2'
+14:49:05.475343 line       175                 message(prompt["traduction"],key="bot key")
+New var:....... bot_key = 'b72985af-370f-4f0d-a8c7-9115d2bea8fd'
+14:49:05.475869 line       177 
+14:49:05.477455 line       178             
+14:49:05.478507 line       173 
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:49:05.479033 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+Modified var:.. user_key = 'd61a3f96-22b9-4a19-ab4c-1756ccc984e3'
+14:49:05.479561 line       175                 message(prompt["traduction"],key="bot key")
+Modified var:.. bot_key = 'feff227c-36d0-4b85-9983-0c1715364dff'
+14:49:05.480085 line       177 
+14:49:05.481666 line       178             
+14:49:05.482724 line       173 
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+14:49:05.483270 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+Modified var:.. user_key = 'a88f3c66-fe9c-4806-b86e-cc17b73c9010'
+14:49:05.484280 line       175                 message(prompt["traduction"],key="bot key")
+Modified var:.. bot_key = '6d6698a7-5d26-415c-bfcb-873466982eb4'
+14:49:05.485278 line       177 
+14:49:05.487277 line       178             
+14:49:05.488277 line       173 
+14:49:05.489280 line       183     # def add_chat(self):
+14:49:05.490278 return     183     # def add_chat(self):
+Return value:.. None
+Elapsed time: 00:00:00.030949
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD45C580>
+14:49:18.964012 call       158         Affiche l'historique des messages de chat entre l'utilisateur et le bot.
+14:49:18.965008 line       165         if chat.status_code == 200:
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:49:18.965008 line       166             chat_messages = chat.json()
+New var:....... chat = <Response [200]>
+14:49:18.978093 line       168             counter_bot = 2
+14:49:18.978599 line       169             
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:49:18.979116 line       170             for prompt in chat_messages:
+New var:....... counter_user = 0
+14:49:18.979640 line       171                 counter_user += 2
+New var:....... counter_bot = 1
+14:49:18.980173 line       173 
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:49:18.980700 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+New var:....... user_key = '9c827667-843c-400d-abf7-2b4ed03abb8b'
+14:49:18.981222 line       175                 message(prompt["traduction"],key="bot key")
+New var:....... bot_key = '54f50a2f-b67e-4252-aea8-b4d62d33c0ba'
+14:49:18.981752 line       177 
+14:49:18.983340 line       178             
+14:49:18.984397 line       173 
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:49:18.984915 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+Modified var:.. user_key = '6dd01988-56db-4734-a855-19c51b81aae6'
+14:49:18.985431 line       175                 message(prompt["traduction"],key="bot key")
+Modified var:.. bot_key = '269c72b7-6857-48df-91c1-ca03d7252ad2'
+14:49:18.985947 line       177 
+14:49:18.987526 line       178             
+14:49:18.988618 line       173 
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+14:49:18.989142 line       174                 message(prompt["atraduire"], is_user=True, key="user_key")
+Modified var:.. user_key = '8781a31a-5f73-4761-a1b8-e07f0587ecaa'
+14:49:18.989142 line       175                 message(prompt["traduction"],key="bot key")
+Modified var:.. bot_key = '92decd01-2c80-4d5e-b47f-ba8f2e7e8b69'
+14:49:18.990148 line       177 
+14:49:18.991151 line       178             
+14:49:18.992149 line       173 
+14:49:18.993150 line       183     # def add_chat(self):
+14:49:18.993150 return     183     # def add_chat(self):
+Return value:.. None
+Elapsed time: 00:00:00.030139
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190DC6202E0>
+14:52:15.632676 call       160 
+14:52:15.633675 line       167             counter_user = 1
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:52:15.633675 line       168             counter_bot = 2
+New var:....... chat = <Response [200]>
+14:52:15.647020 line       170             for prompt in chat_messages:
+14:52:15.648041 line       171                 counter_user += 2
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:52:15.648041 line       172                 counter_bot += 2
+New var:....... counter_user = 0
+14:52:15.648570 line       173 
+New var:....... counter_bot = 1
+14:52:15.649598 line       175                 message(prompt["traduction"],key="bot key")
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:52:15.649598 line       176            
+New var:....... user_key = 'e20bdd7c-a1d6-4d8c-9c43-d8827e0cd632'
+14:52:15.650642 line       177 
+New var:....... bot_key = 'b4a3c126-f344-4532-bd8a-38dfb00e3a31'
+14:52:15.651170 line       179             else :
+14:52:15.652743 line       180                st.error(f"Erreur : {chat.status_code}")
+14:52:15.653795 line       175                 message(prompt["traduction"],key="bot key")
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:52:15.654317 line       176            
+Modified var:.. user_key = 'f18a6d6c-a226-42b3-8d14-0ac17c52ea76'
+14:52:15.654840 line       177 
+Modified var:.. bot_key = 'f6002129-7120-4913-96a1-23e7946c94e4'
+14:52:15.655369 line       179             else :
+14:52:15.656938 line       180                st.error(f"Erreur : {chat.status_code}")
+14:52:15.657999 line       175                 message(prompt["traduction"],key="bot key")
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+14:52:15.658523 line       176            
+Modified var:.. user_key = '0b2849e6-ad07-4fd4-b6b4-2574dcf2075a'
+14:52:15.658523 line       177 
+Modified var:.. bot_key = '939b232d-f127-4063-9e12-c862bb7c4b7d'
+14:52:15.659531 line       179             else :
+14:52:15.660529 line       180                st.error(f"Erreur : {chat.status_code}")
+14:52:15.662528 line       175                 message(prompt["traduction"],key="bot key")
+14:52:15.662528 line       185     #     chat = requests.get(url)
+14:52:15.663529 return     185     #     chat = requests.get(url)
+Return value:.. None
+Elapsed time: 00:00:00.031855
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190DC6234C0>
+14:52:23.307843 call       160 
+14:52:23.307843 line       167             counter_user = 1
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:52:23.308843 line       168             counter_bot = 2
+New var:....... chat = <Response [200]>
+14:52:23.321892 line       170             for prompt in chat_messages:
+14:52:23.322401 line       171                 counter_user += 2
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:52:23.322937 line       172                 counter_bot += 2
+New var:....... counter_user = 0
+14:52:23.323466 line       173 
+New var:....... counter_bot = 1
+14:52:23.324526 line       175                 message(prompt["traduction"],key="bot key")
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:52:23.325053 line       176            
+New var:....... user_key = 'b0a361b3-3751-4cbe-b717-cf05dc561ab6'
+14:52:23.326127 line       177 
+New var:....... bot_key = '30815707-4ada-4b52-be90-b594a02cf3ad'
+14:52:23.326656 line       179             else :
+14:52:23.328786 line       180                st.error(f"Erreur : {chat.status_code}")
+14:52:23.330404 line       175                 message(prompt["traduction"],key="bot key")
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:52:23.330936 line       176            
+Modified var:.. user_key = '767b48b2-93bd-4095-9bec-d9b67d9e527c'
+14:52:23.331475 line       177 
+Modified var:.. bot_key = '8a8f5d27-69f4-426e-9f8a-d02ff88636ba'
+14:52:23.332002 line       179             else :
+14:52:23.333580 line       180                st.error(f"Erreur : {chat.status_code}")
+14:52:23.334627 line       175                 message(prompt["traduction"],key="bot key")
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+14:52:23.335153 line       176            
+Modified var:.. user_key = '1255facc-ebbe-4041-9323-3432dffb748e'
+14:52:23.335678 line       177 
+Modified var:.. bot_key = 'b95168ca-6e97-459a-8f8e-73fe7e3c127b'
+14:52:23.336206 line       179             else :
+14:52:23.337784 line       180                st.error(f"Erreur : {chat.status_code}")
+14:52:23.339361 line       175                 message(prompt["traduction"],key="bot key")
+14:52:23.339891 line       185     #     chat = requests.get(url)
+14:52:23.340409 return     185     #     chat = requests.get(url)
+Return value:.. None
+Elapsed time: 00:00:00.033611
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD3EBEB0>
+14:52:26.221143 call       160 
+14:52:26.221688 line       167             counter_user = 1
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:52:26.222219 line       168             counter_bot = 2
+New var:....... chat = <Response [200]>
+14:52:26.234616 line       170             for prompt in chat_messages:
+14:52:26.235123 line       171                 counter_user += 2
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:52:26.235649 line       172                 counter_bot += 2
+New var:....... counter_user = 0
+14:52:26.236172 line       173 
+New var:....... counter_bot = 1
+14:52:26.236698 line       175                 message(prompt["traduction"],key="bot key")
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:52:26.237231 line       176            
+New var:....... user_key = 'd2bb2988-c63a-4202-93d8-353302a95b98'
+14:52:26.237757 line       177 
+New var:....... bot_key = '9bc2e0dc-57ca-4d7f-9c32-cd2546617b08'
+14:52:26.238279 line       179             else :
+14:52:26.239337 line       180                st.error(f"Erreur : {chat.status_code}")
+14:52:26.240916 line       175                 message(prompt["traduction"],key="bot key")
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:52:26.241440 line       176            
+Modified var:.. user_key = '21c3acf0-1413-4196-a1c6-63cb646ddf60'
+14:52:26.241965 line       177 
+Modified var:.. bot_key = '1ba815bb-190b-4e33-b575-225d6e94f134'
+14:52:26.242479 line       179             else :
+14:52:26.243526 line       180                st.error(f"Erreur : {chat.status_code}")
+14:52:26.244577 line       175                 message(prompt["traduction"],key="bot key")
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+14:52:26.245109 line       176            
+Modified var:.. user_key = '975fbebf-2003-45aa-9070-3108adcefb1a'
+14:52:26.245637 line       177 
+Modified var:.. bot_key = 'ec1986d9-168d-4f1d-aca1-e67fe903a5f3'
+14:52:26.246167 line       179             else :
+14:52:26.248682 line       180                st.error(f"Erreur : {chat.status_code}")
+14:52:26.249689 line       175                 message(prompt["traduction"],key="bot key")
+14:52:26.249689 line       185     #     chat = requests.get(url)
+14:52:26.251689 return     185     #     chat = requests.get(url)
+Return value:.. None
+Elapsed time: 00:00:00.030546
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD45C6A0>
+14:52:39.466893 call       160 
+14:52:39.467896 line       167             counter_user = 1
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:52:39.467896 line       168             counter_bot = 2
+New var:....... chat = <Response [200]>
+14:52:39.480768 line       170             for prompt in chat_messages:
+14:52:39.481805 line       171                 counter_user += 2
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:52:39.481805 line       172                 counter_bot += 2
+New var:....... counter_user = 0
+14:52:39.482333 line       173 
+New var:....... counter_bot = 1
+14:52:39.482860 line       175                 message(prompt["traduction"],key="bot key")
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:52:39.483385 line       176            
+New var:....... user_key = '2420b194-b2c5-4cf4-96d7-18e7318f3561'
+14:52:39.483913 line       177 
+New var:....... bot_key = 'e75306fd-d2ab-471a-880b-fc5a3a12e40a'
+14:52:39.484439 line       179             else :
+14:52:39.485498 line       180                st.error(f"Erreur : {chat.status_code}")
+14:52:39.487088 line       175                 message(prompt["traduction"],key="bot key")
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:52:39.487618 line       176            
+Modified var:.. user_key = 'ca13d08f-9a81-4c74-bdcf-5e7a739550a5'
+14:52:39.488149 line       177 
+Modified var:.. bot_key = '8674905b-2ec3-4e22-b6ca-0e4ca4a4dd78'
+14:52:39.488680 line       179             else :
+14:52:39.489733 line       180                st.error(f"Erreur : {chat.status_code}")
+14:52:39.490801 line       175                 message(prompt["traduction"],key="bot key")
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+14:52:39.491331 line       176            
+Modified var:.. user_key = 'eadf7913-b805-4309-a28d-ccc598bb250a'
+14:52:39.491865 line       177 
+Modified var:.. bot_key = '49fb1fb6-adc5-4512-af6b-69cd04fb05e9'
+14:52:39.491865 line       179             else :
+14:52:39.493877 line       180                st.error(f"Erreur : {chat.status_code}")
+14:52:39.494874 line       175                 message(prompt["traduction"],key="bot key")
+14:52:39.494874 line       185     #     chat = requests.get(url)
+14:52:39.495873 return     185     #     chat = requests.get(url)
+Return value:.. None
+Elapsed time: 00:00:00.029979
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD3EB7F0>
+14:52:43.814310 call       160 
+14:52:43.814839 line       167             counter_user = 1
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:52:43.815356 line       168             counter_bot = 2
+New var:....... chat = <Response [200]>
+14:52:43.827580 line       170             for prompt in chat_messages:
+14:52:43.828088 line       171                 counter_user += 2
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:52:43.828619 line       172                 counter_bot += 2
+New var:....... counter_user = 0
+14:52:43.829136 line       173 
+New var:....... counter_bot = 1
+14:52:43.829669 line       175                 message(prompt["traduction"],key="bot key")
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:52:43.830201 line       176            
+New var:....... user_key = '5e241e8b-5d75-4461-a2d9-2938ece42889'
+14:52:43.830737 line       177 
+New var:....... bot_key = 'b10d4d81-188e-46e5-a0bf-1272c28fc252'
+14:52:43.831267 line       179             else :
+14:52:43.832322 line       180                st.error(f"Erreur : {chat.status_code}")
+14:52:43.833910 line       175                 message(prompt["traduction"],key="bot key")
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:52:43.834441 line       176            
+Modified var:.. user_key = '113d6b72-2f8f-43aa-90ca-b9337afe0ab3'
+14:52:43.835493 line       177 
+Modified var:.. bot_key = 'dbf7fa6b-25d8-4453-bf1f-3e4faa0919d3'
+14:52:43.837096 line       179             else :
+14:52:43.838915 line       180                st.error(f"Erreur : {chat.status_code}")
+14:52:43.841919 line       175                 message(prompt["traduction"],key="bot key")
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+14:52:43.842456 line       176            
+Modified var:.. user_key = 'd25eafb8-a7f2-44be-93fb-f57908697517'
+14:52:43.843461 line       177 
+Modified var:.. bot_key = '6e79055d-d44b-4841-9f03-4305a6492171'
+14:52:43.844462 line       179             else :
+14:52:43.846463 line       180                st.error(f"Erreur : {chat.status_code}")
+14:52:43.848975 line       175                 message(prompt["traduction"],key="bot key")
+14:52:43.848975 line       185     #     chat = requests.get(url)
+14:52:43.849975 return     185     #     chat = requests.get(url)
+Return value:.. None
+Elapsed time: 00:00:00.037664
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190DC6235E0>
+14:52:50.549221 call       160 
+14:52:50.549221 line       167             counter_user = 1
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:52:50.549221 line       168             counter_bot = 2
+New var:....... chat = <Response [200]>
+14:52:50.563069 line       170             for prompt in chat_messages:
+14:52:50.563594 line       171                 counter_user += 2
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:52:50.563594 line       172                 counter_bot += 2
+New var:....... counter_user = 0
+14:52:50.564119 line       173 
+New var:....... counter_bot = 1
+14:52:50.564650 line       175                 message(prompt["traduction"],key="bot key")
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:52:50.565177 line       176            
+New var:....... user_key = 'd61efe31-9dd3-4bc4-abbf-e9a91dac7f38'
+14:52:50.565698 line       177 
+New var:....... bot_key = '36deac3e-bc32-4975-b2ea-c45644a7c7fe'
+14:52:50.566228 line       179             else :
+14:52:50.567291 line       180                st.error(f"Erreur : {chat.status_code}")
+14:52:50.568873 line       175                 message(prompt["traduction"],key="bot key")
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:52:50.569397 line       176            
+Modified var:.. user_key = '9811e0f1-fff6-40d6-8140-1c7e19b35731'
+14:52:50.569922 line       177 
+Modified var:.. bot_key = '4de1f26b-b0c5-4f84-8b46-927cf8d5b579'
+14:52:50.570441 line       179             else :
+14:52:50.571501 line       180                st.error(f"Erreur : {chat.status_code}")
+14:52:50.573107 line       175                 message(prompt["traduction"],key="bot key")
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+14:52:50.573637 line       176            
+Modified var:.. user_key = '9bac7ce4-f089-4112-8133-b873794717de'
+14:52:50.573637 line       177 
+Modified var:.. bot_key = 'a03f4f5f-79b2-4e39-a429-dda8ce79cb1c'
+14:52:50.574643 line       179             else :
+14:52:50.575645 line       180                st.error(f"Erreur : {chat.status_code}")
+14:52:50.576644 line       175                 message(prompt["traduction"],key="bot key")
+14:52:50.577645 line       185     #     chat = requests.get(url)
+14:52:50.577645 return     185     #     chat = requests.get(url)
+Return value:.. None
+Elapsed time: 00:00:00.029424
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD3EBC70>
+14:52:53.580273 call       160 
+14:52:53.580797 line       167             counter_user = 1
+New var:....... url = 'http://127.0.0.1:8080/traductions/auteur/1'
+14:52:53.581330 line       168             counter_bot = 2
+New var:....... chat = <Response [200]>
+14:52:53.593241 line       170             for prompt in chat_messages:
+14:52:53.593749 line       171                 counter_user += 2
+New var:....... chat_messages = [{'atraduire': "Premièrement, tu ôteras la Goupi...llets', 'version': 'fr >> en', 'utilisateur': 1}]
+14:52:53.594282 line       172                 counter_bot += 2
+New var:....... counter_user = 0
+14:52:53.594805 line       173 
+New var:....... counter_bot = 1
+14:52:53.595326 line       175                 message(prompt["traduction"],key="bot key")
+New var:....... prompt = {'atraduire': "Premièrement, tu ôteras la Goupil... less.", 'version': 'fr >> en', 'utilisateur': 1}
+14:52:53.595858 line       176            
+New var:....... user_key = '31133ba2-a826-4cd2-8240-e06cd659027c'
+14:52:53.596384 line       177 
+New var:....... bot_key = '132cef15-9e8d-435f-a99c-40de532129ec'
+14:52:53.596916 line       179             else :
+14:52:53.598530 line       180                st.error(f"Erreur : {chat.status_code}")
+14:52:53.599585 line       175                 message(prompt["traduction"],key="bot key")
+Modified var:.. prompt = {'atraduire': 'Chevaliers qui dites ni, nous ne ...woods.', 'version': 'fr >> en', 'utilisateur': 1}
+14:52:53.600109 line       176            
+Modified var:.. user_key = '698f05f8-62a6-4ecd-b1b5-18aa3f767cc0'
+14:52:53.600639 line       177 
+Modified var:.. bot_key = '1e2b6a45-825a-4977-9080-4f2506c3d173'
+14:52:53.601171 line       179             else :
+14:52:53.602241 line       180                st.error(f"Erreur : {chat.status_code}")
+14:52:53.603831 line       175                 message(prompt["traduction"],key="bot key")
+Modified var:.. prompt = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+14:52:53.604360 line       176            
+Modified var:.. user_key = '37b306a5-2ef0-401c-9609-fe23d86e6f0b'
+14:52:53.605367 line       177 
+Modified var:.. bot_key = '5b54e304-ddd1-41e6-a84a-756ec629bfff'
+14:52:53.606367 line       179             else :
+14:52:53.608367 line       180                st.error(f"Erreur : {chat.status_code}")
+14:52:53.609368 line       175                 message(prompt["traduction"],key="bot key")
+14:52:53.610366 line       185     #     chat = requests.get(url)
+14:52:53.611367 return     185     #     chat = requests.get(url)
+Return value:.. None
+Elapsed time: 00:00:00.032096

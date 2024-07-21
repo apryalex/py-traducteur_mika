@@ -423,3 +423,2297 @@ New var:....... reponse = 'tromp avoids the bullets in suit by eating apple'
 13:04:39.038293 return     146                 message(reponse)
 Return value:.. None
 Elapsed time: 00:00:03.949274
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000018F434E5690>
+Starting var:.. option = 'fr >> en'
+13:11:53.161339 call       122     def add_form(self, option):
+13:11:53.161339 line       130         st.subheader(option)
+13:11:53.162847 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'trump évite les balles  en costard en mangeant de pomme sur une corniche'
+13:11:53.163855 line       133         if st.button("Traduire"):
+13:11:53.165856 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004517
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000018F434E6BF0>
+Starting var:.. option = 'fr >> en'
+13:11:53.254930 call       122     def add_form(self, option):
+13:11:53.255932 line       130         st.subheader(option)
+13:11:53.256930 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'trump évite les balles  en costard en mangeant de pomme sur une corniche'
+13:11:53.258436 line       133         if st.button("Traduire"):
+13:11:53.260444 line       135                 "atraduire": atraduire,
+13:11:53.260444 line       136                 "version": option,
+13:11:53.261442 line       137                 "utilisateur":st.session_state["logged_in"]
+13:11:53.261442 line       134             data = {
+New var:....... data = {'atraduire': 'trump évite les balles  en costar...rniche', 'version': 'fr >> en', 'utilisateur': 1}
+13:11:53.261442 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+13:11:57.940024 line       142             if response.status_code == 200:
+13:11:57.940546 line       143                 st.success("Voici votre traduction !")
+13:11:57.941639 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': 'trump évite les balles  en costar...nice'}], 'version': 'fr >> en', 'utilisateur': 1}
+13:11:57.942166 line       145                 reponse = response_data['traduction']
+New var:....... reponse = 'tromp avoids the bullets in suit by eating apple on a cornice'
+13:11:57.942700 line       146                 message(reponse)
+13:11:57.944285 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:04.690417
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000018F434E4940>
+Starting var:.. option = 'fr >> en'
+13:17:46.888833 call       122     def add_form(self, option):
+13:17:46.889832 line       130         st.subheader(option)
+13:17:46.891832 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "Marion met de la crème solaire et arrête de m'envoyer de photo sexy quand je bosse stp"
+13:17:46.893340 line       133         if st.button("Traduire"):
+13:17:46.895864 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.008029
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000018F434E4700>
+Starting var:.. option = 'fr >> en'
+13:17:47.007465 call       122     def add_form(self, option):
+13:17:47.008463 line       130         st.subheader(option)
+13:17:47.009466 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "Marion met de la crème solaire et arrête de m'envoyer de photo sexy quand je bosse stp"
+13:17:47.010465 line       133         if st.button("Traduire"):
+13:17:47.012464 line       135                 "atraduire": atraduire,
+13:17:47.013464 line       136                 "version": option,
+13:17:47.013971 line       137                 "utilisateur":st.session_state["logged_in"]
+13:17:47.014476 line       134             data = {
+New var:....... data = {'atraduire': "Marion met de la crème solaire et...se stp", 'version': 'fr >> en', 'utilisateur': 1}
+13:17:47.014476 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+13:17:52.146177 line       142             if response.status_code == 200:
+13:17:52.147225 line       143                 st.success("Voici votre traduction !")
+13:17:52.147755 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': "Marion met de la crème solaire et...ork.'}], 'version': 'fr >> en', 'utilisateur': 1}
+13:17:52.148279 line       145                 reponse = response_data['traduction']
+New var:....... reponse = 'Marion puts on sunscreen and stops sending me sexy pictures when I work.'
+13:17:52.149339 line       146                 message(reponse)
+13:17:52.150928 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:05.144540
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000018F434E7B80>
+Starting var:.. option = 'fr >> en'
+13:18:42.211306 call       122     def add_form(self, option):
+13:18:42.213308 line       130         st.subheader(option)
+13:18:42.214321 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "Marion met de la crème solaire et arrête de m'envoyer de photo sexy quand je bosse stp"
+13:18:42.216338 line       133         if st.button("Traduire"):
+13:18:42.217339 line       135                 "atraduire": atraduire,
+13:18:42.218340 line       136                 "version": option,
+13:18:42.218340 line       137                 "utilisateur":st.session_state["logged_in"]
+13:18:42.219338 line       134             data = {
+New var:....... data = {'atraduire': "Marion met de la crème solaire et...se stp", 'version': 'fr >> en', 'utilisateur': 1}
+13:18:42.219338 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+13:18:46.902125 line       142             if response.status_code == 200:
+13:18:46.903163 line       143                 st.success("Voici votre traduction !")
+13:18:46.903697 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': "Marion met de la crème solaire et...ork.'}], 'version': 'fr >> en', 'utilisateur': 1}
+13:18:46.904756 line       145                 reponse = response_data['traduction']
+New var:....... reponse = 'Marion puts on sunscreen and stops sending me sexy pictures when I work.'
+13:18:46.905301 line       146                 message(reponse)
+13:18:46.906887 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:04.696652
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287DB3D3FA0>
+Starting var:.. option = 'fr >> en'
+13:28:26.228604 call       122     def add_form(self, option):
+13:28:26.230604 line       130         st.subheader(option)
+13:28:26.231606 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:28:26.232606 line       133         if st.button("Traduire"):
+13:28:26.234683 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.007078
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287DB39F550>
+Starting var:.. option = 'fr >> en'
+13:28:26.264228 call       122     def add_form(self, option):
+13:28:26.265237 line       130         st.subheader(option)
+13:28:26.267243 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:28:26.268242 line       133         if st.button("Traduire"):
+13:28:26.270242 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.007016
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287DBB5D630>
+Starting var:.. option = 'fr >> en'
+13:28:26.887654 call       122     def add_form(self, option):
+13:28:26.889654 line       130         st.subheader(option)
+13:28:26.890654 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:28:26.891657 line       133         if st.button("Traduire"):
+13:28:26.892654 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.006000
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287DB348040>
+Starting var:.. option = 'fr >> en'
+13:28:29.245337 call       122     def add_form(self, option):
+13:28:29.246345 line       130         st.subheader(option)
+13:28:29.247346 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:28:29.249345 line       133         if st.button("Traduire"):
+13:28:29.250345 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.006006
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287DB3CC280>
+Starting var:.. option = 'fr >> en'
+13:28:37.712798 call       122     def add_form(self, option):
+13:28:37.713796 line       130         st.subheader(option)
+13:28:37.713796 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:28:37.714863 line       133         if st.button("Traduire"):
+13:28:37.716865 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004067
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287DBB5F190>
+Starting var:.. option = 'fr >> en'
+13:28:40.512503 call       122     def add_form(self, option):
+13:28:40.513502 line       130         st.subheader(option)
+13:28:40.513502 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:28:40.514577 line       133         if st.button("Traduire"):
+13:28:40.516583 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004080
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287DBB5EA10>
+Starting var:.. option = 'fr >> en'
+13:28:47.230573 call       122     def add_form(self, option):
+13:28:47.232574 line       130         st.subheader(option)
+13:28:47.232574 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:28:47.234627 line       133         if st.button("Traduire"):
+13:28:47.235628 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.006054
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287DB39E7A0>
+Starting var:.. option = 'fr >> en'
+13:28:47.372641 call       122     def add_form(self, option):
+13:28:47.373686 line       130         st.subheader(option)
+13:28:47.374749 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:28:47.375814 line       133         if st.button("Traduire"):
+13:28:47.376878 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005299
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287FA4D46A0>
+Starting var:.. option = 'fr >> en'
+13:28:52.298750 call       122     def add_form(self, option):
+13:28:52.299749 line       130         st.subheader(option)
+13:28:52.300749 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'trump évite les balles '
+13:28:52.301751 line       133         if st.button("Traduire"):
+13:28:52.303750 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005000
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287FA4D45B0>
+Starting var:.. option = 'fr >> en'
+13:28:52.373878 call       122     def add_form(self, option):
+13:28:52.375068 line       130         st.subheader(option)
+13:28:52.375068 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'trump évite les balles '
+13:28:52.376073 line       133         if st.button("Traduire"):
+13:28:52.377075 line       135                 "atraduire": atraduire,
+13:28:52.378072 line       136                 "version": option,
+13:28:52.378072 line       137                 "utilisateur":st.session_state["logged_in"]
+13:28:52.378072 line       134             data = {
+New var:....... data = {'atraduire': 'trump évite les balles ', 'version': 'fr >> en', 'utilisateur': 1}
+13:28:52.379072 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+13:29:00.062350 line       142             if response.status_code == 200:
+13:29:00.062874 line       143                 st.success("Voici votre traduction !")
+13:29:00.063915 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': 'trump évite les balles ', 'traduc...lets'}], 'version': 'fr >> en', 'utilisateur': 1}
+13:29:00.064442 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'tromp avoids bullets'
+13:29:00.064442 line       146                 message(reponse)
+13:29:00.066449 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:07.693570
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287DBB5C970>
+Starting var:.. option = 'fr >> en'
+13:29:25.338795 call       122     def add_form(self, option):
+13:29:25.339797 line       130         st.subheader(option)
+13:29:25.340797 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'ai envie de jour a elden ring "
+13:29:25.341797 line       133         if st.button("Traduire"):
+13:29:25.343595 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004800
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287DBB5E980>
+Starting var:.. option = 'fr >> en'
+13:29:25.430195 call       122     def add_form(self, option):
+13:29:25.431193 line       130         st.subheader(option)
+13:29:25.432193 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'ai envie de jour a elden ring "
+13:29:25.432193 line       133         if st.button("Traduire"):
+13:29:25.434219 line       135                 "atraduire": atraduire,
+13:29:25.434219 line       136                 "version": option,
+13:29:25.435226 line       137                 "utilisateur":st.session_state["logged_in"]
+13:29:25.435226 line       134             data = {
+New var:....... data = {'atraduire': "j'ai envie de jour a elden ring ", 'version': 'fr >> en', 'utilisateur': 1}
+13:29:25.435226 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+13:29:28.639327 line       142             if response.status_code == 200:
+13:29:28.639861 line       143                 st.success("Voici votre traduction !")
+13:29:28.639861 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': "j'ai envie de jour a elden ring "...ring'}], 'version': 'fr >> en', 'utilisateur': 1}
+13:29:28.640870 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'I want day in elden ring'
+13:29:28.641868 line       146                 message(reponse)
+13:29:28.642869 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:03.213676
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287DB3CC1F0>
+Starting var:.. option = 'fr >> en'
+13:29:46.959524 call       122     def add_form(self, option):
+13:29:46.960522 line       130         st.subheader(option)
+13:29:46.961523 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'ai envie de jour a elden ring "
+13:29:46.962526 line       133         if st.button("Traduire"):
+13:29:46.962526 line       135                 "atraduire": atraduire,
+13:29:46.964034 line       136                 "version": option,
+13:29:46.964034 line       137                 "utilisateur":st.session_state["logged_in"]
+13:29:46.964034 line       134             data = {
+New var:....... data = {'atraduire': "j'ai envie de jour a elden ring ", 'version': 'fr >> en', 'utilisateur': 1}
+13:29:46.965042 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+13:29:49.986004 line       142             if response.status_code == 200:
+13:29:49.986535 line       143                 st.success("Voici votre traduction !")
+13:29:49.987592 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': "j'ai envie de jour a elden ring "...ring'}], 'version': 'fr >> en', 'utilisateur': 1}
+13:29:49.988121 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'I want day in elden ring'
+13:29:49.988649 line       146                 message(reponse)
+13:29:49.989705 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:03.030712
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287DBE06560>
+Starting var:.. option = 'fr >> en'
+13:30:42.162269 call       122     def add_form(self, option):
+13:30:42.163270 line       130         st.subheader(option)
+13:30:42.164270 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'ai envie de jouer a elden ring "
+13:30:42.165270 line       133         if st.button("Traduire"):
+13:30:42.166269 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005107
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287DB3D0070>
+Starting var:.. option = 'fr >> en'
+13:30:42.248565 call       122     def add_form(self, option):
+13:30:42.249566 line       130         st.subheader(option)
+13:30:42.250564 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'ai envie de jouer a elden ring "
+13:30:42.251564 line       133         if st.button("Traduire"):
+13:30:42.252564 line       135                 "atraduire": atraduire,
+13:30:42.253564 line       136                 "version": option,
+13:30:42.253564 line       137                 "utilisateur":st.session_state["logged_in"]
+13:30:42.254563 line       134             data = {
+New var:....... data = {'atraduire': "j'ai envie de jouer a elden ring ", 'version': 'fr >> en', 'utilisateur': 1}
+13:30:42.254563 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+13:30:45.274871 line       142             if response.status_code == 200:
+13:30:45.275388 line       143                 st.success("Voici votre traduction !")
+13:30:45.276443 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': "j'ai envie de jouer a elden ring ...ring'}], 'version': 'fr >> en', 'utilisateur': 1}
+13:30:45.276962 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'I want to play elden ring'
+13:30:45.277486 line       146                 message(reponse)
+13:30:45.278532 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:03.031021
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287DBB5E4D0>
+Starting var:.. option = 'fr >> en'
+13:32:50.178499 call       122     def add_form(self, option):
+13:32:50.179497 line       130         st.subheader(option)
+13:32:50.180498 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'ai envie de jouer a elden ring  sur ps5"
+13:32:50.181499 line       133         if st.button("Traduire"):
+13:32:50.182497 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.003998
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000287DBB5F7C0>
+Starting var:.. option = 'fr >> en'
+13:32:50.250233 call       122     def add_form(self, option):
+13:32:50.251233 line       130         st.subheader(option)
+13:32:50.252234 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'ai envie de jouer a elden ring  sur ps5"
+13:32:50.253740 line       133         if st.button("Traduire"):
+13:32:50.255747 line       135                 "atraduire": atraduire,
+13:32:50.256756 line       136                 "version": option,
+13:32:50.256756 line       137                 "utilisateur":st.session_state["logged_in"]
+13:32:50.256756 line       134             data = {
+New var:....... data = {'atraduire': "j'ai envie de jouer a elden ring  sur ps5", 'version': 'fr >> en', 'utilisateur': 1}
+13:32:50.257756 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+13:32:53.739316 line       142             if response.status_code == 200:
+13:32:53.739847 line       143                 st.success("Voici votre traduction !")
+13:32:53.740379 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': "j'ai envie de jouer a elden ring ... ps5'}], 'version': 'fr >> en', 'utilisateur': 1}
+13:32:53.740902 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'I want to play elden ring on ps5'
+13:32:53.741430 line       146                 message(reponse)
+13:32:53.743019 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:03.493316
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002B25A08F850>
+Starting var:.. option = 'fr >> en'
+13:34:03.171205 call       122     def add_form(self, option):
+13:34:03.173206 line       130         st.subheader(option)
+13:34:03.175206 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:34:03.177206 line       133         if st.button("Traduire"):
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002B25A08EBC0>
+13:34:03.179205 return     133         if st.button("Traduire"):
+Starting var:.. option = 'fr >> en'
+Return value:.. None
+13:34:03.178206 call       122     def add_form(self, option):
+13:34:03.180205 line       130         st.subheader(option)
+Elapsed time: 00:00:00.009000
+13:34:03.181206 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'ai envie de jouer a elden ring  sur ps5"
+13:34:03.191776 line       133         if st.button("Traduire"):
+13:34:03.194775 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.016569
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002B25A957040>
+Starting var:.. option = 'fr >> en'
+13:34:03.686183 call       122     def add_form(self, option):
+13:34:03.687398 line       130         st.subheader(option)
+13:34:03.689404 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:34:03.690405 line       133         if st.button("Traduire"):
+13:34:03.692404 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.006221
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002B25A957EB0>
+Starting var:.. option = 'fr >> en'
+13:34:03.848297 call       122     def add_form(self, option):
+13:34:03.849296 line       130         st.subheader(option)
+13:34:03.850295 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:34:03.851296 line       133         if st.button("Traduire"):
+13:34:03.852296 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004999
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002B25A03C760>
+Starting var:.. option = 'fr >> en'
+13:34:06.035779 call       122     def add_form(self, option):
+13:34:06.036937 line       130         st.subheader(option)
+13:34:06.037938 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:34:06.038938 line       133         if st.button("Traduire"):
+13:34:06.039937 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005158
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002B25A957730>
+Starting var:.. option = 'fr >> en'
+13:34:14.941840 call       122     def add_form(self, option):
+13:34:14.942848 line       130         st.subheader(option)
+13:34:14.943845 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:34:14.944847 line       133         if st.button("Traduire"):
+13:34:14.945848 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005103
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002B25A956DD0>
+Starting var:.. option = 'fr >> en'
+13:34:15.057713 call       122     def add_form(self, option):
+13:34:15.058752 line       130         st.subheader(option)
+13:34:15.059808 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:34:15.060859 line       133         if st.button("Traduire"):
+13:34:15.062193 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005016
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002B2792C60B0>
+Starting var:.. option = 'fr >> en'
+13:34:44.218604 call       122     def add_form(self, option):
+13:34:44.219605 line       130         st.subheader(option)
+13:34:44.219605 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'how to eat cotton'
+13:34:44.220604 line       133         if st.button("Traduire"):
+13:34:44.222604 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004000
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002B2792C6230>
+Starting var:.. option = 'fr >> en'
+13:34:44.305592 call       122     def add_form(self, option):
+13:34:44.306594 line       130         st.subheader(option)
+13:34:44.307594 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'how to eat cotton'
+13:34:44.308593 line       133         if st.button("Traduire"):
+13:34:44.309593 line       135                 "atraduire": atraduire,
+13:34:44.309593 line       136                 "version": option,
+13:34:44.310593 line       137                 "utilisateur":st.session_state["logged_in"]
+13:34:44.310593 line       134             data = {
+New var:....... data = {'atraduire': 'how to eat cotton', 'version': 'fr >> en', 'utilisateur': 1}
+13:34:44.310593 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+13:34:46.799588 line       142             if response.status_code == 200:
+13:34:46.800094 line       143                 st.success("Voici votre traduction !")
+13:34:46.801129 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': 'how to eat cotton', 'traduction':...tton'}], 'version': 'fr >> en', 'utilisateur': 1}
+13:34:46.801645 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'how to eat cotton'
+13:34:46.802168 line       146                 message(reponse)
+13:34:46.803221 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:02.498668
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002B25A08D4E0>
+Starting var:.. option = 'fr >> en'
+13:35:14.809387 call       122     def add_form(self, option):
+13:35:14.810386 line       130         st.subheader(option)
+13:35:14.810386 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'how to eat  ketchup'
+13:35:14.811385 line       133         if st.button("Traduire"):
+13:35:14.813387 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004000
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002B25AAF09D0>
+Starting var:.. option = 'fr >> en'
+13:35:14.904091 call       122     def add_form(self, option):
+13:35:14.905095 line       130         st.subheader(option)
+13:35:14.906093 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'how to eat  ketchup'
+13:35:14.907094 line       133         if st.button("Traduire"):
+13:35:14.908094 line       135                 "atraduire": atraduire,
+13:35:14.908094 line       136                 "version": option,
+13:35:14.909252 line       137                 "utilisateur":st.session_state["logged_in"]
+13:35:14.909252 line       134             data = {
+New var:....... data = {'atraduire': 'how to eat  ketchup', 'version': 'fr >> en', 'utilisateur': 1}
+13:35:14.909252 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+13:35:17.737386 line       142             if response.status_code == 200:
+13:35:17.737908 line       143                 st.success("Voici votre traduction !")
+13:35:17.738461 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': 'how to eat  ketchup', 'traduction...chup'}], 'version': 'fr >> en', 'utilisateur': 1}
+13:35:17.738989 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'how to eat ketchup'
+13:35:17.739519 line       146                 message(reponse)
+13:35:17.741111 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:02.837550
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000001D4A9B4D3F0>
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. option = 'fr >> en'
+Starting var:.. option = 'fr >> en'
+r_app.TraducteurApp object at 0x000001D4A9392710>
+13:37:02.303429 call       122     def add_form(self, option):
+Starting var:.. option = 'fr >> en'
+13:37:02.303429 call       122     def add_form(self, option):
+13:37:02.306430 line       130         st.subheader(option)
+13:37:02.303429 call       122     def add_form(self, option):
+13:37:02.306430 line       130         st.subheader(option)
+13:37:02.307428 line       130         st.subheader(option)
+13:37:02.307428 line       131         atraduire = st.text_input("Texte à traduire")
+13:37:02.308428 line       131         atraduire = st.text_input("Texte à traduire")
+13:37:02.310428 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'how to eat  ketchup'
+New var:....... atraduire = ''
+13:37:02.310428 line       133         if st.button("Traduire"):
+13:37:02.311432 line       133         if st.button("Traduire"):
+ ps5"
+13:37:02.315680 return     133         if st.button("Traduire"):
+13:37:02.313428 line       133         if st.button("Traduire"):
+13:37:02.315680 return     133         if st.button("Traduire"):
+Return value:.. None
+Return value:.. None
+13:37:02.316677 return     133         if st.button("Traduire"):
+Elapsed time: 00:00:00.014249
+Return value:.. None
+Elapsed time: 00:00:00.014249
+Elapsed time: 00:00:00.024249
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000001D4A9CF89D0>
+Starting var:.. option = 'fr >> en'
+13:37:02.968306 call       122     def add_form(self, option):
+13:37:02.969314 line       130         st.subheader(option)
+13:37:02.970314 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:37:02.972313 line       133         if st.button("Traduire"):
+13:37:02.974315 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.007007
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000001D4A9CF91E0>
+Starting var:.. option = 'fr >> en'
+13:37:03.132116 call       122     def add_form(self, option):
+13:37:03.133116 line       130         st.subheader(option)
+13:37:03.134115 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:37:03.135115 line       133         if st.button("Traduire"):
+13:37:03.136621 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005511
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000001D4A93D9180>
+Starting var:.. option = 'fr >> en'
+13:37:05.219207 call       122     def add_form(self, option):
+13:37:05.221209 line       130         st.subheader(option)
+13:37:05.221209 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:37:05.222209 line       133         if st.button("Traduire"):
+13:37:05.224208 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005001
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000001D4A9393640>
+Starting var:.. option = 'fr >> en'
+13:37:12.285146 call       122     def add_form(self, option):
+13:37:12.286146 line       130         st.subheader(option)
+13:37:12.287209 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:37:12.288212 line       133         if st.button("Traduire"):
+13:37:12.289209 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005064
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000001D4A9B4E7D0>
+Starting var:.. option = 'fr >> en'
+13:37:12.391448 call       122     def add_form(self, option):
+13:37:12.392503 line       130         st.subheader(option)
+13:37:12.393552 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:37:12.394607 line       133         if st.button("Traduire"):
+13:37:12.395662 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005292
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000001D4C84AFA00>
+Starting var:.. option = 'fr >> en'
+13:37:15.203150 call       122     def add_form(self, option):
+13:37:15.204149 line       130         st.subheader(option)
+13:37:15.205150 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'trump évite les balles '
+13:37:15.206149 line       133         if st.button("Traduire"):
+13:37:15.207286 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005136
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000001D4C84AF580>
+Starting var:.. option = 'fr >> en'
+13:37:15.283221 call       122     def add_form(self, option):
+13:37:15.284222 line       130         st.subheader(option)
+13:37:15.285222 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'trump évite les balles '
+13:37:15.286222 line       133         if st.button("Traduire"):
+13:37:15.287536 line       135                 "atraduire": atraduire,
+13:37:15.287536 line       136                 "version": option,
+13:37:15.288536 line       137                 "utilisateur":st.session_state["logged_in"]
+13:37:15.288536 line       134             data = {
+New var:....... data = {'atraduire': 'trump évite les balles ', 'version': 'fr >> en', 'utilisateur': 1}
+13:37:15.288536 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+13:37:20.544963 line       142             if response.status_code == 200:
+13:37:20.545479 line       143                 st.success("Voici votre traduction !")
+13:37:20.546519 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': 'trump évite les balles ', 'traduc...lets'}], 'version': 'fr >> en', 'utilisateur': 1}
+13:37:20.547044 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'tromp avoids bullets'
+13:37:20.547568 line       146                 message(reponse)
+13:37:20.549136 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:05.266962
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749CF9E0E0>
+Starting var:.. option = 'fr >> en'
+13:47:53.937085 call       122     def add_form(self, option):
+13:47:53.938083 line       130         st.subheader(option)
+13:47:53.939084 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:47:53.941085 line       133         if st.button("Traduire"):
+13:47:53.942085 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005998
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D813730>
+Starting var:.. option = 'fr >> en'
+13:47:55.803233 call       122     def add_form(self, option):
+13:47:55.804240 line       130         st.subheader(option)
+13:47:55.804240 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:47:55.806241 line       133         if st.button("Traduire"):
+13:47:55.807242 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005008
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D812AA0>
+Starting var:.. option = 'fr >> en'
+13:48:05.443092 call       122     def add_form(self, option):
+13:48:05.444220 line       130         st.subheader(option)
+13:48:05.445221 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:48:05.446222 line       133         if st.button("Traduire"):
+13:48:05.447221 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005128
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D812C80>
+Starting var:.. option = 'fr >> en'
+13:48:06.346576 call       122     def add_form(self, option):
+13:48:06.347627 line       130         st.subheader(option)
+13:48:06.348155 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+13:48:06.349205 line       133         if st.button("Traduire"):
+13:48:06.350766 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004717
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DDA2260>
+Starting var:.. option = 'fr >> en'
+13:48:10.962692 call       122     def add_form(self, option):
+13:48:10.964180 line       130         st.subheader(option)
+13:48:10.965180 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas"
+13:48:10.966180 line       133         if st.button("Traduire"):
+13:48:10.967180 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005488
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DDA1F90>
+Starting var:.. option = 'fr >> en'
+13:48:11.058026 call       122     def add_form(self, option):
+13:48:11.059027 line       130         st.subheader(option)
+13:48:11.060029 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas"
+13:48:11.061029 line       133         if st.button("Traduire"):
+13:48:11.062028 line       135                 "atraduire": atraduire,
+13:48:11.063027 line       136                 "version": option,
+13:48:11.063027 line       137                 "utilisateur":st.session_state["logged_in"]
+13:48:11.063027 line       134             data = {
+New var:....... data = {'atraduire': "j'aime les chili changas", 'version': 'fr >> en', 'utilisateur': 1}
+13:48:11.063027 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+13:48:16.491463 line       142             if response.status_code == 200:
+13:48:16.491983 line       143                 st.success("Voici votre traduction !")
+13:48:16.493018 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': "j'aime les chili changas", 'tradu...ngas'}], 'version': 'fr >> en', 'utilisateur': 1}
+13:48:16.493552 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'I like chili changas'
+13:48:16.494071 line       146                 message(reponse)
+13:48:16.495131 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:05.438147
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DB38430>
+Starting var:.. option = 'fr >> en'
+13:49:36.092529 call       122     def add_form(self, option):
+13:49:36.093530 line       130         st.subheader(option)
+13:49:36.093530 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas"
+13:49:36.095530 line       133         if st.button("Traduire"):
+13:49:36.096035 line       135                 "atraduire": atraduire,
+13:49:36.097043 line       136                 "version": option,
+13:49:36.097043 line       137                 "utilisateur":st.session_state["logged_in"]
+13:49:36.097043 line       134             data = {
+New var:....... data = {'atraduire': "j'aime les chili changas", 'version': 'fr >> en', 'utilisateur': 1}
+13:49:36.098043 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+13:49:39.208746 line       142             if response.status_code == 200:
+13:49:39.209270 line       143                 st.success("Voici votre traduction !")
+13:49:39.209807 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': "j'aime les chili changas", 'tradu...ngas'}], 'version': 'fr >> en', 'utilisateur': 1}
+13:49:39.210334 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'I like chili changas'
+13:49:39.211382 line       146                 message(reponse)
+13:49:39.212445 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:03.120976
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D813310>
+Starting var:.. option = 'fr >> en'
+13:49:59.322948 call       122     def add_form(self, option):
+13:49:59.324949 line       130         st.subheader(option)
+13:49:59.324949 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas bleu"
+13:49:59.325948 line       133         if st.button("Traduire"):
+13:49:59.327051 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005108
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DB382B0>
+Starting var:.. option = 'fr >> en'
+13:49:59.422434 call       122     def add_form(self, option):
+13:49:59.423432 line       130         st.subheader(option)
+13:49:59.424433 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas bleu"
+13:49:59.424433 line       133         if st.button("Traduire"):
+13:49:59.425938 line       135                 "atraduire": atraduire,
+13:49:59.426944 line       136                 "version": option,
+13:49:59.426944 line       137                 "utilisateur":st.session_state["logged_in"]
+13:49:59.427944 line       134             data = {
+New var:....... data = {'atraduire': "j'aime les chili changas bleu", 'version': 'fr >> en', 'utilisateur': 1}
+13:49:59.427944 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+13:50:02.470903 line       142             if response.status_code == 200:
+13:50:02.471429 line       143                 st.success("Voici votre traduction !")
+13:50:02.472489 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': "j'aime les chili changas bleu", '...blue'}], 'version': 'fr >> en', 'utilisateur': 1}
+13:50:02.473019 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'I like chili changas blue'
+13:50:02.473561 line       146                 message(reponse)
+13:50:02.474623 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:03.053246
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DB38940>
+Starting var:.. option = 'fr >> en'
+13:51:21.470162 call       122     def add_form(self, option):
+13:51:21.472161 line       130         st.subheader(option)
+13:51:21.472161 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas bleu"
+13:51:21.473160 line       133         if st.button("Traduire"):
+13:51:21.475162 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005000
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DDE3B80>
+Starting var:.. option = 'fr >> en'
+13:51:26.575038 call       122     def add_form(self, option):
+13:51:26.577036 line       130         st.subheader(option)
+13:51:26.577036 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas bleu"
+13:51:26.579038 line       133         if st.button("Traduire"):
+13:51:26.580036 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005999
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D813EE0>
+Starting var:.. option = 'fr >> en'
+13:51:29.557792 call       122     def add_form(self, option):
+13:51:29.558793 line       130         st.subheader(option)
+13:51:29.559791 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas bleu"
+13:51:29.560788 line       133         if st.button("Traduire"):
+13:51:29.561790 line       135                 "atraduire": atraduire,
+13:51:29.562790 line       136                 "version": option,
+13:51:29.562790 line       137                 "utilisateur":st.session_state["logged_in"]
+13:51:29.563789 line       134             data = {
+New var:....... data = {'atraduire': "j'aime les chili changas bleu", 'version': 'fr >> en', 'utilisateur': 1}
+13:51:29.563789 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+13:51:32.607834 line       142             if response.status_code == 200:
+13:51:32.608361 line       143                 st.success("Voici votre traduction !")
+13:51:32.609420 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': "j'aime les chili changas bleu", '...blue'}], 'version': 'fr >> en', 'utilisateur': 1}
+13:51:32.609420 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'I like chili changas blue'
+13:51:32.610470 line       146                 message(reponse)
+13:51:32.611513 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:03.054767
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DB380D0>
+Starting var:.. option = 'fr >> en'
+13:53:26.883182 call       122     def add_form(self, option):
+13:53:26.884181 line       130         st.subheader(option)
+13:53:26.884181 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas bleu"
+13:53:26.886185 line       133         if st.button("Traduire"):
+13:53:26.887237 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+13:53:26.887237 line       141 
+13:53:26.888246 exception  141 
+Exception:..... UnboundLocalError: local variable 'data' referenced before assignment
+13:53:26.888246 line       149                 reponse = response.json()
+13:53:26.888246 line       156     # def add_chat(self):
+13:53:26.889247 line       159     #     Récupère les messages depuis le serveur et les affiche avec des clés uniques via un count pair et impair.
+New var:....... err = UnboundLocalError("local variable 'data' referenced before assignment")
+13:53:26.889247 line       160 
+13:53:26.890244 return     160 
+Return value:.. None
+Elapsed time: 00:00:00.008062
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DDDAD40>
+Starting var:.. option = 'fr >> en'
+13:53:31.900385 call       122     def add_form(self, option):
+13:53:31.901385 line       130         st.subheader(option)
+13:53:31.902386 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas bleu"
+13:53:31.903383 line       133         if st.button("Traduire"):
+13:53:31.904385 line       135                 "atraduire": atraduire,
+13:53:31.905386 line       136                 "version": option,
+13:53:31.905386 line       137                 "utilisateur":st.session_state["logged_in"]
+13:53:31.905386 line       134             data = {
+New var:....... data = {'atraduire': "j'aime les chili changas bleu", 'version': 'fr >> en', 'utilisateur': 1}
+13:53:31.905386 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+13:53:31.906386 line       141 
+New var:....... response = <Response [200]>
+13:53:34.935983 line       142             if response.status_code == 200:
+13:53:34.936498 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': "j'aime les chili changas bleu", '...blue'}], 'version': 'fr >> en', 'utilisateur': 1}
+13:53:34.936498 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'I like chili changas blue'
+13:53:34.937030 line       146                 message(reponse)
+13:53:34.938093 line       147             else:
+13:53:34.939647 return     147             else:
+Return value:.. None
+Elapsed time: 00:00:03.039784
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D812B90>
+Starting var:.. option = 'fr >> en'
+13:53:41.990175 call       122     def add_form(self, option):
+13:53:41.991175 line       130         st.subheader(option)
+13:53:41.991175 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas bleu et verte"
+13:53:41.992175 line       133         if st.button("Traduire"):
+13:53:41.994175 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+13:53:41.994175 line       141 
+13:53:41.995176 exception  141 
+Exception:..... UnboundLocalError: local variable 'data' referenced before assignment
+13:53:41.995176 line       149                 reponse = response.json()
+13:53:41.995176 line       156     # def add_chat(self):
+13:53:41.996176 line       159     #     Récupère les messages depuis le serveur et les affiche avec des clés uniques via un count pair et impair.
+New var:....... err = UnboundLocalError("local variable 'data' referenced before assignment")
+13:53:41.996176 line       160 
+13:53:41.997175 return     160 
+Return value:.. None
+Elapsed time: 00:00:00.007000
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DDDB130>
+Starting var:.. option = 'fr >> en'
+13:53:42.065368 call       122     def add_form(self, option):
+13:53:42.066364 line       130         st.subheader(option)
+13:53:42.067366 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas bleu et verte"
+13:53:42.068854 line       133         if st.button("Traduire"):
+13:53:42.069851 line       135                 "atraduire": atraduire,
+13:53:42.069851 line       136                 "version": option,
+13:53:42.070853 line       137                 "utilisateur":st.session_state["logged_in"]
+13:53:42.070853 line       134             data = {
+New var:....... data = {'atraduire': "j'aime les chili changas bleu et verte", 'version': 'fr >> en', 'utilisateur': 1}
+13:53:42.070853 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+13:53:42.071854 line       141 
+New var:....... response = <Response [200]>
+13:53:45.526176 line       142             if response.status_code == 200:
+13:53:45.526701 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': "j'aime les chili changas bleu et ...reen'}], 'version': 'fr >> en', 'utilisateur': 1}
+13:53:45.527211 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'I like chili changas blue and green'
+13:53:45.527738 line       146                 message(reponse)
+13:53:45.528259 line       147             else:
+13:53:45.529827 return     147             else:
+Return value:.. None
+Elapsed time: 00:00:03.465014
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DB381C0>
+Starting var:.. option = 'fr >> en'
+13:53:53.522343 call       122     def add_form(self, option):
+13:53:53.523340 line       130         st.subheader(option)
+13:53:53.523340 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas bleu et verte eoo"
+13:53:53.525343 line       133         if st.button("Traduire"):
+13:53:53.526342 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+13:53:53.527342 line       141 
+13:53:53.527342 exception  141 
+Exception:..... UnboundLocalError: local variable 'data' referenced before assignment
+13:53:53.527342 line       149                 reponse = response.json()
+13:53:53.528389 line       156     # def add_chat(self):
+13:53:53.528389 line       159     #     Récupère les messages depuis le serveur et les affiche avec des clés uniques via un count pair et impair.
+New var:....... err = UnboundLocalError("local variable 'data' referenced before assignment")
+13:53:53.528389 line       160 
+13:53:53.529393 return     160 
+Return value:.. None
+Elapsed time: 00:00:00.008047
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D811B40>
+Starting var:.. option = 'fr >> en'
+13:53:53.614450 call       122     def add_form(self, option):
+13:53:53.615453 line       130         st.subheader(option)
+13:53:53.616453 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas bleu et verte eoo"
+13:53:53.617453 line       133         if st.button("Traduire"):
+13:53:53.618896 line       135                 "atraduire": atraduire,
+13:53:53.618896 line       136                 "version": option,
+13:53:53.619898 line       137                 "utilisateur":st.session_state["logged_in"]
+13:53:53.619898 line       134             data = {
+New var:....... data = {'atraduire': "j'aime les chili changas bleu et verte eoo", 'version': 'fr >> en', 'utilisateur': 1}
+13:53:53.619898 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+13:53:53.620897 line       141 
+New var:....... response = <Response [200]>
+13:53:57.255578 line       142             if response.status_code == 200:
+13:53:57.256097 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': "j'aime les chili changas bleu et ... eoo'}], 'version': 'fr >> en', 'utilisateur': 1}
+13:53:57.256619 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'I like chili changas blue and green eoo'
+13:53:57.257132 line       146                 message(reponse)
+13:53:57.258203 line       147             else:
+13:53:57.259252 return     147             else:
+Return value:.. None
+Elapsed time: 00:00:03.645843
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D812C80>
+Starting var:.. option = 'fr >> en'
+13:54:07.087406 call       122     def add_form(self, option):
+13:54:07.089068 line       130         st.subheader(option)
+13:54:07.089068 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas bleu et verte eoo"
+13:54:07.091080 line       133         if st.button("Traduire"):
+13:54:07.092079 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005673
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D8132B0>
+Starting var:.. option = 'fr >> en'
+13:54:45.531739 call       122     def add_form(self, option):
+13:54:45.532742 line       130         st.subheader(option)
+13:54:45.533740 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas bleu et verte eoo"
+13:54:45.534742 line       133         if st.button("Traduire"):
+13:54:45.535741 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005003
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DDDAAD0>
+Starting var:.. option = 'fr >> en'
+13:54:46.977691 call       122     def add_form(self, option):
+13:54:46.978692 line       130         st.subheader(option)
+13:54:46.979691 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas bleu et verte eoo"
+13:54:46.980692 line       133         if st.button("Traduire"):
+13:54:46.981690 line       135                 "atraduire": atraduire,
+13:54:46.982691 line       136                 "version": option,
+13:54:46.982691 line       137                 "utilisateur":st.session_state["logged_in"]
+13:54:46.982691 line       134             data = {
+New var:....... data = {'atraduire': "j'aime les chili changas bleu et verte eoo", 'version': 'fr >> en', 'utilisateur': 1}
+13:54:46.983690 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+13:54:50.678109 line       142             if response.status_code == 200:
+13:54:50.678652 line       143                 st.success("Voici votre traduction !")
+13:54:50.679177 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': "j'aime les chili changas bleu et ... eoo'}], 'version': 'fr >> en', 'utilisateur': 1}
+13:54:50.680228 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'I like chili changas blue and green eoo'
+13:54:50.680758 line       146                 message(reponse)
+13:54:50.681798 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:03.705145
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D813220>
+Starting var:.. option = 'fr >> en'
+13:54:56.531543 call       122     def add_form(self, option):
+13:54:56.532544 line       130         st.subheader(option)
+13:54:56.533543 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas bleu et verte eooedeedede"
+13:54:56.534543 line       133         if st.button("Traduire"):
+13:54:56.535544 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005000
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D812C50>
+Starting var:.. option = 'fr >> en'
+13:54:56.610573 call       122     def add_form(self, option):
+13:54:56.611575 line       130         st.subheader(option)
+13:54:56.611575 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas bleu et verte eooedeedede"
+13:54:56.612576 line       133         if st.button("Traduire"):
+13:54:56.614575 line       135                 "atraduire": atraduire,
+13:54:56.614575 line       136                 "version": option,
+13:54:56.614575 line       137                 "utilisateur":st.session_state["logged_in"]
+13:54:56.615573 line       134             data = {
+New var:....... data = {'atraduire': "j'aime les chili changas bleu et ...eedede", 'version': 'fr >> en', 'utilisateur': 1}
+13:54:56.615573 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+13:55:00.868030 line       142             if response.status_code == 200:
+13:55:00.870065 line       143                 st.success("Voici votre traduction !")
+13:55:00.870592 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': "j'aime les chili changas bleu et ...dede'}], 'version': 'fr >> en', 'utilisateur': 1}
+13:55:00.871124 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'I like chili changas blue and green eooedeedede'
+13:55:00.871639 line       146                 message(reponse)
+13:55:00.873211 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:04.263686
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DB388B0>
+Starting var:.. option = 'fr >> en'
+13:56:42.707001 call       122     def add_form(self, option):
+13:56:42.708999 line       130         st.subheader(option)
+13:56:42.708999 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas bleu et verte eooedeedede"
+13:56:42.710999 line       133         if st.button("Traduire"):
+13:56:42.712000 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005998
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D812C20>
+Starting var:.. option = 'fr >> en'
+14:06:25.992428 call       122     def add_form(self, option):
+14:06:25.993429 line       130         st.subheader(option)
+14:06:25.993429 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas bleu et verte eooedeedede"
+14:06:25.995428 line       133         if st.button("Traduire"):
+14:06:25.996427 line       135                 "atraduire": atraduire,
+14:06:25.996975 line       136                 "version": option,
+14:06:25.996975 line       137                 "utilisateur":st.session_state["logged_in"]
+14:06:25.996975 line       134             data = {
+New var:....... data = {'atraduire': "j'aime les chili changas bleu et ...eedede", 'version': 'fr >> en', 'utilisateur': 1}
+14:06:25.997983 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+14:06:30.535471 line       142             if response.status_code == 200:
+14:06:30.536501 line       143                 st.success("Voici votre traduction !")
+14:06:30.537028 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': "j'aime les chili changas bleu et ...dede'}], 'version': 'fr >> en', 'utilisateur': 1}
+14:06:30.537554 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'I like chili changas blue and green eooedeedede'
+14:06:30.538073 line       146                 message(reponse)
+14:06:30.539646 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:04.548313
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DDDA830>
+Starting var:.. option = 'fr >> en'
+14:13:04.827022 call       122     def add_form(self, option):
+14:13:04.828023 line       130         st.subheader(option)
+14:13:04.829021 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas bleu et verte eooedeedede"
+14:13:04.830023 line       133         if st.button("Traduire"):
+14:13:04.831024 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004999
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DDDB670>
+Starting var:.. option = 'fr >> en'
+14:13:07.158677 call       122     def add_form(self, option):
+14:13:07.159677 line       130         st.subheader(option)
+14:13:07.161184 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les chili changas bleu et verte eooedeedede"
+14:13:07.162193 line       133         if st.button("Traduire"):
+14:13:07.163192 line       135                 "atraduire": atraduire,
+14:13:07.164192 line       136                 "version": option,
+14:13:07.164192 line       137                 "utilisateur":st.session_state["logged_in"]
+14:13:07.164192 line       134             data = {
+New var:....... data = {'atraduire': "j'aime les chili changas bleu et ...eedede", 'version': 'fr >> en', 'utilisateur': 1}
+14:13:07.164192 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+14:13:11.829115 line       142             if response.status_code == 200:
+14:13:11.829653 line       143                 st.success("Voici votre traduction !")
+14:13:11.830709 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': "j'aime les chili changas bleu et ...dede'}], 'version': 'fr >> en', 'utilisateur': 1}
+14:13:11.830709 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'I like chili changas blue and green eooedeedede'
+14:13:11.831768 line       146                 message(reponse)
+14:13:11.832823 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:04.675192
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DDA2020>
+Starting var:.. option = 'fr >> en'
+14:13:32.233856 call       122     def add_form(self, option):
+14:13:32.234858 line       130         st.subheader(option)
+14:13:32.234858 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "quand est ce que j'ai mon dlc"
+14:13:32.235856 line       133         if st.button("Traduire"):
+14:13:32.237857 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005000
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DDA1F60>
+Starting var:.. option = 'fr >> en'
+14:13:32.306518 call       122     def add_form(self, option):
+14:13:32.307516 line       130         st.subheader(option)
+14:13:32.308516 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "quand est ce que j'ai mon dlc"
+14:13:32.309515 line       133         if st.button("Traduire"):
+14:13:32.310517 line       135                 "atraduire": atraduire,
+14:13:32.311519 line       136                 "version": option,
+14:13:32.311519 line       137                 "utilisateur":st.session_state["logged_in"]
+14:13:32.311519 line       134             data = {
+New var:....... data = {'atraduire': "quand est ce que j'ai mon dlc", 'version': 'fr >> en', 'utilisateur': 1}
+14:13:32.312516 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+14:13:35.503874 line       142             if response.status_code == 200:
+14:13:35.504404 line       143                 st.success("Voici votre traduction !")
+14:13:35.505463 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': "quand est ce que j'ai mon dlc", '...dlc?'}], 'version': 'fr >> en', 'utilisateur': 1}
+14:13:35.505989 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'when do I have my dlc?'
+14:13:35.505989 line       146                 message(reponse)
+14:13:35.507578 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:03.202122
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D812D10>
+Starting var:.. option = 'en >> fr'
+14:13:40.189251 call       122     def add_form(self, option):
+14:13:40.190252 line       130         st.subheader(option)
+14:13:40.191251 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "quand est ce que j'ai mon dlc"
+14:13:40.192251 line       133         if st.button("Traduire"):
+14:13:40.194252 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005001
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D8132B0>
+Starting var:.. option = 'en >> fr'
+14:13:53.092016 call       122     def add_form(self, option):
+14:13:53.093018 line       130         st.subheader(option)
+14:13:53.093018 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'when can i ask you to work well'
+14:13:53.094018 line       133         if st.button("Traduire"):
+14:13:53.096018 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005002
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749CD503A0>
+Starting var:.. option = 'en >> fr'
+14:13:53.183490 call       122     def add_form(self, option):
+14:13:53.184487 line       130         st.subheader(option)
+14:13:53.185487 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'when can i ask you to work well'
+14:13:53.186486 line       133         if st.button("Traduire"):
+14:13:53.188487 line       135                 "atraduire": atraduire,
+14:13:53.188487 line       136                 "version": option,
+14:13:53.189993 line       137                 "utilisateur":st.session_state["logged_in"]
+14:13:53.189993 line       134             data = {
+New var:....... data = {'atraduire': 'when can i ask you to work well', 'version': 'en >> fr', 'utilisateur': 1}
+14:13:53.191001 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [500]>
+14:13:53.198001 line       142             if response.status_code == 200:
+14:13:53.199000 line       148                 st.error(f"Erreur : {response.status_code}")
+14:13:53.199000 line       149                 reponse = response.json()
+14:13:53.200001 exception  149                 reponse = response.json()
+Exception:..... requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Call ended by exception
+Elapsed time: 00:00:00.026511
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749CD504F0>
+Starting var:.. option = 'en >> fr'
+14:13:55.894089 call       122     def add_form(self, option):
+14:13:55.895089 line       130         st.subheader(option)
+14:13:55.896088 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'when can i ask you to work well'
+14:13:55.897089 line       133         if st.button("Traduire"):
+14:13:55.898089 line       135                 "atraduire": atraduire,
+14:13:55.898089 line       136                 "version": option,
+14:13:55.899089 line       137                 "utilisateur":st.session_state["logged_in"]
+14:13:55.899089 line       134             data = {
+New var:....... data = {'atraduire': 'when can i ask you to work well', 'version': 'en >> fr', 'utilisateur': 1}
+14:13:55.899089 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [500]>
+14:13:55.906085 line       142             if response.status_code == 200:
+14:13:55.907087 line       148                 st.error(f"Erreur : {response.status_code}")
+14:13:55.907087 line       149                 reponse = response.json()
+14:13:55.908086 exception  149                 reponse = response.json()
+Exception:..... requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Call ended by exception
+Elapsed time: 00:00:00.014995
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DDA22F0>
+Starting var:.. option = 'en >> fr'
+14:15:16.632360 call       122     def add_form(self, option):
+14:15:16.633434 line       130         st.subheader(option)
+14:15:16.633961 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'when can i ask you to work well'
+14:15:16.635536 line       133         if st.button("Traduire"):
+14:15:16.636580 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005274
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D8122C0>
+Starting var:.. option = 'en >> fr'
+14:15:18.350121 call       122     def add_form(self, option):
+14:15:18.351126 line       130         st.subheader(option)
+14:15:18.352123 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'when can i ask you to work well'
+14:15:18.353121 line       133         if st.button("Traduire"):
+14:15:18.354122 line       135                 "atraduire": atraduire,
+14:15:18.355124 line       136                 "version": option,
+14:15:18.355124 line       137                 "utilisateur":st.session_state["logged_in"]
+14:15:18.355124 line       134             data = {
+New var:....... data = {'atraduire': 'when can i ask you to work well', 'version': 'en >> fr', 'utilisateur': 1}
+14:15:18.355124 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [500]>
+14:15:18.362122 line       142             if response.status_code == 200:
+14:15:18.363125 line       148                 st.error(f"Erreur : {response.status_code}")
+14:15:18.364124 line       149                 reponse = response.json()
+14:15:18.364124 exception  149                 reponse = response.json()
+Exception:..... requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Call ended by exception
+Elapsed time: 00:00:00.015001
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D811D20>
+Starting var:.. option = 'fr >> en'
+14:16:11.533250 call       122     def add_form(self, option):
+14:16:11.534781 line       130         st.subheader(option)
+14:16:11.535787 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'when can i ask you to work well'
+14:16:11.536790 line       133         if st.button("Traduire"):
+14:16:11.537787 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005537
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D813700>
+Starting var:.. option = 'fr >> en'
+14:16:12.275656 call       122     def add_form(self, option):
+14:16:12.276657 line       130         st.subheader(option)
+14:16:12.277657 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'when can i ask you to work well'
+14:16:12.278658 line       133         if st.button("Traduire"):
+14:16:12.280657 line       135                 "atraduire": atraduire,
+14:16:12.280657 line       136                 "version": option,
+14:16:12.280657 line       137                 "utilisateur":st.session_state["logged_in"]
+14:16:12.281657 line       134             data = {
+New var:....... data = {'atraduire': 'when can i ask you to work well', 'version': 'fr >> en', 'utilisateur': 1}
+14:16:12.281657 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+14:16:15.332312 line       142             if response.status_code == 200:
+14:16:15.332842 line       143                 st.success("Voici votre traduction !")
+14:16:15.333370 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': 'when can i ask you to work well',...well'}], 'version': 'fr >> en', 'utilisateur': 1}
+14:16:15.333897 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'when can i ask you to work well'
+14:16:15.334414 line       146                 message(reponse)
+14:16:15.335982 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:03.061370
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749DB38100>
+Starting var:.. option = 'en >> fr'
+14:16:21.919346 call       122     def add_form(self, option):
+14:16:21.920346 line       130         st.subheader(option)
+14:16:21.920346 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'when can i ask you to work well'
+14:16:21.922344 line       133         if st.button("Traduire"):
+14:16:21.923346 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005000
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D812AA0>
+Starting var:.. option = 'en >> fr'
+14:16:23.598440 call       122     def add_form(self, option):
+14:16:23.599440 line       130         st.subheader(option)
+14:16:23.599440 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'when can i ask you to work well'
+14:16:23.601437 line       133         if st.button("Traduire"):
+14:16:23.602439 line       135                 "atraduire": atraduire,
+14:16:23.602439 line       136                 "version": option,
+14:16:23.603438 line       137                 "utilisateur":st.session_state["logged_in"]
+14:16:23.603438 line       134             data = {
+New var:....... data = {'atraduire': 'when can i ask you to work well', 'version': 'en >> fr', 'utilisateur': 1}
+14:16:23.603438 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [500]>
+14:16:23.610436 line       142             if response.status_code == 200:
+14:16:23.610436 line       148                 st.error(f"Erreur : {response.status_code}")
+14:16:23.611438 line       149                 reponse = response.json()
+14:16:23.612437 exception  149                 reponse = response.json()
+Exception:..... requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Call ended by exception
+Elapsed time: 00:00:00.014997
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D813610>
+Starting var:.. option = 'fr >> en'
+14:17:31.446616 call       122     def add_form(self, option):
+14:17:31.447619 line       130         st.subheader(option)
+14:17:31.448618 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'when can i ask you to work well'
+14:17:31.449616 line       133         if st.button("Traduire"):
+14:17:31.450616 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005003
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002749D812E60>
+Starting var:.. option = 'fr >> en'
+14:17:32.819561 call       122     def add_form(self, option):
+14:17:32.820563 line       130         st.subheader(option)
+14:17:32.821559 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'when can i ask you to work well'
+14:17:32.822561 line       133         if st.button("Traduire"):
+14:17:32.823563 line       135                 "atraduire": atraduire,
+14:17:32.824560 line       136                 "version": option,
+14:17:32.824560 line       137                 "utilisateur":st.session_state["logged_in"]
+14:17:32.824560 line       134             data = {
+New var:....... data = {'atraduire': 'when can i ask you to work well', 'version': 'fr >> en', 'utilisateur': 1}
+14:17:32.825564 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+14:17:35.911011 line       142             if response.status_code == 200:
+14:17:35.911543 line       143                 st.success("Voici votre traduction !")
+14:17:35.912599 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': 'when can i ask you to work well',...well'}], 'version': 'fr >> en', 'utilisateur': 1}
+14:17:35.913144 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'when can i ask you to work well'
+14:17:35.913669 line       146                 message(reponse)
+14:17:35.914713 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:03.096197
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002A01899E4A0>
+Starting var:.. option = 'fr >> en'
+14:18:54.802910 call       122     def add_form(self, option):
+14:18:54.803912 line       130         st.subheader(option)
+14:18:54.804911 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'when can i ask you to work well'
+14:18:54.805911 line       133         if st.button("Traduire"):
+14:18:54.806910 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005001
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002A01954D6F0>
+Starting var:.. option = 'fr >> en'
+14:18:55.204325 call       122     def add_form(self, option):
+14:18:55.206326 line       130         st.subheader(option)
+14:18:55.206326 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+14:18:55.208327 line       133         if st.button("Traduire"):
+14:18:55.209327 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.006004
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002A01954E1D0>
+Starting var:.. option = 'fr >> en'
+14:18:58.140035 call       122     def add_form(self, option):
+14:18:58.141033 line       130         st.subheader(option)
+14:18:58.141033 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+14:18:58.142032 line       133         if st.button("Traduire"):
+14:18:58.144031 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.003996
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002A01899D8A0>
+Starting var:.. option = 'fr >> en'
+14:19:03.676524 call       122     def add_form(self, option):
+14:19:03.677523 line       130         st.subheader(option)
+14:19:03.678526 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+14:19:03.679525 line       133         if st.button("Traduire"):
+14:19:03.680524 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005000
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002A01899DDB0>
+Starting var:.. option = 'fr >> en'
+14:19:04.698674 call       122     def add_form(self, option):
+14:19:04.699710 line       130         st.subheader(option)
+14:19:04.700227 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+14:19:04.701287 line       133         if st.button("Traduire"):
+14:19:04.702879 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004740
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002A0197939D0>
+Starting var:.. option = 'fr >> en'
+14:19:08.573123 call       122     def add_form(self, option):
+14:19:08.574121 line       130         st.subheader(option)
+14:19:08.574121 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'trump évite les balles '
+14:19:08.576120 line       133         if st.button("Traduire"):
+14:19:08.577122 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004997
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x000002A019793970>
+Starting var:.. option = 'fr >> en'
+14:19:08.660193 call       122     def add_form(self, option):
+14:19:08.662192 line       130         st.subheader(option)
+14:19:08.663192 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'trump évite les balles '
+14:19:08.664194 line       133         if st.button("Traduire"):
+14:19:08.665191 line       135                 "atraduire": atraduire,
+14:19:08.666192 line       136                 "version": option,
+14:19:08.666192 line       137                 "utilisateur":st.session_state["logged_in"]
+14:19:08.667190 line       134             data = {
+New var:....... data = {'atraduire': 'trump évite les balles ', 'version': 'fr >> en', 'utilisateur': 1}
+14:19:08.667190 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+14:19:14.100212 line       142             if response.status_code == 200:
+14:19:14.100731 line       143                 st.success("Voici votre traduction !")
+14:19:14.101257 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': 'trump évite les balles ', 'traduc...ullets', 'version': 'fr >> en', 'utilisateur': 1}
+14:19:14.101782 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+14:19:14.102306 exception  145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+Exception:..... TypeError: string indices must be integers
+Call ended by exception
+Elapsed time: 00:00:05.443160
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000025EF3A9A7D0>
+Starting var:.. option = 'fr >> en'
+14:20:57.887187 call       122     def add_form(self, option):
+14:20:57.889185 line       130         st.subheader(option)
+14:20:57.889185 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+14:20:57.890186 line       133         if st.button("Traduire"):
+14:20:57.892188 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005001
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000025EF4217580>
+Starting var:.. option = 'fr >> en'
+14:21:00.313286 call       122     def add_form(self, option):
+14:21:00.314293 line       130         st.subheader(option)
+14:21:00.315293 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+14:21:00.316292 line       133         if st.button("Traduire"):
+14:21:00.317292 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005006
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000025EF4216B90>
+Starting var:.. option = 'fr >> en'
+14:21:05.287354 call       122     def add_form(self, option):
+14:21:05.288352 line       130         st.subheader(option)
+14:21:05.289352 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+14:21:05.290354 line       133         if st.button("Traduire"):
+14:21:05.291355 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004999
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000025EF42169B0>
+Starting var:.. option = 'fr >> en'
+14:21:13.809497 call       122     def add_form(self, option):
+14:21:13.810495 line       130         st.subheader(option)
+14:21:13.810495 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+14:21:13.811497 line       133         if st.button("Traduire"):
+14:21:13.813496 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.003999
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000025EF3A999F0>
+Starting var:.. option = 'fr >> en'
+14:21:13.925684 call       122     def add_form(self, option):
+14:21:13.926748 line       130         st.subheader(option)
+14:21:13.927279 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+14:21:13.928611 line       133         if st.button("Traduire"):
+14:21:13.929659 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005043
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000025EF42175E0>
+Starting var:.. option = 'fr >> en'
+14:21:16.474221 call       122     def add_form(self, option):
+14:21:16.475219 line       130         st.subheader(option)
+14:21:16.475219 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'trump évite les balles '
+14:21:16.476218 line       133         if st.button("Traduire"):
+14:21:16.478217 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.003996
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000025EF47A6020>
+Starting var:.. option = 'fr >> en'
+14:21:16.562962 call       122     def add_form(self, option):
+14:21:16.564961 line       130         st.subheader(option)
+14:21:16.564961 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'trump évite les balles '
+14:21:16.565960 line       133         if st.button("Traduire"):
+14:21:16.567959 line       135                 "atraduire": atraduire,
+14:21:16.567959 line       136                 "version": option,
+14:21:16.568960 line       137                 "utilisateur":st.session_state["logged_in"]
+14:21:16.568960 line       134             data = {
+New var:....... data = {'atraduire': 'trump évite les balles ', 'version': 'fr >> en', 'utilisateur': 1}
+14:21:16.568960 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000025EF47FBAC0>
+Starting var:.. option = 'fr >> en'
+14:21:18.385519 call       122     def add_form(self, option):
+14:21:18.386518 line       130         st.subheader(option)
+14:21:18.387519 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'trump évite les balles '
+14:21:18.388519 line       133         if st.button("Traduire"):
+14:21:18.389516 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005000
+New var:....... response = <Response [200]>
+14:21:21.969861 line       142             if response.status_code == 200:
+14:21:21.970377 line       143                 st.success("Voici votre traduction !")
+14:21:21.971430 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': 'trump évite les balles ', 'traduc...': None, 'version': 'fr >> en', 'utilisateur': 1}
+14:21:21.971958 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+14:21:21.972487 exception  145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+Exception:..... TypeError: 'NoneType' object is not subscriptable
+Call ended by exception
+Elapsed time: 00:00:05.410573
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000025EF47E8820>
+Starting var:.. option = 'fr >> en'
+14:21:24.391896 call       122     def add_form(self, option):
+14:21:24.392897 line       130         st.subheader(option)
+14:21:24.393898 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'when can i ask you to work well'
+14:21:24.394897 line       133         if st.button("Traduire"):
+14:21:24.395897 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005002
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x0000025EF4534D60>
+Starting var:.. option = 'fr >> en'
+14:27:27.710864 call       122     def add_form(self, option):
+14:27:27.711864 line       130         st.subheader(option)
+14:27:27.712864 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'trump évite les balles '
+14:27:27.713864 line       133         if st.button("Traduire"):
+14:27:27.714862 line       135                 "atraduire": atraduire,
+14:27:27.715864 line       136                 "version": option,
+14:27:27.715864 line       137                 "utilisateur":st.session_state["logged_in"]
+14:27:27.715864 line       134             data = {
+New var:....... data = {'atraduire': 'trump évite les balles ', 'version': 'fr >> en', 'utilisateur': 1}
+14:27:27.715864 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+14:27:30.711588 line       142             if response.status_code == 200:
+14:27:30.712112 line       143                 st.success("Voici votre traduction !")
+14:27:30.712636 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': 'trump évite les balles ', 'traduc...': None, 'version': 'fr >> en', 'utilisateur': 1}
+14:27:30.713163 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+14:27:30.714210 exception  145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+Exception:..... TypeError: 'NoneType' object is not subscriptable
+Call ended by exception
+Elapsed time: 00:00:03.003867
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD45C0D0>
+Starting var:.. option = 'fr >> en'
+14:28:54.523274 call       122     def add_form(self, option):
+14:28:54.524270 line       130         st.subheader(option)
+14:28:54.525273 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+14:28:54.526274 line       133         if st.button("Traduire"):
+14:28:54.527273 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004999
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BDC1B580>
+Starting var:.. option = 'fr >> en'
+14:28:58.382087 call       122     def add_form(self, option):
+14:28:58.384084 line       130         st.subheader(option)
+14:28:58.384084 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+14:28:58.386086 line       133         if st.button("Traduire"):
+14:28:58.387086 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004999
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BDC1AB90>
+Starting var:.. option = 'fr >> en'
+14:29:05.214005 call       122     def add_form(self, option):
+14:29:05.215006 line       130         st.subheader(option)
+14:29:05.216007 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+14:29:05.217006 line       133         if st.button("Traduire"):
+14:29:05.218006 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004999
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BDC1AD70>
+Starting var:.. option = 'fr >> en'
+14:29:09.944018 call       122     def add_form(self, option):
+14:29:09.945015 line       130         st.subheader(option)
+14:29:09.945015 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'trump évite les balles '
+14:29:09.946018 line       133         if st.button("Traduire"):
+14:29:09.948017 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005000
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BDC1B400>
+Starting var:.. option = 'fr >> en'
+14:29:09.989207 call       122     def add_form(self, option):
+14:29:09.990207 line       130         st.subheader(option)
+14:29:09.991207 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'trump évite les balles '
+14:29:09.992205 line       133         if st.button("Traduire"):
+14:29:09.993206 line       135                 "atraduire": atraduire,
+14:29:09.994208 line       136                 "version": option,
+14:29:09.994208 line       137                 "utilisateur":st.session_state["logged_in"]
+14:29:09.994208 line       134             data = {
+New var:....... data = {'atraduire': 'trump évite les balles ', 'version': 'fr >> en', 'utilisateur': None}
+14:29:09.995208 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [422]>
+14:29:09.998205 line       142             if response.status_code == 200:
+14:29:09.998205 line       148                 st.error(f"Erreur : {response.status_code}")
+14:29:09.999210 line       149                 reponse = response.json()
+New var:....... reponse = {'detail': [{'type': 'int_type', 'loc': ['body',...nput should be a valid integer', 'input': None}]}
+14:29:09.999210 line       150                 st.json(response.json())
+14:29:10.000207 return     150                 st.json(response.json())
+Return value:.. None
+Elapsed time: 00:00:00.012002
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD49CC70>
+Starting var:.. option = 'fr >> en'
+14:29:14.015828 call       122     def add_form(self, option):
+14:29:14.016859 line       130         st.subheader(option)
+14:29:14.017390 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'trump évite les balles '
+14:29:14.018448 line       133         if st.button("Traduire"):
+14:29:14.020006 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004704
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BE1A9F60>
+Starting var:.. option = 'fr >> en'
+14:29:18.679766 call       122     def add_form(self, option):
+14:29:18.681764 line       130         st.subheader(option)
+14:29:18.681764 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'trump évite les balles '
+14:29:18.682763 line       133         if st.button("Traduire"):
+14:29:18.684766 line       135                 "atraduire": atraduire,
+14:29:18.684766 line       136                 "version": option,
+14:29:18.684766 line       137                 "utilisateur":st.session_state["logged_in"]
+14:29:18.685768 line       134             data = {
+New var:....... data = {'atraduire': 'trump évite les balles ', 'version': 'fr >> en', 'utilisateur': 1}
+14:29:18.685768 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+14:29:24.093025 line       142             if response.status_code == 200:
+14:29:24.093541 line       143                 st.success("Voici votre traduction !")
+14:29:24.094593 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': 'trump évite les balles ', 'traduc...lets'}], 'version': 'fr >> en', 'utilisateur': 1}
+14:29:24.095124 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'tromp avoids bullets'
+14:29:24.095655 line       146                 message(reponse)
+14:29:24.096719 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:05.418019
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD49D210>
+Starting var:.. option = 'fr >> en'
+14:29:47.849423 call       122     def add_form(self, option):
+14:29:47.851422 line       130         st.subheader(option)
+14:29:47.851422 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'trump évite les balles '
+14:29:47.852423 line       133         if st.button("Traduire"):
+14:29:47.854424 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005001
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190DC6225C0>
+Starting var:.. option = 'fr >> en'
+14:30:02.516317 call       122     def add_form(self, option):
+14:30:02.517314 line       130         st.subheader(option)
+14:30:02.517314 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'trump évite les balles  '
+14:30:02.518316 line       133         if st.button("Traduire"):
+14:30:02.520318 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004001
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190DC622650>
+Starting var:.. option = 'fr >> en'
+14:30:02.613074 call       122     def add_form(self, option):
+14:30:02.614074 line       130         st.subheader(option)
+14:30:02.615072 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'trump évite les balles  '
+14:30:02.616074 line       133         if st.button("Traduire"):
+14:30:02.618075 line       135                 "atraduire": atraduire,
+14:30:02.618075 line       136                 "version": option,
+14:30:02.618075 line       137                 "utilisateur":st.session_state["logged_in"]
+14:30:02.619072 line       134             data = {
+New var:....... data = {'atraduire': 'trump évite les balles  ', 'version': 'fr >> en', 'utilisateur': 1}
+14:30:02.619072 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+14:30:05.555949 line       142             if response.status_code == 200:
+14:30:05.556478 line       143                 st.success("Voici votre traduction !")
+14:30:05.557008 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': 'trump évite les balles  ', 'tradu...lets'}], 'version': 'fr >> en', 'utilisateur': 1}
+14:30:05.558061 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'tromp avoids bullets'
+14:30:05.558601 line       146                 message(reponse)
+14:30:05.559668 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:02.947656
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190DC621B70>
+Starting var:.. option = 'fr >> en'
+14:30:10.011047 call       122     def add_form(self, option):
+14:30:10.012048 line       130         st.subheader(option)
+14:30:10.013047 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+14:30:10.014048 line       133         if st.button("Traduire"):
+14:30:10.015048 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005000
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD49CFA0>
+Starting var:.. option = 'fr >> en'
+14:30:13.897174 call       122     def add_form(self, option):
+14:30:13.898176 line       130         st.subheader(option)
+14:30:13.899176 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+14:30:13.900175 line       133         if st.button("Traduire"):
+14:30:13.901176 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005005
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD3EBAF0>
+Starting var:.. option = 'fr >> en'
+14:30:21.499478 call       122     def add_form(self, option):
+14:30:21.500478 line       130         st.subheader(option)
+14:30:21.500478 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+14:30:21.502478 line       133         if st.button("Traduire"):
+14:30:21.503479 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004998
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD45C6D0>
+Starting var:.. option = 'fr >> en'
+14:30:24.982100 call       122     def add_form(self, option):
+14:30:24.983098 line       130         st.subheader(option)
+14:30:24.984099 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les pommes"
+14:30:24.985098 line       133         if st.button("Traduire"):
+14:30:24.986099 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004999
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD45C310>
+Starting var:.. option = 'fr >> en'
+14:30:25.426966 call       122     def add_form(self, option):
+14:30:25.427963 line       130         st.subheader(option)
+14:30:25.428966 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les pommes"
+14:30:25.429966 line       133         if st.button("Traduire"):
+14:30:25.430966 line       135                 "atraduire": atraduire,
+14:30:25.430966 line       136                 "version": option,
+14:30:25.431965 line       137                 "utilisateur":st.session_state["logged_in"]
+14:30:25.431965 line       134             data = {
+New var:....... data = {'atraduire': "j'aime les pommes", 'version': 'fr >> en', 'utilisateur': None}
+14:30:25.431965 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [422]>
+14:30:25.434967 line       142             if response.status_code == 200:
+14:30:25.435964 line       148                 st.error(f"Erreur : {response.status_code}")
+14:30:25.436966 line       149                 reponse = response.json()
+New var:....... reponse = {'detail': [{'type': 'int_type', 'loc': ['body',...nput should be a valid integer', 'input': None}]}
+14:30:25.436966 line       150                 st.json(response.json())
+14:30:25.437966 return     150                 st.json(response.json())
+Return value:.. None
+Elapsed time: 00:00:00.012000
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD49CF40>
+Starting var:.. option = 'fr >> en'
+14:30:37.992655 call       122     def add_form(self, option):
+14:30:37.994657 line       130         st.subheader(option)
+14:30:37.994657 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les pommes"
+14:30:37.995656 line       133         if st.button("Traduire"):
+14:30:37.996655 line       135                 "atraduire": atraduire,
+14:30:37.997657 line       136                 "version": option,
+14:30:37.997657 line       137                 "utilisateur":st.session_state["logged_in"]
+14:30:37.998654 line       134             data = {
+New var:....... data = {'atraduire': "j'aime les pommes", 'version': 'fr >> en', 'utilisateur': None}
+14:30:37.998654 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [422]>
+14:30:38.001656 line       142             if response.status_code == 200:
+14:30:38.002661 line       148                 st.error(f"Erreur : {response.status_code}")
+14:30:38.002661 line       149                 reponse = response.json()
+New var:....... reponse = {'detail': [{'type': 'int_type', 'loc': ['body',...nput should be a valid integer', 'input': None}]}
+14:30:38.003661 line       150                 st.json(response.json())
+14:30:38.004662 return     150                 st.json(response.json())
+Return value:.. None
+Elapsed time: 00:00:00.012007
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD49E4D0>
+Starting var:.. option = 'fr >> en'
+14:30:39.508453 call       122     def add_form(self, option):
+14:30:39.509509 line       130         st.subheader(option)
+14:30:39.510040 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les pommes"
+14:30:39.511098 line       133         if st.button("Traduire"):
+14:30:39.512659 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004732
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD45C340>
+Starting var:.. option = 'fr >> en'
+14:30:43.764171 call       122     def add_form(self, option):
+14:30:43.765170 line       130         st.subheader(option)
+14:30:43.766170 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les pommes"
+14:30:43.767171 line       133         if st.button("Traduire"):
+14:30:43.767704 line       135                 "atraduire": atraduire,
+14:30:43.768711 line       136                 "version": option,
+14:30:43.768711 line       137                 "utilisateur":st.session_state["logged_in"]
+14:30:43.768711 line       134             data = {
+New var:....... data = {'atraduire': "j'aime les pommes", 'version': 'fr >> en', 'utilisateur': 1}
+14:30:43.769711 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+14:30:46.456717 line       142             if response.status_code == 200:
+14:30:46.457235 line       143                 st.success("Voici votre traduction !")
+14:30:46.458291 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': "j'aime les pommes", 'traduction':...les.'}], 'version': 'fr >> en', 'utilisateur': 1}
+14:30:46.458819 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'I like apples.'
+14:30:46.459346 line       146                 message(reponse)
+14:30:46.460404 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:02.697291
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD45C790>
+Starting var:.. option = 'en >> fr'
+14:30:53.831707 call       122     def add_form(self, option):
+14:30:53.832705 line       130         st.subheader(option)
+14:30:53.832705 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = "j'aime les pommes"
+14:30:53.833706 line       133         if st.button("Traduire"):
+14:30:53.835707 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004000
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD49E530>
+Starting var:.. option = 'en >> fr'
+14:31:00.345648 call       122     def add_form(self, option):
+14:31:00.346647 line       130         st.subheader(option)
+14:31:00.347649 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'i like orange'
+14:31:00.348646 line       133         if st.button("Traduire"):
+14:31:00.349645 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004999
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD49E3B0>
+Starting var:.. option = 'en >> fr'
+14:31:00.452796 call       122     def add_form(self, option):
+14:31:00.453797 line       130         st.subheader(option)
+14:31:00.454796 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'i like orange'
+14:31:00.455798 line       133         if st.button("Traduire"):
+14:31:00.457800 line       135                 "atraduire": atraduire,
+14:31:00.457800 line       136                 "version": option,
+14:31:00.457800 line       137                 "utilisateur":st.session_state["logged_in"]
+14:31:00.458801 line       134             data = {
+New var:....... data = {'atraduire': 'i like orange', 'version': 'en >> fr', 'utilisateur': 1}
+14:31:00.458801 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [500]>
+14:31:00.467797 line       142             if response.status_code == 200:
+14:31:00.467797 line       148                 st.error(f"Erreur : {response.status_code}")
+14:31:00.468797 line       149                 reponse = response.json()
+14:31:00.468797 exception  149                 reponse = response.json()
+Exception:..... requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Call ended by exception
+Elapsed time: 00:00:00.018005
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD49D210>
+Starting var:.. option = 'en >> fr'
+14:31:00.592591 call       122     def add_form(self, option):
+14:31:00.593591 line       130         st.subheader(option)
+14:31:00.594590 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'i like orange'
+14:31:00.595591 line       133         if st.button("Traduire"):
+14:31:00.596591 line       135                 "atraduire": atraduire,
+14:31:00.597591 line       136                 "version": option,
+14:31:00.597591 line       137                 "utilisateur":st.session_state["logged_in"]
+14:31:00.597591 line       134             data = {
+New var:....... data = {'atraduire': 'i like orange', 'version': 'en >> fr', 'utilisateur': 1}
+14:31:00.598589 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [500]>
+14:31:00.604590 line       142             if response.status_code == 200:
+14:31:00.605588 line       148                 st.error(f"Erreur : {response.status_code}")
+14:31:00.605588 line       149                 reponse = response.json()
+14:31:00.606593 exception  149                 reponse = response.json()
+Exception:..... requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Call ended by exception
+Elapsed time: 00:00:00.014998
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD3EB8B0>
+Starting var:.. option = 'en >> fr'
+14:32:12.805899 call       122     def add_form(self, option):
+14:32:12.807896 line       130         st.subheader(option)
+14:32:12.807896 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'i like orange'
+14:32:12.809897 line       133         if st.button("Traduire"):
+14:32:12.810896 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005997
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190DC64BAF0>
+Starting var:.. option = 'en >> fr'
+14:32:14.825499 call       122     def add_form(self, option):
+14:32:14.827498 line       130         st.subheader(option)
+14:32:14.827498 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'i like orange'
+14:32:14.828500 line       133         if st.button("Traduire"):
+14:32:14.830497 line       135                 "atraduire": atraduire,
+14:32:14.830497 line       136                 "version": option,
+14:32:14.830497 line       137                 "utilisateur":st.session_state["logged_in"]
+14:32:14.831500 line       134             data = {
+New var:....... data = {'atraduire': 'i like orange', 'version': 'en >> fr', 'utilisateur': 1}
+14:32:14.831500 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [500]>
+14:32:14.838500 line       142             if response.status_code == 200:
+14:32:14.838500 line       148                 st.error(f"Erreur : {response.status_code}")
+14:32:14.839498 line       149                 reponse = response.json()
+14:32:14.839498 exception  149                 reponse = response.json()
+Exception:..... requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Call ended by exception
+Elapsed time: 00:00:00.016000
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD45C700>
+Starting var:.. option = 'fr >> en'
+14:34:06.862281 call       122     def add_form(self, option):
+14:34:06.863279 line       130         st.subheader(option)
+14:34:06.864278 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'i like orange'
+14:34:06.865279 line       133         if st.button("Traduire"):
+14:34:06.866280 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005001
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190DC64BBB0>
+Starting var:.. option = 'fr >> en'
+14:34:08.652512 call       122     def add_form(self, option):
+14:34:08.653511 line       130         st.subheader(option)
+14:34:08.654511 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'i like orange'
+14:34:08.655513 line       133         if st.button("Traduire"):
+14:34:08.656513 line       135                 "atraduire": atraduire,
+14:34:08.657513 line       136                 "version": option,
+14:34:08.657513 line       137                 "utilisateur":st.session_state["logged_in"]
+14:34:08.657513 line       134             data = {
+New var:....... data = {'atraduire': 'i like orange', 'version': 'fr >> en', 'utilisateur': 1}
+14:34:08.657513 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+14:34:11.047174 line       142             if response.status_code == 200:
+14:34:11.048197 line       143                 st.success("Voici votre traduction !")
+14:34:11.048732 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': 'i like orange', 'traduction': [{'...ange'}], 'version': 'fr >> en', 'utilisateur': 1}
+14:34:11.049260 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'i like orange'
+14:34:11.049786 line       146                 message(reponse)
+14:34:11.051348 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:02.399353
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD49DD80>
+Starting var:.. option = 'fr >> en'
+14:35:08.124982 call       122     def add_form(self, option):
+14:35:08.125982 line       130         st.subheader(option)
+14:35:08.126982 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'i like orange'
+14:35:08.127983 line       133         if st.button("Traduire"):
+14:35:08.128981 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004999
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190DC623940>
+Starting var:.. option = 'fr >> en'
+14:40:39.785827 call       122     def add_form(self, option):
+14:40:39.786827 line       130         st.subheader(option)
+14:40:39.787825 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'i like orange'
+14:40:39.788823 line       133         if st.button("Traduire"):
+14:40:39.789827 line       135                 "atraduire": atraduire,
+14:40:39.790826 line       136                 "version": option,
+14:40:39.790826 line       137                 "utilisateur":st.session_state["logged_in"]
+14:40:39.790826 line       134             data = {
+New var:....... data = {'atraduire': 'i like orange', 'version': 'fr >> en', 'utilisateur': 1}
+14:40:39.791823 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+14:40:42.230666 line       142             if response.status_code == 200:
+14:40:42.231200 line       143                 st.success("Voici votre traduction !")
+14:40:42.232243 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': 'i like orange', 'traduction': [{'...ange'}], 'version': 'fr >> en', 'utilisateur': 1}
+14:40:42.232243 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'i like orange'
+14:40:42.233302 line       146                 message(reponse)
+14:40:42.234355 return     146                 message(reponse)
+Return value:.. None
+Elapsed time: 00:00:02.449577
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD3EBE80>
+Starting var:.. option = 'fr >> en'
+14:40:50.754255 call       122     def add_form(self, option):
+14:40:50.755258 line       130         st.subheader(option)
+14:40:50.756258 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'i like orange '
+14:40:50.757257 line       133         if st.button("Traduire"):
+14:40:50.758255 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.004999
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD49CFA0>
+Starting var:.. option = 'en >> fr'
+14:40:51.900786 call       122     def add_form(self, option):
+14:40:51.901787 line       130         st.subheader(option)
+14:40:51.901787 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'i like orange '
+14:40:51.903793 line       133         if st.button("Traduire"):
+14:40:51.904795 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005006
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD49E710>
+Starting var:.. option = 'en >> fr'
+14:40:52.714654 call       122     def add_form(self, option):
+14:40:52.715652 line       130         st.subheader(option)
+14:40:52.716652 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'i like orange '
+14:40:52.718161 line       133         if st.button("Traduire"):
+14:40:52.719168 line       135                 "atraduire": atraduire,
+14:40:52.720168 line       136                 "version": option,
+14:40:52.720168 line       137                 "utilisateur":st.session_state["logged_in"]
+14:40:52.720168 line       134             data = {
+New var:....... data = {'atraduire': 'i like orange ', 'version': 'en >> fr', 'utilisateur': 1}
+14:40:52.720168 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [500]>
+14:40:52.727167 line       142             if response.status_code == 200:
+14:40:52.727167 line       148                 st.error(f"Erreur : {response.status_code}")
+14:40:52.728167 line       149                 reponse = response.json()
+14:40:52.729171 exception  149                 reponse = response.json()
+Exception:..... requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Call ended by exception
+Elapsed time: 00:00:00.015513
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD3EBC70>
+Starting var:.. option = 'en >> fr'
+14:45:25.091037 call       152                 
+14:45:25.093033 line       161         """
+14:45:25.093033 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... atraduire = 'i like orange '
+14:45:25.095036 line       164         
+14:45:25.096035 return     164         
+Return value:.. None
+Elapsed time: 00:00:00.005997
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD3EB7F0>
+Starting var:.. option = 'en >> fr'
+14:45:35.355853 call       152                 
+14:45:35.356853 line       161         """
+14:45:35.357853 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... atraduire = 'i like orange '
+14:45:35.358853 line       164         
+14:45:35.359850 return     164         
+Return value:.. None
+Elapsed time: 00:00:00.004998
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190DC620E80>
+Starting var:.. option = 'en >> fr'
+14:45:39.771014 call       152                 
+14:45:39.772014 line       161         """
+14:45:39.772014 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... atraduire = 'i like orange '
+14:45:39.774018 line       164         
+14:45:39.775016 line       166             chat_messages = chat.json()
+14:45:39.775016 line       167             counter_user = 1
+14:45:39.776018 line       168             counter_bot = 2
+14:45:39.776018 line       165         if chat.status_code == 200:
+New var:....... data = {'atraduire': 'i like orange ', 'version': 'en >> fr', 'utilisateur': 1}
+14:45:39.776018 line       171                 counter_user += 2
+14:45:39.777016 line       172                 counter_bot += 2
+New var:....... response = <Response [500]>
+14:45:39.783017 line       173 
+14:45:39.784017 exception  173 
+Exception:..... requests.exceptions.HTTPError: 500 Server Error:... Error for url: http://127.0.0.1:8080/traductions
+14:45:39.784017 line       188     #         chat_messages = chat.json()
+New var:....... http_err = HTTPError('500 Server Error: Internal Server Error for url: http://127.0.0.1:8080/traductions')
+14:45:39.784017 line       189 
+14:45:39.785015 return     189 
+Return value:.. None
+Elapsed time: 00:00:00.015007
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD49CD00>
+Starting var:.. option = 'en >> fr'
+14:46:07.041539 call       152                 
+14:46:07.042541 line       161         """
+14:46:07.043539 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... atraduire = 'i like orange '
+14:46:07.044538 line       164         
+14:46:07.045538 return     164         
+Return value:.. None
+Elapsed time: 00:00:00.005002
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD49D330>
+Starting var:.. option = 'en >> fr'
+14:46:11.459948 call       152                 
+14:46:11.461513 line       161         """
+14:46:11.462036 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... atraduire = 'i like orange '
+14:46:11.463074 line       164         
+14:46:11.464108 return     164         
+Return value:.. None
+Elapsed time: 00:00:00.005215
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190DC622530>
+Starting var:.. option = 'en >> fr'
+14:47:11.000348 call       152                 
+14:47:11.001344 line       161         """
+14:47:11.002346 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... atraduire = 'i like orange '
+14:47:11.003350 line       164         
+14:47:11.004347 line       166             chat_messages = chat.json()
+14:47:11.005346 line       167             counter_user = 1
+14:47:11.005346 line       168             counter_bot = 2
+14:47:11.005346 line       165         if chat.status_code == 200:
+New var:....... data = {'atraduire': 'i like orange ', 'version': 'en >> fr', 'utilisateur': 1}
+14:47:11.005346 line       171                 counter_user += 2
+14:47:11.006347 line       172                 counter_bot += 2
+New var:....... response = <Response [500]>
+14:47:11.012344 line       173 
+14:47:11.013346 exception  173 
+Exception:..... requests.exceptions.HTTPError: 500 Server Error:... Error for url: http://127.0.0.1:8080/traductions
+14:47:11.013346 line       188     #         chat_messages = chat.json()
+New var:....... http_err = HTTPError('500 Server Error: Internal Server Error for url: http://127.0.0.1:8080/traductions')
+14:47:11.014346 line       189 
+14:47:11.015344 return     189 
+Return value:.. None
+Elapsed time: 00:00:00.014996
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD49CD60>
+Starting var:.. option = 'fr >> en'
+14:47:41.074800 call       152                 
+14:47:41.075800 line       161         """
+14:47:41.076801 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... atraduire = 'i like orange '
+14:47:41.077798 line       164         
+14:47:41.078801 return     164         
+Return value:.. None
+Elapsed time: 00:00:00.005000
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190DC6230D0>
+Starting var:.. option = 'fr >> en'
+14:47:42.334250 call       152                 
+14:47:42.335250 line       161         """
+14:47:42.336250 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... atraduire = 'i like orange '
+14:47:42.337249 line       164         
+14:47:42.338247 line       166             chat_messages = chat.json()
+14:47:42.339251 line       167             counter_user = 1
+14:47:42.339251 line       168             counter_bot = 2
+14:47:42.340251 line       165         if chat.status_code == 200:
+New var:....... data = {'atraduire': 'i like orange ', 'version': 'fr >> en', 'utilisateur': 1}
+14:47:42.340251 line       171                 counter_user += 2
+14:47:42.340251 line       172                 counter_bot += 2
+New var:....... response = <Response [200]>
+14:47:44.803365 line       173 
+14:47:44.804396 line       175                 message(prompt["traduction"],key="bot key")
+14:47:44.804396 line       176            
+New var:....... response_data = {'atraduire': 'i like orange ', 'traduction': [{...ange'}], 'version': 'fr >> en', 'utilisateur': 1}
+14:47:44.804934 line       177 
+14:47:44.805992 line       179             else :
+14:47:44.806516 line       180                st.error(f"Erreur : {chat.status_code}")
+New var:....... reponse = 'i like orange'
+14:47:44.806516 line       181 
+14:47:44.807566 line       182 
+14:47:44.808618 return     182 
+Return value:.. None
+Elapsed time: 00:00:02.475422
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD49E2C0>
+Starting var:.. option = 'fr >> en'
+14:47:50.011377 call       152                 
+14:47:50.012089 line       161         """
+14:47:50.013128 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... atraduire = 'i like orange '
+14:47:50.014176 line       164         
+14:47:50.015730 return     164         
+Return value:.. None
+Elapsed time: 00:00:00.004877
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD49E4D0>
+Starting var:.. option = 'fr >> en'
+14:47:53.509912 call       152                 
+14:47:53.511913 line       161         """
+14:47:53.511913 line       162         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+New var:....... atraduire = 'i like orange '
+14:47:53.512913 line       164         
+14:47:53.514913 line       166             chat_messages = chat.json()
+14:47:53.514913 line       167             counter_user = 1
+14:47:53.514913 line       168             counter_bot = 2
+14:47:53.514913 line       165         if chat.status_code == 200:
+New var:....... data = {'atraduire': 'i like orange ', 'version': 'fr >> en', 'utilisateur': 1}
+14:47:53.515913 line       171                 counter_user += 2
+14:47:53.515913 line       172                 counter_bot += 2
+New var:....... response = <Response [200]>
+14:47:55.961107 line       173 
+14:47:55.961635 line       175                 message(prompt["traduction"],key="bot key")
+14:47:55.961635 line       176            
+New var:....... response_data = {'atraduire': 'i like orange ', 'traduction': [{...ange'}], 'version': 'fr >> en', 'utilisateur': 1}
+14:47:55.962164 line       177 
+14:47:55.963211 line       179             else :
+14:47:55.963734 line       180                st.error(f"Erreur : {chat.status_code}")
+New var:....... reponse = 'i like orange'
+14:47:55.963734 line       181 
+14:47:55.964790 line       182 
+14:47:55.965849 return     182 
+Return value:.. None
+Elapsed time: 00:00:02.456993
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD45C760>
+Starting var:.. option = 'fr >> en'
+14:48:40.375695 call       122     def add_form(self, option):
+14:48:40.376695 line       130         st.subheader(option)
+14:48:40.377695 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'i like orange '
+14:48:40.378695 line       133         if st.button("Traduire"):
+14:48:40.380695 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005000
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD49D780>
+Starting var:.. option = 'fr >> en'
+14:49:00.862785 call       122     def add_form(self, option):
+14:49:00.863784 line       130         st.subheader(option)
+14:49:00.864785 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'i like orange '
+14:49:00.865786 line       133         if st.button("Traduire"):
+14:49:00.866783 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005000
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190DC6200A0>
+Starting var:.. option = 'fr >> en'
+14:49:03.074175 call       122     def add_form(self, option):
+14:49:03.075178 line       130         st.subheader(option)
+14:49:03.076176 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = 'i like orange '
+14:49:03.077174 line       133         if st.button("Traduire"):
+14:49:03.078174 line       135                 "atraduire": atraduire,
+14:49:03.079174 line       136                 "version": option,
+14:49:03.079174 line       137                 "utilisateur":st.session_state["logged_in"]
+14:49:03.079174 line       134             data = {
+New var:....... data = {'atraduire': 'i like orange ', 'version': 'fr >> en', 'utilisateur': 1}
+14:49:03.079174 line       140             response = requests.post(self.URL_TRADUCTEUR, json=data)
+New var:....... response = <Response [200]>
+14:49:05.453486 line       142             if response.status_code == 200:
+14:49:05.454020 line       143                 st.success("Voici votre traduction !")
+14:49:05.454554 line       144                 response_data = response.json()
+New var:....... response_data = {'atraduire': 'i like orange ', 'traduction': [{...ange'}], 'version': 'fr >> en', 'utilisateur': 1}
+14:49:05.455086 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+New var:....... reponse = 'i like orange'
+14:49:05.455616 line       146                 message(reponse)
+14:49:05.457205 line       147             else:
+14:49:05.458269 return     147             else:
+Return value:.. None
+Elapsed time: 00:00:02.385154
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD45C580>
+Starting var:.. option = 'fr >> en'
+14:49:18.959008 call       122     def add_form(self, option):
+14:49:18.960008 line       130         st.subheader(option)
+14:49:18.961008 line       131         atraduire = st.text_input("Texte à traduire")
+New var:....... atraduire = ''
+14:49:18.962008 line       133         if st.button("Traduire"):
+14:49:18.963007 return     133         if st.button("Traduire"):
+Return value:.. None
+Elapsed time: 00:00:00.005004
+Source path:... C:\Users\User\Documents\EXO\cas_pratique\py-traducteur_mika\web_traducteur\src\vue\traducteur_app.py
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190DC6202E0>
+Starting var:.. option = 'fr >> en'
+14:52:15.627117 call       123         """
+14:52:15.628668 line       132 
+14:52:15.628668 line       133         if st.button("Traduire"):
+New var:....... atraduire = ''
+14:52:15.629676 line       135                 "atraduire": atraduire,
+14:52:15.631675 return     135                 "atraduire": atraduire,
+Return value:.. None
+Elapsed time: 00:00:00.005559
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190DC6234C0>
+Starting var:.. option = 'fr >> en'
+14:52:23.301843 call       123         """
+14:52:23.303838 line       132 
+14:52:23.303838 line       133         if st.button("Traduire"):
+New var:....... atraduire = "j'ai faim"
+14:52:23.304843 line       135                 "atraduire": atraduire,
+14:52:23.306843 return     135                 "atraduire": atraduire,
+Return value:.. None
+Elapsed time: 00:00:00.005000
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD3EBEB0>
+Starting var:.. option = 'fr >> en'
+14:52:23.402108 call       123         """
+14:52:23.404106 line       132 
+14:52:23.405659 line       133         if st.button("Traduire"):
+New var:....... atraduire = "j'ai faim"
+14:52:23.406666 line       135                 "atraduire": atraduire,
+14:52:23.408666 line       137                 "utilisateur":st.session_state["logged_in"]
+14:52:23.408666 line       138             }
+14:52:23.408666 line       139 
+14:52:23.409665 line       136                 "version": option,
+New var:....... data = {'atraduire': "j'ai faim", 'version': 'fr >> en', 'utilisateur': 1}
+14:52:23.410668 line       142             if response.status_code == 200:
+New var:....... response = <Response [200]>
+14:52:26.215326 line       144                 response_data = response.json()
+14:52:26.215856 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+14:52:26.216374 line       146                 message(reponse)
+New var:....... response_data = {'atraduire': "j'ai faim", 'traduction': [{'tran...gry."}], 'version': 'fr >> en', 'utilisateur': 1}
+14:52:26.216900 line       147             else:
+New var:....... reponse = "I'm hungry."
+14:52:26.217430 line       148                 st.error(f"Erreur : {response.status_code}")
+14:52:26.219018 line       149                 reponse = response.json()
+14:52:26.220078 return     149                 reponse = response.json()
+Return value:.. None
+Elapsed time: 00:00:02.819035
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD45C6A0>
+Starting var:.. option = 'fr >> en'
+14:52:39.461895 call       123         """
+14:52:39.462897 line       132 
+14:52:39.463895 line       133         if st.button("Traduire"):
+New var:....... atraduire = "j'ai envie de pomme"
+14:52:39.464895 line       135                 "atraduire": atraduire,
+14:52:39.465894 return     135                 "atraduire": atraduire,
+Return value:.. None
+Elapsed time: 00:00:00.004998
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD3EB7F0>
+Starting var:.. option = 'fr >> en'
+14:52:41.151942 call       123         """
+14:52:41.152943 line       132 
+14:52:41.152943 line       133         if st.button("Traduire"):
+New var:....... atraduire = "j'ai envie de pomme"
+14:52:41.153942 line       135                 "atraduire": atraduire,
+14:52:41.155942 line       137                 "utilisateur":st.session_state["logged_in"]
+14:52:41.155942 line       138             }
+14:52:41.155942 line       139 
+14:52:41.156942 line       136                 "version": option,
+New var:....... data = {'atraduire': "j'ai envie de pomme", 'version': 'fr >> en', 'utilisateur': 1}
+14:52:41.156942 line       142             if response.status_code == 200:
+New var:....... response = <Response [200]>
+14:52:43.808047 line       144                 response_data = response.json()
+14:52:43.808564 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+14:52:43.809611 line       146                 message(reponse)
+New var:....... response_data = {'atraduire': "j'ai envie de pomme", 'traduction...ple.'}], 'version': 'fr >> en', 'utilisateur': 1}
+14:52:43.810130 line       147             else:
+New var:....... reponse = 'I want an apple.'
+14:52:43.810660 line       148                 st.error(f"Erreur : {response.status_code}")
+14:52:43.812241 line       149                 reponse = response.json()
+14:52:43.813276 return     149                 reponse = response.json()
+Return value:.. None
+Elapsed time: 00:00:02.662368
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190DC6235E0>
+Starting var:.. option = 'fr >> en'
+14:52:50.544225 call       123         """
+14:52:50.545223 line       132 
+14:52:50.546224 line       133         if st.button("Traduire"):
+New var:....... atraduire = "j'ai envie de pomme  frite"
+14:52:50.547223 line       135                 "atraduire": atraduire,
+14:52:50.548225 return     135                 "atraduire": atraduire,
+Return value:.. None
+Elapsed time: 00:00:00.004996
+Starting var:.. self = <vue.traducteur_app.TraducteurApp object at 0x00000190BD3EBC70>
+Starting var:.. option = 'fr >> en'
+14:52:50.628191 call       123         """
+14:52:50.629189 line       132 
+14:52:50.629189 line       133         if st.button("Traduire"):
+New var:....... atraduire = "j'ai envie de pomme  frite"
+14:52:50.631191 line       135                 "atraduire": atraduire,
+14:52:50.632191 line       137                 "utilisateur":st.session_state["logged_in"]
+14:52:50.632191 line       138             }
+14:52:50.633190 line       139 
+14:52:50.633190 line       136                 "version": option,
+New var:....... data = {'atraduire': "j'ai envie de pomme  frite", 'version': 'fr >> en', 'utilisateur': 1}
+14:52:50.633190 line       142             if response.status_code == 200:
+New var:....... response = <Response [200]>
+14:52:53.573950 line       144                 response_data = response.json()
+14:52:53.574986 line       145                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+14:52:53.575513 line       146                 message(reponse)
+New var:....... response_data = {'atraduire': "j'ai envie de pomme  frite", 'tra...ple.'}], 'version': 'fr >> en', 'utilisateur': 1}
+14:52:53.576043 line       147             else:
+New var:....... reponse = 'I want a fried apple.'
+14:52:53.576575 line       148                 st.error(f"Erreur : {response.status_code}")
+14:52:53.578154 line       149                 reponse = response.json()
+14:52:53.579208 return     149                 reponse = response.json()
+Return value:.. None
+Elapsed time: 00:00:02.953081

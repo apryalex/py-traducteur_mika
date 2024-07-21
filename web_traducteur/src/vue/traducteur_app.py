@@ -5,6 +5,8 @@ from config.parametres import URL_TRADUCTEUR, URL_VERSIONS, URL_LOGIN, URL_TRADU
 import requests
 import pysnooper
 import uuid
+
+
 class TraducteurApp:
     def __init__(self):
         self.URL_TRADUCTEUR = URL_TRADUCTEUR
@@ -143,11 +145,14 @@ class TraducteurApp:
                 st.success("Voici votre traduction !")
                 response_data = response.json()
                 reponse = f"{response_data['traduction'][0]['translation_text']}"
+                message(atraduire, is_user=True)
                 message(reponse)
             else:
                 st.error(f"Erreur : {response.status_code}")
                 reponse = response.json()
                 st.json(response.json())
+        
+
 
                 
     
@@ -156,7 +161,7 @@ class TraducteurApp:
     def add_chat(self):
         """
         Affiche l'historique des messages de chat entre l'utilisateur et le bot.
-        Récupère les messages depuis le serveur et les affiche avec des clés uniques.
+        Récupère les messages depuis le serveur et les affiche avec des clés uniques via UUID.
 
         """
         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
@@ -168,28 +173,27 @@ class TraducteurApp:
             counter_bot = 1
             
             for prompt in chat_messages:
-                counter_user += 2
-                counter_bot += 2
+                user_key = str(uuid.uuid4())
+                bot_key = str(uuid.uuid4())
 
-                message(prompt["atraduire"], is_user=True, key=f"bot_message_{counter_user}")
-                message(prompt["traduction"],key=f"bot_message_{counter_bot}")
+                message(prompt["atraduire"], is_user=True, key=user_key)
+                message(prompt["traduction"],key=bot_key)
            
-                # message(f"U S E R :{prompt['atraduire'],}", key=f"user_message_{counter}")
-                # message(f" G P T :{prompt['traduction']}", key=f"bot_message_{counter}")
+
             
             else :
                st.error(f"Erreur : {chat.status_code}")
 
+    # ancienne version 
+    # def add_chat(self):
+    #     url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
+    #     chat = requests.get(url)
 
-        # def add_chat(self):
-        # url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
-        # chat = requests.get(url)
+    #     if chat.status_code == 200:
+    #         chat_messages = chat.json()
 
-        # if chat.status_code == 200:
-        #     chat_messages = chat.json()
-
-        #     for prompt in chat_messages:
-        #         message(prompt["atraduire"], is_user=True)
-        #         message(prompt["traduction"])
-        # else :
-        #     st.error(f"Erreur : {chat.status_code}")
+    #         for prompt in chat_messages:
+    #             message(prompt["atraduire"], is_user=True)
+    #             message(prompt["traduction"])
+    #     else :
+    #         st.error(f"Erreur : {chat.status_code}")

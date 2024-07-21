@@ -9,6 +9,7 @@ class Service_Traducteur(Connexion):
         cls.ouvrir_connexion()
         query = "INSERT INTO Prompts (text_in, text_out, version, utilisateur) VALUES (%s, %s, %s, %s)"
         values = [prompt.atraduire, prompt.traduction, prompt.version, prompt.utilisateur]
+
         
         try:
             cls.cursor.execute(query, values)
