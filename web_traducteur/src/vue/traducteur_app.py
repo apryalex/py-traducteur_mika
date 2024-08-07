@@ -21,6 +21,9 @@ class TraducteurApp:
             layout="wide",
             initial_sidebar_state="expanded",
         )
+        
+        # Désactiver les messages d'erreur dans Streamlit
+        st.set_option('client.showErrorDetails', False)
 
         if "logged_in" not in st.session_state:
             st.session_state["logged_in"] = None
@@ -145,7 +148,7 @@ class TraducteurApp:
                 st.success("Voici votre traduction !")
                 response_data = response.json()
                 reponse = f"{response_data['traduction'][0]['translation_text']}"
-                message(atraduire, is_user=True)
+                message(atraduire, is_user=True) # ajout du texte a traduire dans le chat
                 message(reponse)
             else:
                 st.error(f"Erreur : {response.status_code}")
@@ -165,24 +168,36 @@ class TraducteurApp:
 
         """
         url = f"{self.URL_TRADUCTIONS}{st.session_state.logged_in}"
-        chat = requests.get(url)
-        
-        if chat.status_code == 200:
+    
+        try:
+            # requête HTTP pour récupérer les messages de chat
+            chat = requests.get(url)
+            chat.raise_for_status()  # lève un except si le statut HTTP indique une erreur
+            
             chat_messages = chat.json()
-            counter_user = 0
-            counter_bot = 1
+            keys = set() # Set qui servira à vérifier l'unicité des clés
             
             for prompt in chat_messages:
                 user_key = str(uuid.uuid4())
                 bot_key = str(uuid.uuid4())
+                
+                # Vérifie si une clef est déjà présente dans le set() avent de l'ajouter
+                if user_key in keys or bot_key in keys:
+                    raise ValueError("Erreur de clé dupliquée trouvé !")
+                #
+                keys.add(user_key)
+                keys.add(bot_key)
 
+                # Afficher les messages avec des clés uniques
                 message(prompt["atraduire"], is_user=True, key=user_key)
-                message(prompt["traduction"],key=bot_key)
-           
-
-            
-            else :
-               st.error(f"Erreur : {chat.status_code}")
+                message(prompt["traduction"], key=bot_key)
+        
+        except requests.exceptions.RequestException as e:
+            st.error(f"Erreur lors de la récupération des messages : {e}")
+        except ValueError as ve:
+            st.error(f"Erreur de clé dupliquée : {ve}")
+        except Exception as e:
+            st.error(f"Une erreur inattendue est survenue : {e}")
 
     # ancienne version 
     # def add_chat(self):

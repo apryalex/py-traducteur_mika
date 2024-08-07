@@ -3,6 +3,7 @@ __pycache__/
 
 api_env
 web_env
+test_env
 
 bdd_traducteur/mysql.sock
 bdd_traducteur/bdd/
